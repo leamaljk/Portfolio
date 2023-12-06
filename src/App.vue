@@ -1,0 +1,14 @@
+<template>
+
+<router-view />
+
+</template>
+
+
+
+<style lang="scss">
+body{
+ 
+  background-color: black;
+}
+</style>
