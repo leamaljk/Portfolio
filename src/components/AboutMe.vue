@@ -40,6 +40,7 @@
   </template>
   
   <style scoped>
+  
   body {
     font-family: 'Tenor Sans', sans-serif;
   }
@@ -75,7 +76,7 @@
   }
   .about {
     font-family: 'Tenor Sans', sans-serif;
-    color: #f00707;
+    color: var(--primaryRed);
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;

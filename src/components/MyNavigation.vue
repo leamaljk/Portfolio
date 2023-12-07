@@ -1,16 +1,16 @@
 <template>
-    <header>
-      <div class="container">
+  <header class="fixed-header">
+        <div class="container">
         <button class="hamburger" @click="toggleNav">&#9776;</button>
         <nav class="top-bar" :class="{ 'is-active': navIsActive }">
-          <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/#about-section">About Me</router-link></li>
-            <li><router-link to="/#skills-wrapper">Skills</router-link></li>
-            <li><router-link to="/">Portfolio</router-link></li>
-            <li><router-link to="/">Contact</router-link></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><router-link to="/" @click="closeNav">Home</router-link></li>
+          <li><router-link to="/#about-section" @click="closeNav">About Me</router-link></li>
+          <li><router-link to="/#skills-wrapper" @click="closeNav">Skills</router-link></li>
+          <li><router-link to="/" @click="closeNav">Portfolio</router-link></li>
+          <li><router-link to="/" @click="closeNav">Contact</router-link></li>
+        </ul>
+      </nav>
       </div>
     </header>
 </template>
@@ -23,6 +23,9 @@ export default {
     };
   },
   methods: {
+    closeNav() {
+    this.navIsActive = false;
+  },
     toggleNav() {
       this.navIsActive = !this.navIsActive; // Toggle the state of the nav menu
     },
@@ -102,14 +105,14 @@ nav ul li a {
 
 nav ul li a:hover {
   color: rgba(255, 255, 255, 0.7);
-  outline-color: rgba(249, 7, 7);
+  outline-color: var(--primaryRed);
   outline-offset: 4em;
 }
 
 @media (max-width: 768px) {
 
 
-    .logo, nav {
+    nav {
     float: none;
     text-align: center; /* Center the logo and nav on small screens */
   }
@@ -118,18 +121,44 @@ nav ul li a:hover {
     display: none;
   }
   
+
+/* fixed header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   /* HAMBURGER TOGGLE */
+
 .hamburger {
   background: none;
   border: none;
   font-size: 2.2rem; /* Adjust the size as needed */
   cursor: pointer;
   display: block;
-  color: rgb(240, 7, 7);
+  color: var(--primaryRed);
   align-items: center;
   padding-left: 20px;
 }
-  
+
+.top-bar.is-active {
+    display: block; /* Ensure the nav displays when active */
+    position: fixed; /* Fixed position to stay at the top */
+    width: 100%; /* Take full width of the screen */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 999; /* Below the header but above other content */
+    background-color: #333; /* Background to match the header */
+    margin-top: 60px; /* Offset by the height of the hamburger menu */
+  }
 
   nav ul {
     padding-top: 0px;

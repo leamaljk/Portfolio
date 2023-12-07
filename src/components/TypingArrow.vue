@@ -1,59 +1,87 @@
 <template>
   <section class="hero">
     <div class="container-text">
-    <h1>I'm Lea - Web Developer. </h1>
-    <p class="typing-effect"> Check out my latest work and get in touch to collaborate.</p>
-  </div>
+      <h1>I'm Lea - Web Developer.</h1>
+      <p class="typing-effect">Check out my latest work and get in touch with me ...</p>
+    </div>
   </section>
   
-  <div id="arrow" @click="scrollDown" class="arrow bounce">&#10095;</div>
-</template>
-
+  <div id="arrow" @click="scrollPage" class="arrow" :class="{ 'up': isBottomOfPage, 'down': !isBottomOfPage }">&#10095;</div>
+  </template>
 <script>
-
 export default {
-  
+  data() {
+    return {
+      isBottomOfPage: false,
+    };
+  },
   methods: {
-    scrollDown() {
-      window.scrollBy({ 
-        top: window.innerHeight,
-        behavior: 'smooth' 
-      });
+  handleScroll() {
+    // Check if the user is at the bottom of the page and update isBottomOfPage accordingly.
+    this.isBottomOfPage = (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight;
+  },
+  scrollPage() {
+    if (this.isBottomOfPage) {
+      // Scroll to the top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // Scroll down
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
     }
   }
+},
+mounted() {
+  window.addEventListener('scroll', this.handleScroll);
+},
+beforeUnmount() {
+  window.removeEventListener('scroll', this.handleScroll);
+}
+
 }
 </script>
 
+
+
 <style scoped>
-
-
 /* ARROW STYLING */
+/* Base styling for the arrow, without rotation */
 .arrow {
   display: inline-block;
-  color: rgb(240, 7, 7); /* Adjust the color as needed */
-  font-size: 6rem; /* Adjust the size as needed */
+  color: var(--primaryRed);
+  font-size: 6rem;
+  font-weight: 600; /* Adjust the size as needed */
   cursor: pointer;
+  rotate: 90deg;
   position: fixed; /* Fixed positioning relative to the viewport */
   left: 50%;
   bottom: 10px; /* Position it 20px up from the bottom of the viewport */
-  transform: translateX(-50%) rotate(90deg); /* Center it horizontally and rotate */
+  transform: translateX(-50%); /* Center it horizontally */
   user-select: none; /* Prevent text selection */
+}
+
+/* When the arrow is up, rotate to point upwards */
+.arrow.up {
+  animation: none; /* Stop any animation */
+  transform: translateX(-50%) rotate(180deg); /* Rotate to point up */
+}
+
+/* When the arrow is down, keep it at its initial state */
+.arrow.down {
   animation: bounce 2s infinite; /* Apply the bouncing animation */
 }
 
-/* Bounce animation with rotation */
+/* Keyframes for the bounce animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0) translateX(-50%) rotate(90deg);
+    transform: translateY(-5%);
   }
   40% {
-    transform: translateY(-30px) translateX(-50%) rotate(90deg);
+    transform: translateY(-5%) translateX(-30px);
   }
   60% {
-    transform: translateY(-15px) translateX(-50%) rotate(90deg);
+    transform: translateY(-5%) translateX(-15px);
   }
 }
-
 
 /* Basic reset for styling */
 * {
@@ -131,7 +159,7 @@ color: white;}
 
   .container-text .typing-effect {
     font-size: 1rem; /* Smaller font size for p */
-    animation: typing 7s steps(50, end) infinite; /* Slower typing for better readability */
+    animation: typing 5s steps(40, end) infinite; /* Slower typing for better readability */
   }
 
 }
@@ -148,7 +176,7 @@ color: white;}
   .container-text .typing-effect {
     width: 100%;
     font-size: 0.875rem; /* Smaller font size for p */
-    animation: typing 6s steps(30, end) infinite; /* Even slower typing for better readability */
+    animation: typing 5s steps(40, end) infinite; /* Even slower typing for better readability */
     padding: 0 10px; /* Add padding to ensure text doesn't touch the edges */
     border-right: 0.1em solid rgb(253, 253, 253); /* Slightly thinner cursor for smaller screens */
   }
