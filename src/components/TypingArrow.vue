@@ -7,7 +7,9 @@
   </section>
   
   <div id="arrow" @click="scrollPage" class="arrow" :class="{ 'up': isBottomOfPage, 'down': !isBottomOfPage }">&#10095;</div>
-  </template>
+</template>
+
+
 <script>
 export default {
   data() {
@@ -149,7 +151,7 @@ color: white;}
 /* Ensure that the hero image resizes responsively */
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 0; /* Less vertical padding on smaller screens */
+    padding: 50px 0;
   }
 
   .container-text h1,
@@ -168,6 +170,9 @@ color: white;}
 }
 
 @media (max-width: 480px) {
+  .hero{
+    margin-top: 60px;
+  }
   .container-text h1,
   .container-text .typing-effect {
     font-size: 1.5rem; /* Even smaller font size for h1 */
