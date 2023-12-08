@@ -112,7 +112,7 @@ body {
   padding: 0 20px ;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid rgb(255, 255, 254); /* The typwriter cursor */
+  border-right: .15em solid #f07f7f; /* The typwriter cursor */
 }
 
 .container-text .typing-effect {

@@ -1,7 +1,7 @@
 <template>
     <header>
       <!-- ... other header elements ... -->
-      <i class="fas fa-moon theme-toggle" @click="toggleTheme"></i>
+      <i class="fas fa-moon theme-toggle" @click="toggleTheme"> <span class="theme">Click for a Theme</span></i>
     </header>
     <!-- ... rest of your component ... -->
   </template>
@@ -23,13 +23,19 @@
   </script>
   
   <style>
+  .theme{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 100;
+  }
   .theme-toggle {
     cursor: pointer;
     position: absolute;
-    top: 40px;
+    top: 45px;
     left: 25px;
-    font-size: 24px;
-    color: #fff; /* Or any other color */
+    font-size: 26px;
+    color: var(--primaryRed);
   }
   
   /* Dark theme styles */
@@ -44,6 +50,9 @@
         top: 74px;
         left: 320px;
     }
+
+    .theme{display: none;
+  }
 }
 
   </style>

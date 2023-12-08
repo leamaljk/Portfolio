@@ -96,7 +96,7 @@ export default {
 }
 
 .soft {
-  background-color: #fff;
+  background-color: #fee8e8;
   color: var(--primaryRed);
 }
 

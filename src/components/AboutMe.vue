@@ -12,7 +12,7 @@
          </p>
       </div>
       <div class="profile-pic-container">
-        <img src="../assets/images/profile-photo.jpg" alt="My profile photo" class="profile-pic"/>
+        <img src="../assets/images/profile-pic (3).jpg" alt="My profile photo" class="profile-pic"/>
       </div>
       
        <button class="interests">
@@ -106,8 +106,8 @@ export default {
   }
   .profile-pic-container {
   position: relative;
-  width: 25rem; /* Size of the image plus border */
-  height: 25rem;
+  width: 30rem; /* Size of the image plus border */
+  height: 30rem;
   border-radius: 50%; /* Makes it circular */
   display: flex;
   align-items: center;
@@ -128,8 +128,9 @@ export default {
   width: 100%; /* Slightly less to account for the border */
   height: 100%;
   border-radius: 50%; /* Circular image */
-  filter: grayscale(100%); 
-  object-fit: cover; /* Adjusts the size of the image within its container */
+  filter: grayscale(10%); 
+  background-size: cover;
+   /* Adjusts the size of the image within its container */
   z-index: 1; /* Above the pseudo-element */
 }
 
