@@ -8,11 +8,13 @@
 
 <style lang="scss">
 :root {
-  --primaryRed: #cc0000;
+  --primaryRed: #f07f7f;
+  --secondary: #7d868a; //for the text
+  --title: #747070;
 }
 
-body{
- 
-  background-color: black;
-}
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+  }
+
 </style>

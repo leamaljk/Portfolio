@@ -101,7 +101,7 @@ export default {
 }
 
 .skill:hover {
-  background-color: #d7d4d4;
+  transform: translateX(-5px);
 }
 
 @media (max-width: 768px) {

@@ -1,12 +1,13 @@
 <template>
+  <ToggleTheme />
     <div id="about-section">
       <div class="about-content">
         <h1 class="about">Hi.</h1>
         <p class="aboutMe">
     I'm a Web Developer with a passion for building engaging and efficient websites and applications. I thrive on challenges and love to use my technical skills to solve complex problems.
-    <br><br> Whether it's bringing a designer's vision to life with front-end technologies or architecting robust back-end systems, I'm always up for the challenge. I'm particularly fascinated by the power of JavaScript frameworks like React and Vue.js to create dynamic user interfaces, as well as the capabilities of Node.js and Express for server-side solutions.
-    <br><br> On the database side, I am well-versed in both SQL with PostgreSQL and NoSQL with MongoDB, ensuring that the data layer of the applications I work on is as performant and scalable as the rest.
-    <br><br>When not coding, I'm often exploring new technologies, dabbling in UI/UX design with tools like Figma, or honing my skills in C# and Python for more structured and object-oriented approaches to problem-solving.
+    <br><br> Whether it's bringing a designer's vision to life with front-end technologies or architecting robust back-end systems, I'm always up for the challenge. I'm particularly fascinated by the power of <em>JavaScript </em> frameworks like <em>React</em> and <em>Vue.js</em> to create dynamic user interfaces, as well as the capabilities of <em>Node.js</em> and <em>Express</em> for server-side solutions.
+    <br><br> On the database side, I am well-versed in both <em>SQL</em> with <em>PostgreSQL</em> and <em>NoSQL</em> with <em>MongoDB</em>, ensuring that the data layer of the applications I work on is as performant and scalable as the rest.
+    <br><br>When not coding, I'm often exploring new technologies, dabbling in UI/UX design or honing my skills for more structured and object-oriented approaches to problem-solving.
     <br><br>Feel free to reach out to me for collaborations, tech talks, or just to exchange knowledge on the latest web development trends!
          </p>
       </div>
@@ -38,9 +39,17 @@
     </div>
 
   </template>
+  <script>
+import ToggleTheme from '../components/ToggleTheme.vue';
+
+export default {
+  components: {
+    'ToggleTheme': ToggleTheme,}
+  };
+</script>
   
   <style scoped>
-  
+
   body {
     font-family: 'Tenor Sans', sans-serif;
   }
@@ -66,7 +75,7 @@
  
   .hobbies{
     font-family: 'Tenor Sans', sans-serif;
-    color: #747070;
+    color: var(--title);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -86,10 +95,11 @@
   
   .aboutMe {
     font-family: 'Tenor Sans', sans-serif;
-    color: #d7d4d4;
+    color: var(--secondary);
+    padding: 10px 15px;
     font-size: 1.2rem;
     line-height: 1.8;
-    text-align: left;
+    text-align: justify;
     justify-content: space-between;
     animation: fadeIn 1s ease 0.5s;
     animation-fill-mode: both;
@@ -156,7 +166,6 @@
     transition: background-color 0.3s;
     font-size: 1rem;
     text-align: center;
-    
     max-width: 2.4rem;
     max-height: 2rem;
     
@@ -169,8 +178,7 @@
     position: relative;
     left: 2rem;
     bottom: 1em;
-    color: #d7d4d4;
-    
+    color: var(--secondary);    
     font-family: 'Tenor Sans', sans-serif;
 
 
