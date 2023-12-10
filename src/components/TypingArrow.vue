@@ -101,7 +101,7 @@ body {
 /* Container to wrap the content */
 .container-text {
   font-family: 'TenorSanas', sans-serif;
-  border: 3px solid white;
+  border: 3px solid var(--secondary);
   padding: 50px 0; 
   max-width: 700px;
   margin: auto;
@@ -112,7 +112,7 @@ body {
   padding: 0 20px ;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid #f07f7f; /* The typwriter cursor */
+  border-right: .15em solid var(--title); /* The typwriter cursor */
 }
 
 .container-text .typing-effect {
@@ -141,11 +141,13 @@ body {
 .hero h1 {
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
-color: white;}
+color: var(--secondary);
+
+}
 
 .hero p {
   font-size: 1.7em; /* Slightly larger font size for readability */
-  color: white; /* Light grey color for the paragraph */
+  color: var(--secondary);
 }
 
 /* Ensure that the hero image resizes responsively */
@@ -183,7 +185,7 @@ color: white;}
     font-size: 0.875rem; /* Smaller font size for p */
     animation: typing 5s steps(40, end) infinite; /* Even slower typing for better readability */
     padding: 0 10px; /* Add padding to ensure text doesn't touch the edges */
-    border-right: 0.1em solid rgb(253, 253, 253); /* Slightly thinner cursor for smaller screens */
+    border-right: 0.1em solid var(--secondary); /* Slightly thinner cursor for smaller screens */
   }
 }
 </style>

@@ -12,7 +12,7 @@
          </p>
       </div>
       <div class="profile-pic-container">
-        <img src="../assets/images/profile-pic (3).jpg" alt="My profile photo" class="profile-pic"/>
+        <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
       </div>
       
        <button class="interests">
@@ -75,7 +75,7 @@ export default {
  
   .hobbies{
     font-family: 'Tenor Sans', sans-serif;
-    color: var(--title);
+    color: var(--primaryRed);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -104,35 +104,30 @@ export default {
     animation: fadeIn 1s ease 0.5s;
     animation-fill-mode: both;
   }
+  
   .profile-pic-container {
   position: relative;
   width: 30rem; /* Size of the image plus border */
   height: 30rem;
   border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Ensures the image doesn't spill outside the border */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px auto; /* Center the container and add space for the shadow */
-  box-shadow: 
-    0 20px 40px rgba(255, 255, 255, 0.3) ;/* Light shadow for a floating effect */
+  margin: auto; /* Center the container */
   transition: box-shadow 0.3s ease;
+  background-size: cover; /* This will cover the entire area of the container */
 }
 
-.profile-pic-container:hover {
-  box-shadow: 
-    0 30px 60px rgba(255, 255, 255, 0.2), /* Larger light shadow for hover effect */
-    0 0 70px rgba(255, 255, 255, 0.1); /* More diffused part of the shadow grows */
-}
-
+/* If you're using an img tag instead of a background image */
 .profile-pic {
-  width: 100%; /* Slightly less to account for the border */
-  height: 100%;
-  border-radius: 50%; /* Circular image */
-  filter: grayscale(10%); 
-  background-size: cover;
-   /* Adjusts the size of the image within its container */
-  z-index: 1; /* Above the pseudo-element */
+  position: relative;
+  top: 8%;  /* Move up by 10% of the container height */
+  width: 100%; /* Full width of the parent container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* This property will cover the area of the container without stretching the image */
 }
+
 
 
   
@@ -158,8 +153,8 @@ export default {
 
   .interests{
     padding: 0.5rem 1rem;
-    border: none;
-    background-color: #d0d0d3; /* Your primary color */
+    border: 3px solid var(--primaryRed);
+    background-color: var(--secondary); /* Your primary color */
     color: white;
     border-radius: 2rem; /* Rounded borders */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -178,7 +173,7 @@ export default {
   .p-int{
     position: relative;
     left: 2rem;
-    bottom: 1em;
+    bottom: 1.4em;
     color: var(--secondary);    
     font-family: 'Tenor Sans', sans-serif;
 
@@ -193,7 +188,10 @@ export default {
     width: 15rem; /* Smaller size for mobile devices */
     height: 15rem;
     margin: 20px auto; /* Less margin on smaller screens */
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Adjusted shadow for smaller size */
+  }
+
+  .aboutMe{
+    padding: 0;
   }
   }
   </style>

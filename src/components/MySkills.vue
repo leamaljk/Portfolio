@@ -91,13 +91,13 @@ export default {
 }
 
 .hard {
-  background-color: var(--primaryRed);
+  background-color: #4c495c;
   color: white;
 }
 
 .soft {
-  background-color: #fee8e8;
-  color: var(--primaryRed);
+  background-color: #564f70;
+  color: white;
 }
 
 .skill:hover {

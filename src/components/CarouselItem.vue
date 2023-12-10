@@ -68,7 +68,7 @@
       <div class="card__info">
         <h2 class="card__title">Booki</h2>
         <p class="card__text">Turning Mock-up Into a Web Page with HTML and CSS</p>
-        <button class="card__button">Click Here To See More !</button>
+        <button @click="goToComponent" class="card__button"> Click Here To See More !</button>
     </div>
     </div>
 
@@ -91,7 +91,17 @@
 </div>
 </template>
 
-
+<script>
+export default {
+  methods: {
+    goToComponent() {
+      this.$router.push({ name: 'SeeMore' });
+      // // or if you want to use path
+      // this.$router.push('/seeMore');
+    }
+  },
+};
+</script>
 
   <style scoped>
   #card-container {
@@ -153,7 +163,7 @@
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #f07f7f; /* Adjust the color to match your design */
+    background-color: var(--primaryRed); /* Adjust the color to match your design */
     color: white;
     font-size: 0.8em;
     font-weight: bold;
@@ -162,7 +172,7 @@
   }
   
   .card__button:hover {
-    background-color: #e05656; /* Slightly darker shade for button hover */
+    background-color: var(--title); /* Slightly darker shade for button hover */
   }
   
   .card__title {

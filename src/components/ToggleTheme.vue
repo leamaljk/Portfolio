@@ -1,7 +1,7 @@
 <template>
     <header>
       <!-- ... other header elements ... -->
-      <i class="fas fa-moon theme-toggle" @click="toggleTheme"> <span class="theme">Click for a Theme</span></i>
+      <!-- <i class="fas fa-moon theme-toggle" @click="toggleTheme"> <span class="theme">Click for a Theme</span></i> -->
     </header>
     <!-- ... rest of your component ... -->
   </template>
@@ -40,7 +40,7 @@
   
   /* Dark theme styles */
   body.dark-theme {
-    background-color: #121212;
+    background-color: #2e293e;
 
   }
 
