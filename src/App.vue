@@ -8,7 +8,7 @@
 
 <style lang="scss">
 :root {
-  --primaryRed: #802bb1;
+  --primaryRed: hsl(270, 79%, 59%);
   --secondary: #2e293e; //for the text
   --title: #2e293e;
 }

@@ -118,8 +118,8 @@ color: white;
   .grid-container {
     position: relative;
     top: 100px;
-    width: 80%;
-    height: 300px;
+    width: 289px; /* Make the image responsive to the viewport width */
+    height: 289px;
     margin-bottom: 300px;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
     

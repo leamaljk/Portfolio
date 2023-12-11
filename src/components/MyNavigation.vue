@@ -49,9 +49,10 @@ body {
 }
 
 header {
-  background: #907272; /* A dark background for the header */
+  background: #fff; /* A dark background for the header */
   color: var(--primaryRed);/* Light text color for contrast */
-  padding: 10px 0; /* Some padding around the content */
+  padding: 10px 0;
+  height: 35px; /* Some padding around the content */
 }
 
 .hamburger {
@@ -71,7 +72,7 @@ header {
 nav {
 font-family: 'TenorSanas', sans-serif;
 margin-right: 1rem;
-margin-top: 2rem;
+/* margin-top: 2rem; */
 float: right; /* Align the navigation to the right */
 }
 
@@ -99,14 +100,18 @@ nav ul li a {
   margin-left: 20px;
   text-decoration: none;
   outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0.5em;
-  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
 nav ul li a:hover {
-  color: rgba(255, 255, 255, 0.7);
-  outline-color: var(--primaryRed);
-  outline-offset: 4em;
+  color:hsl(271, 85%, 92%) ;
+  border-bottom: 3px solid var(--primaryRed);
+  border-right: 2px solid var(--primaryRed);
+  padding-right: 3px;
+  padding-bottom: 3px;
+  width: auto;
+  
+  
 }
 
 @media (max-width: 768px) {
@@ -128,7 +133,8 @@ nav ul li a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  height: auto;
+  background-color: var(--secondary);
   color: white;
   padding: 0.5rem 1rem;
   z-index: 1000;
@@ -156,21 +162,26 @@ nav ul li a:hover {
     top: 0; /* Align to the top */
     left: 0; /* Align to the left */
     z-index: 999; /* Below the header but above other content */
-    background-color: #333; /* Background to match the header */
-    margin-top: 60px; /* Offset by the height of the hamburger menu */
+    background-color: var(--secondary);
+    margin-top: 60px; 
+    border: none;
+    padding: 20px;
+
   }
 
   nav ul {
     padding-top: 0px;
+    border: none;
+    
   }
 
   nav ul li a{
-   
+    padding: 20px;
     display: block; /* Stack the links vertically */
     margin: 10px 0; /* Add space between the stacked links */
   }
   nav ul li a:hover {
-  outline-offset: 0.8em;
+    color: #fff;
   }
 }
 
