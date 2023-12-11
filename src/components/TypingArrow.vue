@@ -1,10 +1,4 @@
 <template>
-  <section class="hero">
-    <div class="container-text">
-      <h1>I'm Lea - Web Developer.</h1>
-      <p class="typing-effect">Check out my latest work and get in touch with me ...</p>
-    </div>
-  </section>
   
   <div id="arrow" @click="scrollPage" class="arrow" :class="{ 'up': isBottomOfPage, 'down': !isBottomOfPage }">&#10095;</div>
 </template>
@@ -98,94 +92,13 @@ body {
   line-height: 1.6;
 }
 
-/* Container to wrap the content */
-.container-text {
-  font-family: 'TenorSanas', sans-serif;
-  border: 3px solid var(--secondary);
-  padding: 50px 0; 
-  max-width: 700px;
-  margin: auto;
-  
-}
-
-.container-text .typing-effect {
-  padding: 0 20px ;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: .15em solid var(--title); /* The typwriter cursor */
-}
-
-.container-text .typing-effect {
-  width: 100%;
-  animation: typing 6s steps(60, end) infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0}
-  to { width: 100% }
-}
-
-
-
-/* Hero section styles */
-.hero {
-  background: url('../assets/images/img2.jpg') no-repeat bottom center/cover; /* Hero image with covering background */
-  padding: 100px 0; /* Some vertical padding */
-  text-align: center; /* Center the text */
-  height: 26rem;
-  padding-top: 8rem;
-}
-
-/* Hero text styles */
-.hero h1 {
-  font-size: 2.5em; /* Large font size */
-  margin-bottom: 20px;
-color: var(--secondary);
-
-}
-
-.hero p {
-  font-size: 1.7em; /* Slightly larger font size for readability */
-  color: var(--secondary);
-}
 
 /* Ensure that the hero image resizes responsively */
 @media (max-width: 768px) {
-  .hero {
-    padding: 50px 0;
-  }
 
-  .container-text h1,
-  .container-text .typing-effect {
-    font-size: 2rem; /* Smaller font size for h1 */
-  }
-
-  .container-text .typing-effect {
-    font-size: 1rem; /* Smaller font size for p */
-    animation: typing 5s steps(40, end) infinite; /* Slower typing for better readability */
-  }
-
-}
 .arrow {
   font-size: 4.1rem; 
 }
 
-@media (max-width: 480px) {
-  .hero{
-    margin-top: 60px;
-  }
-  .container-text h1,
-  .container-text .typing-effect {
-    font-size: 1.5rem; /* Even smaller font size for h1 */
-  }
-
-  .container-text .typing-effect {
-    width: 100%;
-    font-size: 0.875rem; /* Smaller font size for p */
-    animation: typing 5s steps(40, end) infinite; /* Even slower typing for better readability */
-    padding: 0 10px; /* Add padding to ensure text doesn't touch the edges */
-    border-right: 0.1em solid var(--secondary); /* Slightly thinner cursor for smaller screens */
-  }
 }
 </style>

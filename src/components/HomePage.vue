@@ -4,6 +4,9 @@
 
 <MyNavigation /> 
 </div>
+<div>
+<HeaderTop />
+</div>
 <router-view />
 <div>
     <TypingArrow></TypingArrow>
@@ -22,6 +25,8 @@
 <script>
 // import ToggleTheme from '../components/ToggleTheme.vue';
 import MyNavigation from '../components/MyNavigation.vue';
+import HeaderTop from '../components/HeaderTop.vue';
+
 import TypingArrow from '../components/TypingArrow.vue';
 import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
@@ -31,6 +36,7 @@ export default {
   components: {
     // 'ToggleTheme': ToggleTheme,
     'MyNavigation': MyNavigation,
+    'HeaderTop': HeaderTop,
     'TypingArrow': TypingArrow,
     'AboutMe': AboutMe,
     'MySkills': MySkills,

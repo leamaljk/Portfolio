@@ -11,10 +11,9 @@
     <br><br>Feel free to reach out to me for collaborations, tech talks, or just to exchange knowledge on the latest web development trends!
          </p>
       </div>
-      <div class="profile-pic-container">
-        <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
-      </div>
       
+      
+      <div class="interest-container">
        <button class="interests">
         <p class="p-int">Pilates</p>  
         </button>
@@ -33,10 +32,10 @@
     <button class="interests">
         <p class="p-int">Reading</p>
     </button>
+    </div>
     <!-- MY INTERESTS -->
     <h1 class="hobbies">Couple of things I love to do.</h1>
-
-    </div>
+  </div>
 
   </template>
   <script>
@@ -151,6 +150,15 @@ export default {
     }
   }
 
+  .interest-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    right: 90px;
+  }
   .interests{
     padding: 0.5rem 1rem;
     border: 3px solid var(--primaryRed);
@@ -160,7 +168,7 @@ export default {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-align: center;
     max-width: 2.4rem;
     max-height: 2rem;
@@ -190,6 +198,11 @@ export default {
     margin: 20px auto; /* Less margin on smaller screens */
   }
 
+  .interests{
+  font-size: 1.2em;
+  gap: 10px;
+
+  }
   .aboutMe{
     padding: 0;
   }

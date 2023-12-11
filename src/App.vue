@@ -9,12 +9,15 @@
 <style lang="scss">
 :root {
   --primaryRed: #802bb1;
-  --secondary: #d1d7e1; //for the text
+  --secondary: #2e293e; //for the text
   --title: #2e293e;
 }
 
 body {
-    background-color: #2e293e;/* Dark background */
+  background-size: contain;
+    background-repeat: repeat; /* To prevent the image from repeating */
+    background-position: center; 
+  background-image:url('../src/assets/images/bc-image (3).jpg') ;
   }
 
 </style>

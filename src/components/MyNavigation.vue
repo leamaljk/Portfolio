@@ -49,8 +49,8 @@ body {
 }
 
 header {
-  background: #333; /* A dark background for the header */
-  color: #fff; /* Light text color for contrast */
+  background: #907272; /* A dark background for the header */
+  color: var(--primaryRed);/* Light text color for contrast */
   padding: 10px 0; /* Some padding around the content */
 }
 
@@ -93,7 +93,7 @@ nav ul li a {
   font-weight: 600;
   font-size: 1.5em;
   text-align: center;
-  color: #ffffff;
+  color: var(--primaryRed);
   cursor: pointer;
   outline: 1px solid;
   margin-left: 20px;

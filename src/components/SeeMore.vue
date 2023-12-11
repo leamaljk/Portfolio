@@ -38,7 +38,7 @@ export default {
 .close-btn {
     position: absolute;
   top: 3rem; /* Adjust as needed */
- left: 72rem;
+  left: 72rem;
   padding: 10px 10px;
   border: none;
   background: none;
