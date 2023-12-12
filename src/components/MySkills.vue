@@ -67,7 +67,7 @@ export default {
 
 .skills-heading {
   font-family: 'Tenor Sans', sans-serif;
-  color: #747070;
+  color: var(--title);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -91,13 +91,16 @@ export default {
 }
 
 .hard {
-  background-color: #4c495c;
+  background-color: #b19afc;
   color: white;
+  border: 1.3px solid #fff;
+
 }
 
 .soft {
-  background-color: #564f70;
-  color: white;
+  background-color: #fff;
+  color: #564f70;
+  border: 1px solid #564f70;
 }
 
 .skill:hover {

@@ -1,6 +1,7 @@
 <template>
-  <ToggleTheme />
+ 
     <div id="about-section">
+
       <div class="about-content">
         <h1 class="about">Hi.</h1>
         <p class="aboutMe">
@@ -39,12 +40,7 @@
 
   </template>
   <script>
-import ToggleTheme from '../components/ToggleTheme.vue';
 
-export default {
-  components: {
-    'ToggleTheme': ToggleTheme,}
-  };
 </script>
   
   <style scoped>
@@ -162,7 +158,7 @@ export default {
   .interests{
     padding: 0.5rem 1rem;
     border: 3px solid var(--primaryRed);
-    background-color: var(--secondary); /* Your primary color */
+    background-color: var(--primaryRed); /* Your primary color */
     color: white;
     border-radius: 2rem; /* Rounded borders */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -175,7 +171,7 @@ export default {
     
   }
   .interests:hover{
-    transform: translateX(-5px);
+    transform: translateX(-10px);
     transition: all .3s ease;
   }
   .p-int{

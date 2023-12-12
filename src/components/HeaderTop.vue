@@ -26,7 +26,7 @@ html, body {
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
   padding-left: 160px;
-color: white;
+  color: white;
 }
 
 .text-section p{
@@ -38,7 +38,7 @@ color: white;
 .grid-container {
     background-color: var(--primaryRed);
     display: grid;
-    margin:  100px auto;
+    margin:  55px auto;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
@@ -50,13 +50,12 @@ color: white;
     align-items: center; /* Vertically center */
     justify-items: center; /* Horizontally center */
     width: 80%; 
-    height: 25rem;/* Adjust the width as needed */
-    max-width: 1000px; /* Optional: maximum width */
+    height: 25rem;
+    max-width: 1000px; 
 }
 
 
 .typing-effect {
-
   border-right: .15em solid #fff; /* The typwriter cursor */
   white-space: nowrap;
   overflow: hidden;
@@ -76,7 +75,6 @@ color: white;
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-
 
 
 .text-section, .photo-section {
@@ -117,7 +115,7 @@ color: white;
 @media (max-width: 768px) {
   .grid-container {
     position: relative;
-    top: 100px;
+    top: 150px;
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px;
     margin-bottom: 300px;
@@ -137,8 +135,10 @@ color: white;
     color: var(--secondary);
     position: relative;
     bottom: 130px;
-    left: -182px;
+    left: -152px;
     overflow:visible;
+    font-size: 1rem; /* Adjust the typing text font size for smaller screens */
+
 
     
   }

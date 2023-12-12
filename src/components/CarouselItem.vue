@@ -4,7 +4,7 @@
     <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/Booki.jpg"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -18,7 +18,7 @@
     <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/folder.png"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -32,7 +32,7 @@
     <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/folder.png"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -48,7 +48,7 @@
     <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/folder.png"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -62,7 +62,7 @@
         <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/folder.png"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -77,7 +77,7 @@
     <div class="card">
       <img
         class="card__img"
-        src="../assets/images/imgBooki1.jpg"
+        src="../assets/images/folder.png"
         alt="Profile photo"
       />
       <div class="card__info">
@@ -104,7 +104,12 @@ export default {
 </script>
 
   <style scoped>
+ *{
+  background-color: var(--secondary);
+  }
+
   #card-container {
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -115,9 +120,10 @@ export default {
   
   .card {
     align-items: center;
-    margin: 20px;
+    margin: 30px;
     position: relative;
-    width: 300px;
+    width: 250px;
+    
     border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -129,13 +135,15 @@ export default {
   }
   
   .card__img {
+    background-repeat: no-repeat;
+    object-fit:cover; 
     width: 100%;
     display: block;
     transition: transform 0.5s ease-in-out; /* Smooth transition for image zoom */
   }
   
   .card:hover .card__img {
-    transform: scale(1.6); /* Zooms in the image */
+    transform: scale(1.4); /* Zooms in the image */
   }
   
   .card__info {

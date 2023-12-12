@@ -52,6 +52,7 @@ header {
   background: #fff; /* A dark background for the header */
   color: var(--primaryRed);/* Light text color for contrast */
   padding: 10px 0;
+  margin-top:55px; 
   height: 35px; /* Some padding around the content */
 }
 
@@ -71,9 +72,11 @@ header {
 /* Navigation styles */
 nav {
 font-family: 'TenorSanas', sans-serif;
-margin-right: 1rem;
-/* margin-top: 2rem; */
-float: right; /* Align the navigation to the right */
+margin-right: 3rem;
+position: relative;
+bottom: 0.3em;
+float: right; 
+
 }
 
 nav ul {
@@ -100,18 +103,14 @@ nav ul li a {
   margin-left: 20px;
   text-decoration: none;
   outline-color: rgba(255, 255, 255, 0.5);
-  transition: all 300ms cubic-bezier(0.2, 0, 0, 0.8);
+  outline-offset: 0.4em;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
 nav ul li a:hover {
-  color:hsl(271, 85%, 92%) ;
-  border-bottom: 3px solid var(--primaryRed);
-  border-right: 2px solid var(--primaryRed);
-  padding-right: 3px;
-  padding-bottom: 3px;
-  width: auto;
-  
-  
+  color: #b19afc;
+  outline-color: var(--primaryRed);
+  outline-offset: 2em;
 }
 
 @media (max-width: 768px) {
@@ -130,7 +129,7 @@ nav ul li a:hover {
 /* fixed header */
 .fixed-header {
   position: fixed;
-  top: 0;
+  top: -57px;
   left: 0;
   width: 100%;
   height: auto;
@@ -141,6 +140,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
   /* HAMBURGER TOGGLE */
 
@@ -165,7 +165,7 @@ nav ul li a:hover {
     background-color: var(--secondary);
     margin-top: 60px; 
     border: none;
-    padding: 20px;
+    
 
   }
 
@@ -176,7 +176,7 @@ nav ul li a:hover {
   }
 
   nav ul li a{
-    padding: 20px;
+    padding: 10px;
     display: block; /* Stack the links vertically */
     margin: 10px 0; /* Add space between the stacked links */
   }
