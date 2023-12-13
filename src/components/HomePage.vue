@@ -18,7 +18,7 @@
 <MySkills />
 </div>
 <div>
-<CarouselItem />
+<CardStyle />
 </div>
 </template>
 
@@ -30,7 +30,7 @@ import HeaderTop from '../components/HeaderTop.vue';
 import TypingArrow from '../components/TypingArrow.vue';
 import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
-import CarouselItem from '../components/CarouselItem.vue';
+import CardStyle from '../components/CardStyle.vue';
 
 export default {
   components: {
@@ -40,7 +40,7 @@ export default {
     'TypingArrow': TypingArrow,
     'AboutMe': AboutMe,
     'MySkills': MySkills,
-    'CarouselItem': CarouselItem,
+    'CardStyle': CardStyle,
   },
 };
 
