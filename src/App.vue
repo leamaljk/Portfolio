@@ -14,10 +14,10 @@
 }
 
 body {
-  background-size: contain;
+  object-fit: fill;
     background-repeat: repeat; /* To prevent the image from repeating */
     background-position: center; 
-  background-image:url('../src/assets/images/bc-image (3).jpg') ;
+  background-image:url('../src/assets/images/bc (2).jpg') ;
   }
 
 </style>
