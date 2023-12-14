@@ -4,11 +4,11 @@
         <button class="hamburger" @click="toggleNav">&#9776;</button>
         <nav class="top-bar" :class="{ 'is-active': navIsActive }">
         <ul>
-          <li><router-link to="/" @click="closeNav">Home</router-link></li>
-          <li><router-link to="/#about-section" @click="closeNav">About Me</router-link></li>
-          <li><router-link to="/#skills-wrapper" @click="closeNav">Skills</router-link></li>
-          <li><router-link to="/#cards-container" @click="closeNav">Portfolio</router-link></li>
-          <li><router-link to="/#footer" @click="closeNav">Contact</router-link></li>
+          <li><router-link to="/" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'house']" beat />Home</router-link></li>
+          <li><router-link to="/#about-section" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'user']" beat/>About Me</router-link></li>
+          <li><router-link to="/#skills-wrapper" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'medal']" beat/>Skills</router-link></li>
+          <li><router-link to="/#cards-container" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'folder-open']" beat />Portfolio</router-link></li>
+          <li><router-link to="/#footer" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'at']" beat/>Contact</router-link></li>
         </ul>
       </nav>
       </div>
@@ -68,6 +68,7 @@ header {
 }
 .top-bar {
   color: #fff;
+  
 }
 /* Navigation styles */
 nav {
@@ -113,10 +114,26 @@ nav ul li a:hover {
   outline-offset: 2em;
 }
 
-@media (max-width: 768px) {
+.icon {
+  
+  display: none; /* Hide icons by default */
+  margin-right: 5px; /* Add some space between icon and text */
+}
 
+.home-icon:before {
+  content: "\f015"; /* FontAwesome home icon */
+}
+
+@media (max-width: 768px) {
+  .icon {
+    color: #b19afc;
+    margin-right: 20px;
+    display: inline-block; /* Show icons only on phone */
+  }
 
     nav {
+    
+    /* text-transform: uppercase; */
     float: none;
     text-align: center; /* Center the logo and nav on small screens */
   }
@@ -133,7 +150,7 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: auto;
-  background-color: var(--secondary);
+  background-color: var(--primaryRed);
   color: white;
   padding: 0.5rem 1rem;
   z-index: 1000;
@@ -150,9 +167,9 @@ nav ul li a:hover {
   font-size: 2.2rem; /* Adjust the size as needed */
   cursor: pointer;
   display: block;
-  color: var(--primaryRed);
+  color: white;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .top-bar.is-active {
@@ -162,7 +179,7 @@ nav ul li a:hover {
     top: 0; /* Align to the top */
     left: 0; /* Align to the left */
     z-index: 999; /* Below the header but above other content */
-    background-color: var(--secondary);
+    background-color: var(--primaryRed);
     margin-top: 60px; 
     border: none;
     
@@ -176,16 +193,50 @@ nav ul li a:hover {
   }
 
   nav ul li a{
+    
+    outline: none;
+    margin: 10px 40px;
+    color: white;
     padding: 10px;
     display: block; /* Stack the links vertically */
-    margin: 10px 0; /* Add space between the stacked links */
   }
-  nav ul li a:hover {
-    color: #fff;
-  }
+  
 }
 
+@media (max-width: 480px) {
+  .icon {
+   
+    margin-left: 60px;
+    float: left;
+    color: #fff;
+    display: inline-block; /* Show icons only on phone */
+  }
 
+  nav ul li a{
+    padding-right: 60px;
+    position: relative;
+    text-align: right;
+    font-size: 1.6em;
+    font-weight: 200;
+  }
+  
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+ 
+}
 
 
 </style>

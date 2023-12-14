@@ -104,7 +104,9 @@ export default {
 }
 
 .skill:hover {
-  transform: translateX(-5px);
+  /* transform: translateX(-5px); */
+  background-color: var(--primaryRed);
+  color: #fff;
 }
 
 @media (max-width: 768px) {

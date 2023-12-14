@@ -8,9 +8,9 @@
 <HeaderTop />
 </div>
 <router-view />
-<div>
+<!-- <div>
     <TypingArrow></TypingArrow>
-</div>
+</div> -->
 <div>
 <AboutMe />
 </div>
@@ -29,17 +29,19 @@
 // import ToggleTheme from '../components/ToggleTheme.vue';
 import MyNavigation from '../components/MyNavigation.vue';
 import HeaderTop from '../components/HeaderTop.vue';
-import TypingArrow from '../components/TypingArrow.vue';
+// import TypingArrow from '../components/TypingArrow.vue';
 import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
 import CardStyle from '../components/CardStyle.vue';
 import ContactFooter from '../components/ContactFooter.vue'
+
+
 export default {
   components: {
     // 'ToggleTheme': ToggleTheme,
     'MyNavigation': MyNavigation,
     'HeaderTop': HeaderTop,
-    'TypingArrow': TypingArrow,
+    // 'TypingArrow': TypingArrow,
     'AboutMe': AboutMe,
     'MySkills': MySkills,
     'CardStyle': CardStyle,
