@@ -20,18 +20,20 @@
 <div>
 <CardStyle />
 </div>
+<div>
+<ContactFooter />
+</div>
 </template>
 
 <script>
 // import ToggleTheme from '../components/ToggleTheme.vue';
 import MyNavigation from '../components/MyNavigation.vue';
 import HeaderTop from '../components/HeaderTop.vue';
-
 import TypingArrow from '../components/TypingArrow.vue';
 import AboutMe from '../components/AboutMe.vue';
 import MySkills from '../components/MySkills.vue';
 import CardStyle from '../components/CardStyle.vue';
-
+import ContactFooter from '../components/ContactFooter.vue'
 export default {
   components: {
     // 'ToggleTheme': ToggleTheme,
@@ -41,6 +43,7 @@ export default {
     'AboutMe': AboutMe,
     'MySkills': MySkills,
     'CardStyle': CardStyle,
+    'ContactFooter': ContactFooter
   },
 };
 

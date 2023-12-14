@@ -9,7 +9,7 @@
           <div class="card-content">
             <h2>Booki</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
           <div class="card-content">
             <h2>OhMyFood</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
           <div class="card-content">
             <h2>Mike's Design</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
           <div class="card-content">
             <h2>Knap</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
           <div class="card-content">
             <h2>Piikante</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -79,13 +79,23 @@
           <div class="card-content">
             <h2>Grupomania</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button>Click Here To See More!</button>
+            <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
       </div>
     </div>
   </template>
  
+ <script>
+ export default {
+   methods: {
+     goToComponent() {
+       this.$router.push({ name: 'SeeMore' });
+       
+     }
+   },
+ };
+ </script>
  
 <style scoped>
 #cards-container {
@@ -176,6 +186,7 @@ padding-bottom: 10px;
   #cards-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .card-front img {
