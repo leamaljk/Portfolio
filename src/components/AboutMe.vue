@@ -33,6 +33,7 @@
     <button class="interests">
         <p class="p-int">Reading</p>
     </button>
+    
     </div>
     <!-- MY INTERESTS -->
     <h1 class="hobbies">Couple of things I love to do.</h1>

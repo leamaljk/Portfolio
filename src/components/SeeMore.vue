@@ -1,17 +1,25 @@
 <template>
     <div id="app">
+      <!-- <div><h1>Hello</h1></div> -->
       <!-- X button to close and go to home -->
       <button @click="goToHome" class="close-btn">X</button>
-  
+  <div><PhotoGalleryBooki /></div>
       <!-- Your other content for the component -->
-      <h1>Hello</h1>
+      
       <!-- ... -->
     </div>
   </template>
 
 
 <script>
+
+import PhotoGalleryBooki from '../components/Photo-Gallery/PhotoGalleryBooki.vue'
+
 export default {
+
+  components: {
+    'PhotoGalleryBooki': PhotoGalleryBooki,
+  },
   methods: {
     goToHome() {
       this.$router.push('/#card-container');

@@ -209,7 +209,7 @@ nav ul li a:hover {
     margin-left: 60px;
     float: left;
     color: #fff;
-    display: inline-block; /* Show icons only on phone */
+    /* display: inline-block; Show icons only on phone */
   }
 
   nav ul li a{
