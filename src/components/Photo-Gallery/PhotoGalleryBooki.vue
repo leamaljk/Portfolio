@@ -104,57 +104,47 @@
     };
     </script>
     
-  <style lang="scss">
-  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
-  
-  $body: 'Inconsolata', monospace;
-  $big: 'Merriweather', serif;
-  
-  $white: #ffffff;
-  $primary: #b19afc;
-  $secondary: #7451eb;
-  $light: #CECDCA;
-  $dark: #474545;
-  
-  $ease: all 0.3s ease-in-out;
-  
-  body {
-    font-family: $body;
-    margin: 0;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  #portfolio {
-    width: 100%;
-    min-height: 100vh;
-    background: $white;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 2px;
-    
-    @media (max-width: 768px) {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-  }
 
-  // Media query for very small screens
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  }
-  }
-  .project {
-    position: relative;
-    background: $primary;
-    overflow: hidden;
-    img {
+
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+  
+    body {
+      font-family: 'Inconsolata', monospace;
+      margin: 0;
+    }
+  
+    button {
+      cursor: pointer;
+    }
+  
+    #portfolio {
+      width: 100%;
+      min-height: 100vh;
+      background: #ffffff;
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 2px;
+    }
+  
+    .project {
+      position: relative;
+      background: #b19afc;
+      overflow: hidden;
+    }
+  
+    .project img {
       position: absolute;
       opacity: 0.9;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    p {
+  
+    .project p {
       position: absolute;
       text-align: center;
       width: 100%;
@@ -163,6 +153,7 @@
       letter-spacing: 2px;
       z-index: 3;
     }
+  
     .grid__title {
       position: absolute;
       width: 100%;
@@ -173,97 +164,118 @@
       font-size: 0.8em;
       z-index: 3;
       text-transform: uppercase;
-      color: $dark;
+      color: #474545;
       letter-spacing: 2px;
     }
-  }
   
-  // project hover overlay
-  .project:hover .grid__overlay {
-    transform: translateY(0%);
-  }
+    .project:hover .grid__overlay {
+      transform: translateY(0%);
+    }
   
-  .grid__overlay {
-    background: rgba(darken($primary, 10%), .9);
-    height: 100%;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    transform: translateY(101%);
-    transition: $ease;
-    button {
+    .grid__overlay {
+      background: rgba(177, 154, 252, 0.9);
+      height: 100%;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      position: relative;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      transform: translateY(101%);
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .grid__overlay button {
       background: none;
       outline: none;
       font-weight: 100;
       letter-spacing: 2px;
-      border: 1px solid $white;
-      color: $white;
+      border: 1px solid #ffffff;
+      color: #ffffff;
       text-transform: uppercase;
       padding: 10px;
-      &:hover {
-        transition: $ease;
-        background: $white;
-        color: $secondary;
-        transform: scale(1.05);
+    }
+  
+    .grid__overlay button:hover {
+      background: #ffffff;
+      color: #7451eb;
+      transform: scale(1.05);
+    }
+  
+    .overlay {
+      position: fixed;
+      background: rgba(71, 69, 69, 0.7);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+  
+    .overlay.open {
+      display: flex;
+    }
+  
+    .overlay__inner {
+      background: #ffffff;
+      padding: 20px;
+      box-sizing: border-box;
+      max-width: 80%;
+      max-height: 80vh;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .overlay__inner img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  
+    .close {
+      position: absolute;
+      top: 3px;
+      right: 10px;
+      background: none;
+      outline: 0;
+      background-color: #ffffff;
+      border: 1px solid #7451eb;
+      padding: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      z-index: 1001;
+    }
+  
+    .close:hover {
+      
+      color: #7451eb;
+    }
+  
+    /* Media Queries */
+    @media (max-width: 768px) {
+      #portfolio {
+        gap: 20px;
+        
+        grid-template-columns: repeat(2, 1fr);
       }
     }
-  }
   
-//  img .project__image{
-//     object-fit: cover;
-//     width: 60px;
-//     height: 60px;
-//     align-items: center;
-//     justify-items: center;
-//   }
-  //project popup overlay
+    @media (max-width: 480px) {
+      #portfolio {
+        gap: 20px;
+       
+        grid-template-columns: 1fr;
+      }
   
-  .overlay {
-    position: fixed;
-    background: rgba($dark, 0.7);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    z-index: 3;
-  }
-  .overlay.open {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    width: 700px;
-    height: 700px;
-  }
-  
-  .overlay__inner {
-    background: $white;
-    width: 700px;
-    padding: 20px;
-    position: relative;
-    opacity: 1;
-  }
-  
-  .close {
-    position: absolute;
-    top: 3px;
-    right: 10px;
-    background: none;
-    outline: 0;
-    color: $dark;
-    border: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    &:hover {
-      color: $secondary;
-    }
-  }
-  
-//   .project__image {
-//     margin-left: -50%;
-//   }
-  </style>
+      .project img {
     
+        position: relative; /* Change position to relative for mobile */
+      }
+    }
+  </style>
+  
