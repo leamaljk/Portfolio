@@ -2,7 +2,7 @@
     <div id="app">
       <!-- <div><h1>Hello</h1></div> -->
       <!-- X button to close and go to home -->
-      <button @click="goToHome" class="close-btn">Home Page</button>
+      <button @click="goToHome" class="close-btn">Home Page &#x2718;</button>
   <div><PhotoGalleryBooki /></div>
       <!-- Your other content for the component -->
       
@@ -49,14 +49,16 @@ export default {
       left: 0px;
       background: none;
       outline: 0;
+      width: 120px;
       background-color: transparent;
-      border: 1px solid #ffffff;
-      color: #ffffff;
+      /* border: 1px solid #ffffff; */
+      border: none;
+      color: black;
       padding: 10px;
       text-transform: uppercase;
-      letter-spacing: 2px;
       z-index: 1001;
-    
+      border-radius: 2px;
+
   }
 
   .close-btn:hover {
