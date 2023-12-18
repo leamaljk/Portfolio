@@ -2,7 +2,7 @@
     <div id="app">
       <!-- <div><h1>Hello</h1></div> -->
       <!-- X button to close and go to home -->
-      <button @click="goToHome" class="close-btn">X</button>
+      <button @click="goToHome" class="close-btn">Home Page</button>
   <div><PhotoGalleryBooki /></div>
       <!-- Your other content for the component -->
       
@@ -44,16 +44,36 @@ export default {
 }
 
 .close-btn {
-    position: absolute;
-  top: 3rem; /* Adjust as needed */
-  left: 72rem;
-  padding: 10px 10px;
-  border: none;
-  background: none;
-  font-size: 1.6em; /* Large enough for better clickability */
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--primaryRed); /* Or any color that suits your design */
-}
+    position: fixed;
+      top: 0px;
+      left: 0px;
+      background: none;
+      outline: 0;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      z-index: 1001;
+    
+  }
 
+  .close-btn:hover {
+      
+      color: #7451eb;
+    }
+
+@media (max-width: 480px) {
+  #app{
+
+    width: 40%;
+  }
+
+  .close-btn {
+    display: none;
+    
+  }
+
+}
 </style>

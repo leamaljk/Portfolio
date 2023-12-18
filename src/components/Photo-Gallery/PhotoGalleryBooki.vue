@@ -283,13 +283,15 @@
   
     .close {
       position: absolute;
-      top: 3px;
-      right: 10px;
+      top: 0px;
+      right: 0px;
+      width: 120px;
       background: none;
       outline: 0;
-      background-color: #ffffff;
-      border: 1px solid #7451eb;
-      padding: 15px;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 10px;
       text-transform: uppercase;
       letter-spacing: 2px;
       z-index: 1001;
@@ -304,22 +306,27 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffff;
-  border: 1px solid #7451eb;
+  background: rgba(71, 69, 69, 0.7);
+  border: rgba(71, 69, 69, 0.7) 2px solid;
+  color: #ffffff;
+  font-size: 1em;
   padding: 10px;
   cursor: pointer;
-}
+  width: 120px;
+  max-width: 100%;
+  height: 100vh;
+  opacity: 80%;
+  }
 
-.prev {
-  left: 10px;
+  .prev {
+  left: 0px;
 }
 
 .next {
-  right: 10px;
+  right: 0px;
 }
-
 .prev:hover, .next:hover {
-  background-color: #7451eb;
+  background-color: #b19afc;
   color: white;
 }
 
@@ -336,29 +343,18 @@
     @media (max-width: 480px) {
       #portfolio {
         gap: 20px;
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(300px, 1fr);
+/* 
+        grid-template-columns: 1fr; */
       }
   
-  .prev, .next {
+      .project img {
+    
+        position: relative; /* Change position to relative for mobile */
+      }
+      .prev, .next {
     display: none; /* Hide prev and next buttons on small screens */
   }
-
-  .overlay__inner {
-    position: fixed; /* Fixed position to stay in place during scroll */
-    top: 2%; /* Center vertically */
-    left:1px; /* Center horizontally */
-    width: 340px; /* Set a max width for inner content */
-    height: auto; /* Auto height based on content */
-  }
-  .project img {
-    
-    position: relative; /* Change position to relative for mobile */
-  }
-  .close {
-    padding: 5px;
-    font-size: 12px;
-  }
-}
-
+    }
   </style>
   
