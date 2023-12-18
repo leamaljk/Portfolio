@@ -5,7 +5,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (5).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -15,7 +15,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (3).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -25,7 +25,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (2).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -35,7 +35,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (1).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -44,7 +44,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (6).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -54,7 +54,7 @@
       <img class="project__image" src="../../assets/images/projects/Booki (4).png"  />
       <div class="glass-overlay"></div>
       <p>booki</p>
-      <h3 class="grid__title"> click to see the image </h3>
+      <h3 class="grid__title"> click to see the gallery</h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -373,9 +373,12 @@ background-color:var(--primaryRed); /* Darker shade on hover for the button */
     width: 100%;
     text-align: center;
     white-space: nowrap;
-    bottom: 0;
-    font-weight: 100;
-    font-size: 0.8em;
+    bottom: -20px;
+    font-weight: 200;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1em;
     z-index: 3;
     text-transform: uppercase;
     color: #474545;
@@ -523,14 +526,14 @@ color: white;
     }
     .glass-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
-    backdrop-filter: blur(1px); /* Creates the frosted glass effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    border-radius: 5px; /* Optional: if you want rounded corners */
+    top: 100px;
+    left: -60px;
+    width: 250px;
+    height: 250px;
+    padding: 280px;
+    border-radius: 50%;
+    background-color: #7451eb;
+    opacity: 0.9;
 }
 
     .id-live{
@@ -539,14 +542,19 @@ color: white;
     }
     #portfolio {
       padding: 20px;
-      background-color: #b19afc;
       width: 90%;
       grid-template-columns: repeat(1, minmax(100%, 1fr));
 
     }
+    .grid__title {
+    padding-left: 10px;
+     font-weight: 500;
+     font-size: 1.2em;
+     background-color: transparent;
+     color: #ffffff;
+    }
 
     .project img {
-  
       position: relative; /* Change position to relative for mobile */
     }
     .prev, .next {

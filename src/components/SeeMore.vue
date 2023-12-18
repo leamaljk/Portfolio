@@ -1,12 +1,14 @@
 <template>
     <div id="app">
-      <!-- <div><h1>Hello</h1></div> -->
-      <!-- X button to close and go to home -->
       <button @click="goToHome" class="close-btn">Home Page &#x2718;</button>
-  <div><PhotoGalleryBooki /></div>
-      <!-- Your other content for the component -->
+
+      <div><PhotoGalleryBooki /></div>
       
-      <!-- ... -->
+    </div>
+
+    <!-- FOOTER -->
+    <div>
+      <ContactFooter />
     </div>
   </template>
 
@@ -14,15 +16,17 @@
 <script>
 
 import PhotoGalleryBooki from '../components/Photo-Gallery/PhotoGalleryBooki.vue'
+import ContactFooter from '../components/ContactFooter.vue'
 
 export default {
 
   components: {
     'PhotoGalleryBooki': PhotoGalleryBooki,
+    'ContactFooter': ContactFooter
   },
   methods: {
     goToHome() {
-      this.$router.push('/#card-container');
+      this.$router.push('/#cards-container');
     }
   }
 };
@@ -60,7 +64,11 @@ export default {
       border-radius: 2px;
 
   }
-
+#footer {
+  background-color: white;
+  color: var(--primaryRed);
+  border-top: 2px solid var(--primaryRed);
+}
   .close-btn:hover {
       
       color: #7451eb;
@@ -74,7 +82,7 @@ export default {
 
   .close-btn {
     
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     
