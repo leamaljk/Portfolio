@@ -104,22 +104,11 @@
   };
   </script>
   
-  <style lang="scss">
+  <style>
   @import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
 
-  $body: 'Inconsolata', monospace;
-  $big: 'Merriweather', serif;
-
-  $white: #ffffff;
-  $primary: #b19afc;
-  $secondary: #7451eb;
-  $light: #CECDCA;
-  $dark: #474545;
-
-  $ease: all 0.3s ease-in-out;
-
   body {
-    font-family: $body;
+    font-family: 'Inconsolata', monospace;
     margin: 0;
   }
 
@@ -130,66 +119,59 @@
   #portfolio {
     width: 100%;
     min-height: 100vh;
-    background: $white;
+    background: #ffffff;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2px;
-
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(2, minmax(200px, 1fr));
-    }
-
-    @media (max-width: 480px) {
-      grid-template-columns: 1fr;
-    }
+    grid-gap: 20px;
   }
 
   .project {
     position: relative;
-    background: $primary;
+    background: #b19afc;
     overflow: hidden;
+    border-top: #7451eb 2px solid;
+  }
 
-    img {
-      position: absolute;
-      opacity: 0.9;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  .project img {
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    p {
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      padding: 1em 0;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      z-index: 3;
-    }
+  .project p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 3;
+  }
 
-    .grid__title {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      white-space: nowrap;
-      bottom: 0;
-      font-weight: 100;
-      font-size: 0.8em;
-      z-index: 3;
-      text-transform: uppercase;
-      color: $dark;
-      letter-spacing: 2px;
-    }
+  .grid__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    z-index: 3;
+    text-transform: uppercase;
+    color: #474545;
+    letter-spacing: 2px;
+  }
 
-    &:hover .grid__overlay {
-      transform: translateY(0%);
-    }
+  .project:hover .grid__overlay {
+    transform: translateY(0%);
   }
 
   .grid__overlay {
-    background: rgba($primary, 0.9);
+    background: rgba(177, 154, 252, 0.9);
     height: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
@@ -198,61 +180,59 @@
     justify-items: center;
     align-items: center;
     transform: translateY(101%);
-    transition: $ease;
+    transition: all 0.3s ease-in-out;
+  }
 
-    button {
-      background: none;
-      outline: none;
-      font-weight: 100;
-      letter-spacing: 2px;
-      border: 1px solid $white;
-      color: $white;
-      text-transform: uppercase;
-      padding: 10px;
+  .grid__overlay button {
+    background: none;
+    outline: none;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+  }
 
-      &:hover {
-        transition: $ease;
-        background: $white;
-        color: $secondary;
-        transform: scale(1.05);
-      }
-    }
+  .grid__overlay button:hover {
+    background: #ffffff;
+    color: #7451eb;
+    transform: scale(1.05);
   }
 
   .overlay {
     position: fixed;
-    background: rgba($dark, 0.7);
+    background: rgba(71, 69, 69, 0.7);
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1000; // Make sure it's above all other content
-    display: none; // Initially hidden
+    z-index: 1000;
   }
 
   .overlay.open {
-    display: flex; // Displayed when opened
+    display: flex;
   }
 
   .overlay__inner {
-    background: $white;
+    background: #ffffff;
     padding: 20px;
     box-sizing: border-box;
     max-width: 80%;
-    max-height: 80vh; // Don't exceed 80% of viewport height
-    overflow: auto; // Enable scrolling if the content is larger
-    display: flex; // Use flexbox for centering the image
+    max-height: 80vh;
+    overflow: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .overlay__inner img {
-    max-width: 100%; // Scale the image to fit the width
-    max-height: 100%; // Scale the image to fit the height
-    object-fit: contain; // Prevent distortion
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .close {
@@ -261,14 +241,38 @@
     right: 10px;
     background: none;
     outline: 0;
-    color: $dark;
-    border: 0;
+    background-color: #ffffff;
+    border: 1px solid #7451eb;
+    padding: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    z-index: 1001; // Above the overlay content
+    z-index: 1001;
+  }
 
-    &:hover {
-      color: $secondary;
+  .close:hover {
+    
+    color: #7451eb;
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    #portfolio {
+      gap: 20px;
+      
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    #portfolio {
+      gap: 20px;
+     
+      grid-template-columns: 1fr;
+    }
+
+    .project img {
+  
+      position: relative; /* Change position to relative for mobile */
     }
   }
 </style>

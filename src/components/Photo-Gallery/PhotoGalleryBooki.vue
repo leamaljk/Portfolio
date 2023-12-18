@@ -57,6 +57,8 @@
      
       <div class="overlay">
         <div class="overlay__inner">
+          <button class="prev">← Prev</button>
+          <button class="next">Next →</button>
           <button class="close">close X</button>
           <img>
         </div>
@@ -66,26 +68,83 @@
     
     <script>
     export default {
-      name: 'PhotoGallery',
-      mounted() {
-        const buttons = document.querySelectorAll('.project');
-        const overlay = document.querySelector('.overlay');
-        const overlayImage = document.querySelector('.overlay__inner img');
-    
-        function open(e) {
-          overlay.classList.add('open');
-          const src = e.currentTarget.querySelector('img').src;
-          overlayImage.src = src;
-        }
-    
-        function close() {
-          overlay.classList.remove('open');
-        }
-    
-        buttons.forEach(button => button.addEventListener('click', open));
-        overlay.addEventListener('click', close);
+  name: 'PhotoGallery',
+  data() {
+    return {
+      currentIndex: 0,
+      images: [],
+      touchStartX: 0,
+      touchEndX: 0,
+    };
+  },
+
+  mounted() {
+    const buttons = document.querySelectorAll('.project');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = document.querySelector('.overlay__inner img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    this.images = Array.from(document.querySelectorAll('.project__image')).map(img => img.src);
+
+    const open = (index) => {
+      this.currentIndex = index;
+      overlay.classList.add('open');
+      overlayImage.src = this.images[index];
+    };
+
+    const close = () => {
+      overlay.classList.remove('open');
+    };
+
+    const showPrevImage = () => {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        overlayImage.src = this.images[this.currentIndex];
       }
     };
+
+    const showNextImage = () => {
+      if (this.currentIndex < this.images.length - 1) {
+        this.currentIndex++;
+        overlayImage.src = this.images[this.currentIndex];
+      }
+    };
+
+    buttons.forEach((button, index) => button.addEventListener('click', () => open(index)));
+    overlay.addEventListener('click', close);
+    prevButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showPrevImage();
+    });
+    nextButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showNextImage();
+    });
+
+
+    const handleTouchStart = (e) => {
+      this.touchStartX = e.changedTouches[0].screenX;
+    };
+
+    const handleTouchMove = (e) => {
+      this.touchEndX = e.changedTouches[0].screenX;
+    };
+
+    const handleTouchEnd = () => {
+      if (this.touchStartX - this.touchEndX > 50) {
+        showNextImage();
+      } else if (this.touchEndX - this.touchStartX > 50) {
+        showPrevImage();
+      }
+    };
+
+    overlayImage.addEventListener('touchstart', handleTouchStart);
+    overlayImage.addEventListener('touchmove', handleTouchMove);
+    overlayImage.addEventListener('touchend', handleTouchEnd);
+ 
+  }
+};
+
     </script>
     
 
@@ -240,6 +299,30 @@
       
       color: #7451eb;
     }
+
+    .prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 1px solid #7451eb;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #7451eb;
+  color: white;
+}
+
   
     /* Media Queries */
     @media (max-width: 768px) {
