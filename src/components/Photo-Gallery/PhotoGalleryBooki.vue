@@ -3,8 +3,9 @@
   <section id="portfolio">
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (5).png"  />
-      <p>websites</p>
-      <h3 class="grid__title"> front-end</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -12,8 +13,9 @@
     
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (3).png"  />
-      <p>pure css</p>
-      <h3 class="grid__title"> front-end</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -21,8 +23,9 @@
     
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (2).png"  />
-      <p>web apps</p>
-      <h3 class="grid__title"> full-stack</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -30,16 +33,18 @@
     
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (1).png"  />
-      <p>daily ui</p>
-      <h3 class="grid__title"> ui/ux design</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
     </div>
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (6).png"  />
-      <p>websites</p>
-      <h3 class="grid__title"> front-end</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -47,8 +52,9 @@
     
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (4).png"  />
-      <p>pure css</p>
-      <h3 class="grid__title"> front-end</h3>
+      <div class="glass-overlay"></div>
+      <p>booki</p>
+      <h3 class="grid__title"> click to see the image </h3>
       <div class="grid__overlay">
         <button class="viewbutton">view more</button>
       </div>
@@ -512,11 +518,31 @@ color: white;
   @media (max-width: 480px) {
     .project{
       height: 300px;
-    }
-    #portfolio ,.id-live {
-      gap: 20px;
+      width: 100%;
       
+    }
+    .glass-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    backdrop-filter: blur(1px); /* Creates the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border-radius: 5px; /* Optional: if you want rounded corners */
+}
+
+    .id-live{
       grid-template-columns: minmax(300px, 1fr);
+
+    }
+    #portfolio {
+      padding: 20px;
+      background-color: #b19afc;
+      width: 90%;
+      grid-template-columns: repeat(1, minmax(100%, 1fr));
+
     }
 
     .project img {

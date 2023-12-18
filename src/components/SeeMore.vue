@@ -73,7 +73,10 @@ export default {
   }
 
   .close-btn {
-    display: none;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
     
   }
 
