@@ -328,22 +328,37 @@
     @media (max-width: 768px) {
       #portfolio {
         gap: 20px;
-        
         grid-template-columns: repeat(2, 1fr);
       }
+      
     }
   
     @media (max-width: 480px) {
       #portfolio {
         gap: 20px;
-       
         grid-template-columns: 1fr;
       }
   
-      .project img {
+  .prev, .next {
+    display: none; /* Hide prev and next buttons on small screens */
+  }
+
+  .overlay__inner {
+    position: fixed; /* Fixed position to stay in place during scroll */
+    top: 2%; /* Center vertically */
+    left:1px; /* Center horizontally */
+    width: 340px; /* Set a max width for inner content */
+    height: auto; /* Auto height based on content */
+  }
+  .project img {
     
-        position: relative; /* Change position to relative for mobile */
-      }
-    }
+    position: relative; /* Change position to relative for mobile */
+  }
+  .close {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
   </style>
   
