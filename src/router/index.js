@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '../components/HomePage.vue';
 import SeeMore from '../components/SeeMore.vue'
+import PhotoGalleryOhmyfood from '../components/Photo-Gallery/PhotoGalleryOhmyfood.vue'
+import PhotoGalleryBooki from '../components/Photo-Gallery/PhotoGalleryBooki.vue'
+
 const routes = [
   {
     path: '/',
@@ -11,6 +14,16 @@ const routes = [
     path: '/seeMore',
     name: 'SeeMore',
     component: SeeMore
+  },
+  {
+    path: '/photoGalleryBooki',
+    name: 'PhotoGalleryBooki',
+    component: PhotoGalleryBooki
+  },
+  {
+  path: '/photoGalleryOhmyfood',
+  name: 'PhotoGalleryOhmyfood',
+  component: PhotoGalleryOhmyfood
   },
   // If AboutMe is a section in HomePage, no need for a separate route here
 ];

@@ -1,4 +1,5 @@
 <template>
+  
     <div id="cards-container">
       <!-- CARD 1 -->
       <div class="card">
@@ -9,7 +10,7 @@
           <div class="card-content">
             <h2>Booki</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
+            <button @click="goToBooki">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -23,7 +24,7 @@
           <div class="card-content">
             <h2>OhMyFood</h2>
             <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
+            <button @click="goToOhmyfood">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -89,9 +90,11 @@
  <script>
  export default {
    methods: {
-     goToComponent() {
-       this.$router.push({ name: 'SeeMore' });
-       
+     goToBooki() {
+       this.$router.push({ name: 'PhotoGalleryBooki' });
+     },
+     goToOhmyfood() {
+       this.$router.push({ name: 'PhotoGalleryOhmyfood' });
      }
    },
  };
