@@ -245,7 +245,7 @@
   }
   
     .app {
-    width: 90%;
+    width: 70%;
     height: auto;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -279,10 +279,12 @@
   
     /* LIVE SECTION */
     .live-website {
-      
+    width: 90%;
     font-family: 'Tenor Sans', sans-serif;
     margin-top: 20px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -340,15 +342,19 @@
     }
     
     @media (max-width: 480px) {
-    #live-website .content {
-      padding: 0 15px; /* Add padding on the sides for very small screens */
-    }
+      
     
-    #live-website h2 {
+    .live-website{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+    .live-website h2 {
       font-size: 1.5em; /* Further adjust font size for very small screens */
     }
     
-    #live-website .live-link-button {
+    .live-website .live-link-button {
       padding: 8px 16px; /* Adjust button padding for small screens */
     }
     }
@@ -429,7 +435,7 @@
       }
     
       .grid__title {
-        font-family: ' Merriweather';
+        font-family: 'Inconsolata', monospace;
         position: absolute;
         width: 100%;
         text-align: center;
@@ -576,6 +582,9 @@
           gap: 20px;
           grid-template-columns: repeat(2, 1fr);
         }
+        #portfolio{
+          width: 100%;
+        }
         
       }
     
@@ -593,12 +602,15 @@
 }
       .close-btn {
       position: absolute;
-      left: 0;
+      left: -4px;
       top: 0;
+      font-size: 1.3em;
+      width: 200px;
+      font-weight: 500;
     }
         .project{
           height: 300px;
-          width: 100%;
+          min-width: 100%;
           border: var(--primaryRed) solid 0.6px;
           
         }
@@ -618,16 +630,25 @@
           grid-template-columns: minmax(300px, 1fr);
     
         }
+
         #portfolio {
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          margin-top: 20px;
           padding: 20px;
           width: 90%;
-          grid-template-columns: repeat(1, minmax(100%, 1fr));
+          grid-template-columns: repeat(1, minmax(300px, 1fr));
     
         }
+        .app{
+            width: 100%;
+            margin: auto;
+          }
         .grid__title {
         padding-left: 10px;
          font-weight: 500;
-         font-size: 0.9em;
+         font-size: 1.2em;
          background-color: transparent;
          color: #ffffff;
         }

@@ -3,6 +3,7 @@ import HomePage from '../components/HomePage.vue';
 import SeeMore from '../components/SeeMore.vue'
 import PhotoGalleryOhmyfood from '../components/Photo-Gallery/PhotoGalleryOhmyfood.vue'
 import PhotoGalleryBooki from '../components/Photo-Gallery/PhotoGalleryBooki.vue'
+import PhotoGalleryMike from '../components/Photo-Gallery/PhotoGalleryMike.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
   path: '/photoGalleryOhmyfood',
   name: 'PhotoGalleryOhmyfood',
   component: PhotoGalleryOhmyfood
+  },
+  {
+  path: '/photoGalleryMike',
+  name: 'PhotoGalleryMike',
+  component: PhotoGalleryMike
   },
   // If AboutMe is a section in HomePage, no need for a separate route here
 ];

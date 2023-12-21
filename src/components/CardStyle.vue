@@ -23,7 +23,7 @@
         <div class="card-back">
           <div class="card-content">
             <h2>OhMyFood</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
+            <p>Integrate a mobile website with animations in CSS</p>
             <button @click="goToOhmyfood">Click Here To See More!</button>
           </div>
         </div>
@@ -37,8 +37,8 @@
         <div class="card-back">
           <div class="card-content">
             <h2>Mike's Design</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
+            <p>Optimize an Existing Website</p>
+            <button @click="goToMikeDesigns">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -95,6 +95,9 @@
      },
      goToOhmyfood() {
        this.$router.push({ name: 'PhotoGalleryOhmyfood' });
+     },
+     goToMikeDesigns() {
+       this.$router.push({ name: 'PhotoGalleryMike' });
      }
    },
  };
