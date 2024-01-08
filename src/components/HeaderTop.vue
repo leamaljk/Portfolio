@@ -35,14 +35,13 @@ html, body {
     position: relative;
     left: 110px;
 }
+
+/* ljubicasti konteiner */
 .grid-container {
     background-color: var(--primaryRed);
     display: grid;
     margin:  55px auto;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
+    border-radius: 200px;
     animation: slideIn 1s ease-out forwards; 
     font-family: 'TenorSanas', sans-serif;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -50,8 +49,9 @@ html, body {
     align-items: center; /* Vertically center */
     justify-items: center; /* Horizontally center */
     width: 80%; 
-    height: 25rem;
+    height: 20rem;
     max-width: 1000px; 
+    overflow: hidden;
 }
 
 
@@ -100,8 +100,8 @@ html, body {
 .photo-section img {
   position: relative;
   top: 8%;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   overflow: hidden; 
   align-items: center;
@@ -110,7 +110,6 @@ html, body {
   object-fit: cover; 
 
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .grid-container {

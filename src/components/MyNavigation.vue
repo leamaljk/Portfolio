@@ -75,7 +75,9 @@ nav {
 font-family: 'TenorSanas', sans-serif;
 margin-right: 3rem;
 position: relative;
-bottom: 0.3em;
+bottom: 0.1em;
+padding-bottom: 5%;
+
 float: right; 
 
 }
