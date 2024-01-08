@@ -188,6 +188,7 @@
     #about-section {
       grid-template-columns: 1fr;
       margin: 10px;
+      
     }
     .profile-pic-container {
     width: 15rem; /* Smaller size for mobile devices */
@@ -203,6 +204,14 @@
   .aboutMe{
     padding: 0;
   }
+  }
+
+  @media (max-width: 480px) {
+    #about-section {
+      grid-template-columns: 1fr;
+      margin: 10px;
+      margin-top: 100px;
+    }
   }
   </style>
   

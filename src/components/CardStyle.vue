@@ -158,6 +158,7 @@ border-bottom-left-radius: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  
 }
 .card-content h2{
 color: var(--primaryRed);

@@ -30,10 +30,11 @@ html, body {
 }
 
 .text-section p{
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     position: relative;
     left: 110px;
+    
 }
 
 /* ljubicasti konteiner */
@@ -51,7 +52,8 @@ html, body {
     width: 80%; 
     height: 20rem;
     max-width: 1000px; 
-    overflow: hidden;
+    overflow: visible; /* Show the parts of the image that are outside the container */
+
 }
 
 
@@ -60,7 +62,7 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 3.5s steps(40, end) 1s infinite normal both,
+  animation: typing 4s steps(40, end) 1s infinite normal both,
              blink-caret .75s step-end infinite;
 }
 
@@ -78,6 +80,7 @@ html, body {
 
 
 .text-section, .photo-section {
+  
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content vertically */
@@ -114,47 +117,45 @@ html, body {
 @media (max-width: 768px) {
   .grid-container {
     position: relative;
-    top: 150px;
+    top: 100px;
     width: 289px; /* Make the image responsive to the viewport width */
-    height: 289px;
+    height: 289px; /* Maintain aspect ratio */
+    max-width: 300px; /* Maximum size of the image */
+    max-height: 300px;
     margin-bottom: 300px;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
     
   }
-
   .text-section h1 {
     color: var(--secondary);
     position: relative;
-    bottom: 120px;
-    left: -70px;
-    width: 100%;
-    font-size: 1.5rem; /* Adjust the heading font size for smaller screens */
+    top: 20px;
+    left: -96px;
+    width: 160px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
   }
   .text-section p{
     color: var(--secondary);
     position: relative;
-    bottom: 130px;
-    left: -152px;
+    bottom: 230px;
+    left: -167px;
     overflow:visible;
-    font-size: 1rem; /* Adjust the typing text font size for smaller screens */
-
-
+    font-size: 16px;
     
   }
-
   .typing-effect {
     animation: none;
-    font-size: 1rem; /* Adjust the typing text font size for smaller screens */
   }
-
   .photo-section img {
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
     max-width: 300px; /* Maximum size of the image */
     max-height: 300px;
     position: relative;
-    right: 69px;
-    top: 0px;
+    right: 86px;
+    bottom: 40px;
   }
 }
 
