@@ -7,8 +7,8 @@
         <p class="aboutMe">
     I'm a Web Developer with a passion for building engaging and efficient websites and applications. I thrive on challenges and love to use my technical skills to solve complex problems.
     <br><br> Whether it's bringing a designer's vision to life with front-end technologies or architecting robust back-end systems, I'm always up for the challenge. I'm particularly fascinated by the power of <em>JavaScript </em> frameworks like <em>React</em> and <em>Vue.js</em> to create dynamic user interfaces, as well as the capabilities of <em>Node.js</em> and <em>Express</em> for server-side solutions.
-    <br><br> On the database side, I am well-versed in both <em>SQL</em> with <em>PostgreSQL</em> and <em>NoSQL</em> with <em>MongoDB</em>, ensuring that the data layer of the applications I work on is as performant and scalable as the rest.
-    <br><br>When not coding, I'm often exploring new technologies, dabbling in UI/UX design or honing my skills for more structured and object-oriented approaches to problem-solving.
+    <br> On the database side, I am well-versed in both <em>SQL</em> with <em>PostgreSQL</em> and <em>NoSQL</em> with <em>MongoDB</em>, ensuring that the data layer of the applications I work on is as performant and scalable as the rest.
+    <br>When not coding, I'm often exploring new technologies, dabbling in UI/UX design or honing my skills for more structured and object-oriented approaches to problem-solving.
     <br><br>Feel free to reach out to me for collaborations, tech talks, or just to exchange knowledge on the latest web development trends!
          </p>
       </div>
@@ -52,8 +52,8 @@
   
   #about-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
@@ -72,7 +72,7 @@
   .hobbies{
     font-family: 'Tenor Sans', sans-serif;
     color: var(--primaryRed);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -82,18 +82,19 @@
   .about {
     font-family: 'Tenor Sans', sans-serif;
     color: var(--primaryRed);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    animation: fadeInUp 1s ease;
+    animation: fadeInUp 2s ease;
   }
   
   .aboutMe {
+    
     font-family: 'Tenor Sans', sans-serif;
     color: var(--secondary);
     padding: 10px 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     text-align: justify;
     justify-content: space-between;
@@ -158,7 +159,7 @@
   }
   .interests{
     padding: 0.5rem 1rem;
-    border: 3px solid var(--primaryRed);
+    border: 2px solid var(--secondary);
     background-color: var(--primaryRed); /* Your primary color */
     color: white;
     border-radius: 2rem; /* Rounded borders */
@@ -174,6 +175,7 @@
   .interests:hover{
     transform: translateX(-10px);
     transition: all .3s ease;
+    background-color: white;
   }
   .p-int{
     position: relative;

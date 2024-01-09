@@ -143,7 +143,6 @@ html, body {
        1px -1px 0 var(--secondary),
       -1px  1px 0 var(--secondary),
        1px  1px 0 var(--secondary); 
-       backface-visibility: hidden; /* Preserve 3D */
        animation: bounce 1.6s ease infinite;
   }
 

@@ -8,8 +8,8 @@
         </div>
         <div class="footer-links">
             <h2 class="social">Contact</h2>
-          <a href="#" target="_blank" aria-label="e-mail"><font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
-            <h4 class="contact">lea.zizic@hotmail.com </h4>
+          <a href="mailto:lea.zizic@hotmail.com" target="_blank" aria-label="e-mail"><font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
+            <h4 class="contact">lea.zizic@hotmail.com</h4>
           </a>
           <a href="#" target="_blank" aria-label="phone"><font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
             <h4 class="contact"> +4475 86 326-416</h4>
