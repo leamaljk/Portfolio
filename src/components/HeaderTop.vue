@@ -2,7 +2,7 @@
 
 <div class="grid-container">
     <div class="text-section">
-      <h1>I'm Lea - Web Developer.</h1>
+      <h1>I'm Lea, Web Developer.</h1>
       <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
     </div>
     <div class="photo-section">
@@ -98,7 +98,7 @@ html, body {
 }
 .photo-section{
     position: relative;
-    left: 70px; 
+    left: 100px; 
 }
 .photo-section img {
   position: relative;
@@ -116,33 +116,56 @@ html, body {
 /* Responsive styles */
 @media (max-width: 768px) {
   .grid-container {
+    padding: 10px;
     position: relative;
     top: 100px;
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
     max-width: 300px; /* Maximum size of the image */
     max-height: 300px;
-    margin-bottom: 300px;
+    margin-bottom: 330px;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
     
   }
   .text-section h1 {
-    color: var(--secondary);
+    
+    color: #fff; /* Text color */
     position: relative;
-    top: 20px;
-    left: -96px;
+    top: 10px;
+    left: -100px;
     width: 160px;
     text-align: center;
-    color: #fff;
-    font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
+    justify-content: center;
+    font-size: 2.7rem; /* Adjust the heading font size for smaller screens */
+    -webkit-text-stroke: 1px var(--secondary); /* For Webkit browsers like Chrome and Safari */
+    text-shadow: /* Simulated border effect */
+      -1px -1px 0 var(--secondary),  
+       1px -1px 0 var(--secondary),
+      -1px  1px 0 var(--secondary),
+       1px  1px 0 var(--secondary); 
+       backface-visibility: hidden; /* Preserve 3D */
+       animation: bounce 1.6s ease infinite;
   }
+
+  @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
   .text-section p{
-    color: var(--secondary);
+    color: var(--primaryRed);
     position: relative;
-    bottom: 230px;
+    bottom: 270px;
     left: -167px;
     overflow:visible;
     font-size: 16px;
+    font-weight: 500;
     
   }
   .typing-effect {
@@ -154,8 +177,11 @@ html, body {
     max-width: 300px; /* Maximum size of the image */
     max-height: 300px;
     position: relative;
-    right: 86px;
-    bottom: 40px;
+    left: -116px;
+    bottom: 70px;
+    border: 10px solid var(--primaryRed) ;
+
+    
   }
 }
 

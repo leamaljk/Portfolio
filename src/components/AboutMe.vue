@@ -152,7 +152,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     position: relative;
     right: 90px;
   }
@@ -165,7 +165,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-align: center;
     max-width: 2.4rem;
     max-height: 2rem;
