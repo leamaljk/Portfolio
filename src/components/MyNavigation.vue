@@ -208,15 +208,14 @@ nav ul li a:hover {
 @media (max-width: 480px) {
   .icon {
    
-    float: left;
+    float: center;
     color: #fff;
     /* display: inline-block; Show icons only on phone */
   }
 
   nav ul li a{
-    margin-right: 80px;
     position: relative;
-    text-align: right;
+    text-align: center;
     font-size: 1.6em;
     font-weight: 200;
   }

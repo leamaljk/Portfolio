@@ -191,14 +191,15 @@ html, body {
   .typing-effect {
     animation: none;
   }
+ 
   .photo-section img {
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
     max-width: 300px; /* Maximum size of the image */
     max-height: 300px;
-    position: relative;
-    left: -116px;
-    bottom: 0px;
+    position: fixed;
+    left: 0px;
+    top: 200px;
     border: 10px solid var(--primaryRed) ;
     align-items: center;
     justify-content: center;
@@ -211,9 +212,9 @@ html, body {
 .round {
   width: 20rem;
   position: absolute;
-  top: 64%; /* Center vertically */
+  top: 74%; /* Center vertically */
   left: 52%; /* Center horizontally */
-  transform: translate(-86%, -60%); /* Adjust the SVG to be centered over the image */
+  transform: translate(-86%, -20%); /* Adjust the SVG to be centered over the image */
   height: auto;
 }
 
