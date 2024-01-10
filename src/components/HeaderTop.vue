@@ -163,10 +163,11 @@ html, body {
     top: 340px;
     left: -220px;
     overflow:visible;
-    font-size: 17px;
-    font-weight: 600;
-    font-family: 'WindSong', cursive;
-    
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;  
   }
   .typing-effect {
     animation: none;
