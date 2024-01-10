@@ -14,6 +14,11 @@
 
 
 <style scoped>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html, body {
     margin: 0;
     height: 100%; /* Make sure the body takes full viewport height */
@@ -118,12 +123,12 @@ html, body {
   .grid-container {
     padding: 10px;
     position: relative;
-    top: 100px;
+    top: 3.75rem;
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
-    max-width: 300px; /* Maximum size of the image */
-    max-height: 300px;
-    margin-bottom: 330px;
+    max-width: 18.75rem; /* Maximum size of the image */
+    max-height: 18.75rem;
+    margin-bottom: 18.75rem;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
     
   }
@@ -131,18 +136,14 @@ html, body {
     
     color: #fff; /* Text color */
     position: relative;
-    top: 10px;
+    top: 35px;
     left: -100px;
-    width: 160px;
+    width: 300px;
     text-align: center;
     justify-content: center;
-    font-size: 2.7rem; /* Adjust the heading font size for smaller screens */
-    -webkit-text-stroke: 1px var(--secondary); /* For Webkit browsers like Chrome and Safari */
-    text-shadow: /* Simulated border effect */
-      -1px -1px 0 var(--secondary),  
-       1px -1px 0 var(--secondary),
-      -1px  1px 0 var(--secondary),
-       1px  1px 0 var(--secondary); 
+    font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
+    -webkit-text-stroke: 2px var(--secondary); /* For Webkit browsers like Chrome and Safari */
+  
        animation: bounce 1.6s ease infinite;
   }
 
@@ -158,13 +159,13 @@ html, body {
   }
 }
   .text-section p{
-    color: var(--primaryRed);
+    color: var(--secondary);
     position: relative;
-    bottom: 270px;
+    bottom: 190px;
     left: -167px;
     overflow:visible;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     
   }
   .typing-effect {
@@ -177,7 +178,7 @@ html, body {
     max-height: 300px;
     position: relative;
     left: -116px;
-    bottom: 70px;
+    bottom: 20px;
     border: 10px solid var(--primaryRed) ;
 
     

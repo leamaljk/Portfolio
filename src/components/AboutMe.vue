@@ -45,6 +45,11 @@
 </script>
   
   <style scoped>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
   body {
     font-family: 'Tenor Sans', sans-serif;
@@ -53,7 +58,7 @@
   #about-section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
@@ -63,7 +68,7 @@
     padding: 2rem;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 1150px;
+    max-width: 71.875rem;
     margin-left: auto;
     margin-right: auto;
   }
