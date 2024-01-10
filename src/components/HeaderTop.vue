@@ -123,7 +123,7 @@ html, body {
   .grid-container {
     padding: 10px;
     position: relative;
-    top: 3.75rem;
+    top: 3rem;
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
     max-width: 18.75rem; /* Maximum size of the image */
@@ -142,9 +142,7 @@ html, body {
     text-align: center;
     justify-content: center;
     font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
-    -webkit-text-stroke: 2px var(--secondary); /* For Webkit browsers like Chrome and Safari */
-  
-       animation: bounce 1.6s ease infinite;
+    animation: bounce 1.6s ease infinite;
   }
 
   @keyframes bounce {
@@ -159,13 +157,15 @@ html, body {
   }
 }
   .text-section p{
+    
     color: var(--secondary);
     position: relative;
-    bottom: 190px;
-    left: -167px;
+    top: 340px;
+    left: -220px;
     overflow:visible;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
+    font-family: 'WindSong', cursive;
     
   }
   .typing-effect {
