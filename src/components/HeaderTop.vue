@@ -5,10 +5,23 @@
       <h1>I'm Lea, Web Developer.</h1>
       <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
     </div>
+   
     <div class="photo-section">
+      
         <!-- Your photo goes here -->
         <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
     </div>
+    <svg class="text-section round" width="20rem" height="20rem" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Create a circular path for the text to follow -->
+  <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,0 150,0 a75,75 0 1,0 -150,0" fill="none" />
+
+  <!-- Apply the text to the path -->
+  <text fill="white">
+    <textPath xlink:href="#circlePath" startOffset="30%" text-anchor="middle" style="font-size: 16px;">
+      I Am building Websites That Tell Your Story.
+    </textPath>
+  </text>
+</svg>
 </div>
 </template>
 
@@ -118,6 +131,12 @@ html, body {
   object-fit: cover; 
 
 }
+
+@media (min-width: 768px) {
+  .round {
+    display: none;
+  }
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .grid-container {
@@ -156,17 +175,21 @@ html, body {
     transform: translateY(-15px);
   }
 }
-  .text-section p{
-    
-    color: var(--secondary);
+
+.text-section{
+  border-radius: 50%;
+}
+.text-section p{
+  display: none;
+}
+  .text-section p, svg{
     position: relative;
-    top: 340px;
-    left: -220px;
+    bottom: 340px;
+    left: -15px;
     overflow:visible;
     font-size: 23px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-weight: 400;
+    
     font-family: 'Great Vibes', cursive;  
   }
   .typing-effect {

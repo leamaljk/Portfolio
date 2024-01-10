@@ -64,7 +64,7 @@
     padding: 2rem;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 1150px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
