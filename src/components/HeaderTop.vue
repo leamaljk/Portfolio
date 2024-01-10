@@ -153,23 +153,22 @@ html, body {
     color: #fff; /* Text color */
     position: relative;
     top: 35px;
-    left: -100px;
+    left: -105px;
     width: 300px;
     text-align: center;
     justify-content: center;
     font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
-    animation: bounce 1.6s ease-in-out;
-  }
+    animation: pulse 4s infinite;  }
 
-  @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+  @keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  40% {
-    transform: translateY(-30px);
+  50% {
+    transform: scale(1.1);
   }
-  60% {
-    transform: translateY(-15px);
+  100% {
+    transform: scale(1);
   }
 }
 
