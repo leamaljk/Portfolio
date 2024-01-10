@@ -1,29 +1,27 @@
 <template>
-
-<div class="grid-container">
+  <div class="grid-container">
     <div class="text-section">
       <h1>I'm Lea, Web Developer.</h1>
       <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
     </div>
-   
-    <div class="photo-section">
-      
-        <!-- Your photo goes here -->
-        <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
-    </div>
-    <svg class="text-section round" width="20rem" height="20rem" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Create a circular path for the text to follow -->
-  <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,0 150,0 a75,75 0 1,0 -150,0" fill="none" />
 
-  <!-- Apply the text to the path -->
-  <text fill="white">
-    <textPath xlink:href="#circlePath" startOffset="30%" text-anchor="middle" style="font-size: 16px;">
-      I Am building Websites That Tell Your Story.
-    </textPath>
-  </text>
-</svg>
-</div>
+    <div class="photo-section">
+      <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
+      <!-- Position SVG around the photo -->
+      <svg class="text-section round" width="20rem" height="20rem" viewBox="0 0 200 200">
+        <!-- Create a circular path for the text to follow -->
+        <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,0 150,0 a75,75 0 1,0 -150,0" fill="none" />
+        <!-- Apply the text to the path -->
+        <text fill="white">
+          <textPath xlink:href="#circlePath" startOffset="34%" text-anchor="middle" style="font-size: 16px;">
+            I Am building Websites That Tell Your Story.
+          </textPath>
+        </text>
+      </svg>
+    </div>
+  </div>
 </template>
+
 
 
 <style scoped>
@@ -69,7 +67,7 @@ html, body {
     justify-items: center; /* Horizontally center */
     width: 80%; 
     height: 20rem;
-    max-width: 1000px; 
+    max-width: 1150px; 
     overflow: visible; /* Show the parts of the image that are outside the container */
 
 }
@@ -152,7 +150,6 @@ html, body {
     
   }
   .text-section h1 {
-    
     color: #fff; /* Text color */
     position: relative;
     top: 35px;
@@ -161,7 +158,7 @@ html, body {
     text-align: center;
     justify-content: center;
     font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
-    animation: bounce 1.6s ease infinite;
+    animation: bounce 1.6s ease-in-out;
   }
 
   @keyframes bounce {
@@ -189,7 +186,6 @@ html, body {
     overflow:visible;
     font-size: 23px;
     font-weight: 400;
-    
     font-family: 'Great Vibes', cursive;  
   }
   .typing-effect {
@@ -202,11 +198,25 @@ html, body {
     max-height: 300px;
     position: relative;
     left: -116px;
-    bottom: 20px;
+    bottom: 0px;
     border: 10px solid var(--primaryRed) ;
-
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
     
   }
+
+
+.round {
+  width: 20rem;
+  position: absolute;
+  top: 64%; /* Center vertically */
+  left: 52%; /* Center horizontally */
+  transform: translate(-86%, -60%); /* Adjust the SVG to be centered over the image */
+  height: auto;
+}
+
 }
 
 @media (max-width: 600px) {

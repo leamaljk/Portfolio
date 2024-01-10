@@ -134,7 +134,7 @@ nav ul li a:hover {
   }
 
     nav {
-    
+    /* margin-right: 60px; */
     /* text-transform: uppercase; */
     float: none;
     text-align: center; /* Center the logo and nav on small screens */
@@ -214,6 +214,7 @@ nav ul li a:hover {
   }
 
   nav ul li a{
+    margin-right: 80px;
     position: relative;
     text-align: right;
     font-size: 1.6em;
