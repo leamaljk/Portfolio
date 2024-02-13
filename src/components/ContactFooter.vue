@@ -9,7 +9,7 @@
         <div class="footer-links">
             <h2 class="social">Contact</h2>
           <a href="mailto:lea.zizic@hotmail.com" target="_blank" aria-label="e-mail"><font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
-            <h4 class="contact">lea.zizic@hotmail.com</h4>
+            <h4 class="contact">PearlDesign2024@outlook.com</h4>
           </a>
           <a href="#" target="_blank" aria-label="phone"><font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
             <h4 class="contact"> +4475 86 326-416</h4>
@@ -22,7 +22,7 @@
           </a> 
         </div>
         <div class="copyright">
-          © 2023 Lea Maljkovic.<br><br> All Rights Reserved.
+          © 2024 PearlDesign.<br><br> All Rights Reserved.
         </div>
       </div>
     </footer>
