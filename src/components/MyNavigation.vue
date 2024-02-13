@@ -1,42 +1,50 @@
 <template>
   <header class="fixed-header">
-        <div class="container">
-        <button class="hamburger" @click="toggleNav">&#9776;</button>
-        <nav class="top-bar" :class="{ 'is-active': navIsActive }">
+    <div class="container">
+      <button class="hamburger" :class="{'is-active': navIsActive}" @click="toggleNav">
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+  <span class="hamburger-line"></span>
+</button>
+
+
+
+      <nav class="top-bar" :class="{ 'is-active': navIsActive }">
         <ul>
-          <li><router-link to="/" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'house']" beat />Home</router-link></li>
-          <li><router-link to="/#about-section" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'user']" beat/>About Me</router-link></li>
-          <li><router-link to="/#skills-wrapper" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'medal']" beat/>Skills</router-link></li>
-          <li><router-link to="/#cards-container" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'folder-open']" beat />Portfolio</router-link></li>
-          <li><router-link to="/#footer" @click="closeNav"><font-awesome-icon class="icon" :icon="['fas', 'at']" beat/>Contact</router-link></li>
+          <li class="nav-logo">
+            <router-link to="/" @click="closeNav">
+              <!-- <img src="../assets/images/logo/LogoSign.png" alt="logo" /> -->
+            </router-link>
+          </li>
+          <li><img src="../assets/images/logo/LogoSign.png" alt="logo" width="25px" height="25px"/><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign.png" alt="logo" width="25px" height="25px"/><router-link to="/#about-section" class="nav-link" @click="closeNav">About Me</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign.png" alt="logo" width="25px" height="25px"/><router-link to="/#skills-wrapper" class="nav-link" @click="closeNav">Skills</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign.png" alt="logo" width="25px" height="25px"/><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign.png" alt="logo" width="25px" height="25px"/><router-link to="/#footer" class="nav-link" @click="closeNav">Contact</router-link></li>
         </ul>
       </nav>
-      </div>
-    </header>
+    </div>
+  </header>
 </template>
 
 <script>
-export default {
+
+  export default {
   data() {
     return {
-      navIsActive: false, // Tracks the state of the nav menu
+      navIsActive: false,
     };
   },
   methods: {
-    closeNav() {
-    this.navIsActive = false;
-  },
     toggleNav() {
       this.navIsActive = !this.navIsActive; // Toggle the state of the nav menu
     },
   },
 };
+
 </script>
 
-
 <style scoped>
-
-/* Basic reset for styling */
 * {
   margin: 0;
   padding: 0;
@@ -44,199 +52,149 @@ export default {
 }
 
 body {
-  font-family: 'TenorSanas', sans-serif;
+  font-family: 'DM Serif Display', serif;
   line-height: 1.6;
 }
 
-header {
-  background: #fff; /* A dark background for the header */
-  color: var(--primaryRed);/* Light text color for contrast */
-  padding: 10px 0;
-  margin-top:55px; 
-  height: 35px; /* Some padding around the content */
+.fixed-header {
+  background: #fff;
+  color: #333;
+  padding: 1rem;
+  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger {
-  display: none; /* Hide by default */
-}
-
-
-
-/* This class will be toggled to show/hide the nav */
-.top-bar.is-active {
-  display: block;
-}
-.top-bar {
-  color: #fff;
-  
-}
-/* Navigation styles */
-nav {
-font-family: 'TenorSanas', sans-serif;
-margin-right: 3rem;
-position: relative;
-bottom: 0.1em;
-padding-bottom: 5%;
-
-float: right; 
-
-}
-
-nav ul {
-  
-  list-style: none; /* Remove list bullets */
-}
-
-nav ul li {
-  
-  display: inline; /* Display links inline */
-  margin-left: 20px; /* Margin between the links */
-}
-
-/* Base styles for the nav links */
-nav ul li a {
-  font-family: 'TenorSanas', sans-serif;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  font-size: 1.5em;
-  text-align: center;
-  color: var(--primaryRed);
+  font-size: 2rem;
+  background: none;
+  border: none;
   cursor: pointer;
-  outline: 1px solid;
-  margin-left: 20px;
+  display: none;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar ul li {
+  margin-left: 30px;
+}
+
+li img {
+ margin-right: 10px;
+}
+
+.nav-link {
   text-decoration: none;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0.4em;
-  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  color: #333;
+  transition: color 0.4s;
 }
 
-nav ul li a:hover {
-  color: #b19afc;
-  outline-color: var(--primaryRed);
-  outline-offset: 2em;
-}
-
-.icon {
-  
-  display: none; /* Hide icons by default */
-  margin-right: 5px; /* Add some space between icon and text */
-}
-
-.home-icon:before {
-  content: "\f015"; /* FontAwesome home icon */
+.nav-link:hover {
+  color: var(--primaryRed);
 }
 
 @media (max-width: 768px) {
-  .icon {
-    color: #b19afc;
-    margin-right: 20px;
-    display: inline-block; /* Show icons only on phone */
-  }
 
-    nav {
-    /* margin-right: 60px; */
-    /* text-transform: uppercase; */
-    float: none;
-    text-align: center; /* Center the logo and nav on small screens */
-  }
+ 
+  .hamburger {
 
-  .top-bar {
-    display: none;
-  }
-  
-
-/* fixed header */
-.fixed-header {
-  position: fixed;
-  top: -57px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: var(--primaryRed);
-  color: white;
-  padding: 0.5rem 1rem;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-}
-  /* HAMBURGER TOGGLE */
-
-.hamburger {
-  background: none;
-  border: none;
-  font-size: 2.2rem; /* Adjust the size as needed */
   cursor: pointer;
   display: block;
-  color: white;
-  align-items: center;
-  padding-left: 10px;
+  position: relative;
+  width: 35px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
-.top-bar.is-active {
-    display: block; /* Ensure the nav displays when active */
-    position: fixed; /* Fixed position to stay at the top */
-    width: 100%; /* Take full width of the screen */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    z-index: 999; /* Below the header but above other content */
-    background-color: var(--primaryRed);
-    margin-top: 60px; 
-    border: none;
-    
+.hamburger-line {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-line:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger.is-active .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+  .top-bar,
+  .top-bar.is-active {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .top-bar.is-active {
+    display: flex;
+  }
+
+  .top-bar ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .top-bar ul li {
+    margin: 10px ;
+
 
   }
 
-  nav ul {
-    padding-top: 0px;
-    border: none;
-    
+  .nav-link {
+    font-size: 1.2rem;
   }
-
-  nav ul li a{
-    
-    outline: none;
-    margin: 10px 40px;
-    color: white;
-    padding: 10px;
-    display: block; /* Stack the links vertically */
-  }
-  
 }
 
 @media (max-width: 480px) {
-  .icon {
-   
-    float: center;
-    color: #fff;
-    /* display: inline-block; Show icons only on phone */
+  .nav-link {
+    font-size: 1rem;
   }
-
-  nav ul li a{
-    position: relative;
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: 200;
-  }
-  
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  background-color: white;
-  transition: width 0.3s ease, left 0.3s ease;
 }
-nav ul li a:hover::after {
-  width: 100%;
-  left: 0;
-}
-
- 
-}
-
-
 </style>

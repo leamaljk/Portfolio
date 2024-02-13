@@ -1,10 +1,9 @@
 <template>
     
 <div id="app">
-
 <MyNavigation /> 
 </div>
-<div>
+<div  class="header">
 <HeaderTop />
 </div>
 <router-view />
@@ -50,3 +49,10 @@ export default {
 };
 
 </script>
+
+<style scoped>
+#app{
+margin-bottom: 8rem;
+
+}
+</style>

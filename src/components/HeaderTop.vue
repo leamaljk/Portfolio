@@ -1,7 +1,8 @@
 <template>
   <div class="grid-container">
     <div class="text-section">
-      <h1>I'm Lea, Web Developer.</h1>
+      
+      <h1>Pearl Design</h1>
       <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
     </div>
 
@@ -18,10 +19,14 @@
           </textPath>
         </text>
       </svg>
+
     </div>
+    <div class="logo-sign">
+        <img src="../assets/images/logo/LogoSign (1).png" alt="logo"  >
+       </div>
   </div>
 </template>
-
+3
 
 
 <style scoped>
@@ -38,23 +43,44 @@ html, body {
     justify-content: center; /* Center content horizontally */
 }
 
+.logo-sign{
+  position: absolute;
+ left: -60px;
+ top: -100px;
+ width: 200px;
+ height: 200px;
+ z-index: 1;
+}
+.logo-sign img{
+overflow: hidden;
+transform: rotate(12deg); 
+}
+
 .text-section h1 {
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
   padding-left: 160px;
-  color: white;
+  color: rgb(25, 24, 24);
+  font-family: 'DM Serif Display', serif;
+  z-index: 1000;
 }
 
 .text-section p{
-    font-size: 1em;
-    color: white;
+    font-size: 0.8em;
+    color: #333;
     position: relative;
     left: 110px;
+    bottom: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 1000;
     
 }
 
 /* ljubicasti konteiner */
 .grid-container {
+  
     background-color: var(--primaryRed);
     display: grid;
     margin:  55px auto;
@@ -67,7 +93,7 @@ html, body {
     justify-items: center; /* Horizontally center */
     width: 80%; 
     height: 20rem;
-    max-width: 1150px; 
+    max-width: 1020px; 
     overflow: visible; /* Show the parts of the image that are outside the container */
 
 }
@@ -85,7 +111,7 @@ html, body {
 /* The typing effect */
 @keyframes typing {
   from { width: 0; }
-  to { width: 80%; }
+  to { width: 100%; }
 }
 
 /* The typewriter cursor effect */
@@ -119,6 +145,7 @@ html, body {
 .photo-section img {
   position: relative;
   top: 8%;
+  left: -10px;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
@@ -127,6 +154,12 @@ html, body {
   justify-content: center;
   background-size: cover;
   object-fit: cover; 
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px){
+
+
 
 }
 
@@ -147,30 +180,35 @@ html, body {
     max-height: 18.75rem;
     margin-bottom: 18.75rem;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
-    
+    overflow: visible;
   }
+
+  .logo-sign{
+  position: absolute;
+ left: 20px;
+ top: 60px;
+
+ z-index: 1;
+}
+.logo-sign img{
+overflow: hidden;
+transform: rotate(12deg); 
+width: 120px;
+ height: 120px;
+}
   .text-section h1 {
-    color: #fff; /* Text color */
+    color: #000000; /* Text color */
     position: relative;
-    top: 35px;
-    left: -105px;
+    top: 30px;
+    left: -45px;
     width: 300px;
     text-align: center;
     justify-content: center;
-    font-size: 2.2rem; /* Adjust the heading font size for smaller screens */
-    animation: pulse 4s infinite;  }
+    font-size: 2rem; /* Adjust the heading font size for smaller screens */
+    animation: none;  
+  }
 
-  @keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 
 .text-section{
   border-radius: 50%;
@@ -181,7 +219,7 @@ html, body {
   .text-section p, svg{
     position: relative;
     bottom: 340px;
-    left: -15px;
+    left: 0px;
     overflow:visible;
     font-size: 23px;
     font-weight: 400;
@@ -190,6 +228,8 @@ html, body {
   .typing-effect {
     animation: none;
   }
+
+  
  
   .photo-section img {
     width: 289px; /* Make the image responsive to the viewport width */
@@ -216,6 +256,8 @@ html, body {
   transform: translate(-86%, -20%); /* Adjust the SVG to be centered over the image */
   height: auto;
 }
+
+
 
 }
 

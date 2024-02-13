@@ -3,58 +3,54 @@
     <div id="about-section">
 
       <div class="about-content">
-        <h1 class="about">Hi.</h1>
-        <p class="aboutMe">
-    I'm a Web Developer with a passion for building engaging and efficient websites and applications. I thrive on challenges and love to use my technical skills to solve complex problems.
-    <br><br> Whether it's bringing a designer's vision to life with front-end technologies or architecting robust back-end systems, I'm always up for the challenge. I'm particularly fascinated by the power of <em>JavaScript </em> frameworks like <em>React</em> and <em>Vue.js</em> to create dynamic user interfaces, as well as the capabilities of <em>Node.js</em> and <em>Express</em> for server-side solutions.
-    <br> On the database side, I am well-versed in both <em>SQL</em> with <em>PostgreSQL</em> and <em>NoSQL</em> with <em>MongoDB</em>, ensuring that the data layer of the applications I work on is as performant and scalable as the rest.
-    <br>When not coding, I'm often exploring new technologies, dabbling in UI/UX design or honing my skills for more structured and object-oriented approaches to problem-solving.
-    <br><br>Feel free to reach out to me for collaborations, tech talks, or just to exchange knowledge on the latest web development trends!
-         </p>
-      </div>
-      
-      
-      <div class="interest-container">
-       <button class="interests">
-        <p class="p-int">Pilates</p>  
-        </button>
-      <button class="interests">
-        <p class="p-int">Guitar</p>
-    </button>
-      <button class="interests">
-        <p class="p-int">Sport</p>
-    </button>
-      <button class="interests">
-        <p class="p-int">Traveling</p>
-    </button>
-    <button class="interests">
-        <p class="p-int">Cooking</p>
-    </button>
-    <button class="interests">
-        <p class="p-int">Reading</p>
-    </button>
-    
-    </div>
-    <!-- MY INTERESTS -->
-    <h1 class="hobbies">Couple of things I love to do.</h1>
-  </div>
+        <h1 class="about">About Me</h1>
 
+        <section class="layout">
+          <div class="grow1 quote">
+  <img src="../assets/images/left.png" alt="Quotation" class="quote-img">
+  <p class="stevejobs">
+    "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
+  </p>
+</div>
+
+  <div class="grow2">
+    <p class="aboutMeText">Since starting my role as a Sortation Associate at Amazon in December 2019, I've honed my ability to thrive in fast-paced settings and fine-tuned my attention to detail and efficiency—skills I believe are transferable to front-end design. My educational journey at OpenClassrooms, culminating in an Associate's degree in Web Development, has equipped me with a deep understanding of web design principles, from crafting responsive HTML/CSS pages to integrating and optimizing multimedia content for the web.
+
+I've dedicated time to expanding my skill set beyond the basics, mastering tools like Figma for UI/UX design, and delving into technical SEO, web security, and content accessibility to ensure the websites I develop are not only aesthetically pleasing but also performant, secure, and accessible to all users. My projects, a testament to my growing expertise in front-end design, reflect my ability to translate conceptual designs into tangible, interactive web experiences. With a passion for continuous learning and a knack for design, I'm eager to bring my creativity and technical skills to the forefront of the front-end design field.</p>
+      
+  </div>
+  <div class="grow3">
+  <ul class="hobbies-list">
+    <li><i class="fas fa-running"></i> Pilates</li>
+    <li><i class="fas fa-guitar"></i> Guitar</li>
+    <li><i class="fas fa-dumbbell"></i> Gym</li>
+    <li><i class="fas fa-plane"></i> Traveling</li>
+    <li><i class="fas fa-utensils"></i> Cooking</li>
+    <li><i class="fas fa-book"></i> Reading</li>
+  </ul>
+  <h1 class="about">Hobbies</h1>
+
+</div>
+
+</section>
+        
+    </div>
+</div>
+      
+      
+
+  
+  
   </template>
   <script>
 
 </script>
   
   <style scoped>
-  
 
-  body {
-    font-family: 'Tenor Sans', sans-serif;
-  }
   
   #about-section {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+   
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
@@ -67,11 +63,110 @@
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Noto Serif TC', serif;
+    animation: fadeIn 1s ease 0.5s;
+    animation-fill-mode: both;
   }
+  .layout {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.grow1 {
+  flex-grow: 1;
+  display: flex; /* Use flexbox for internal alignment */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Align items to the left */
+
+  padding: 20px;
+}
+
+.quote-img {
+  align-self: start; /* Align the image to the top */
+  margin-right: 20px; /* Right margin for space between the image and the text */
+  width: 50px; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.stevejobs {
+  /* Additional styling for the quote */
+  font-style: italic;
+  font-size: 16px;
+}
+
+.grow2 {
+  flex-grow: 2; /* Adjust the growth factor as needed for layout */
+  display: flex;
+  align-items: flex-start; /* Align the content to the top */
+  border-top: 1px solid var(--primaryRed); /* For visual debugging */
+  border-bottom: 1px solid var(--primaryRed); /* For visual debugging */
+  padding: 20px;
   
+  
+}
+
+.aboutMeText {
+  /* Additional styling for the text */
+  font-family: 'Noto Serif TC', serif;
+  color: var(--secondary);
+}
+
+.grow3 {
+  /* Additional styling based on your layout */
+  padding: 20px;
+}
+
+.hobbies-title {
+  font-family: 'Noto Serif TC', serif;
+  color: #333; /* Replace with your color variable or preferred color */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hobbies-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+}
+
+.hobbies-list li {
+  font-family: 'Noto Serif TC', serif;
+  color: black; /* Replace with your color variable or preferred color */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  display: flex;
+}
+
+.hobbies-list i {
+  margin-right: 10px;
+  color: var(--primaryColor); /* Replace with your primary color variable */
+}
+
+/* Include this only if you're using FontAwesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+ 
+
+  .hobbies-title {
+    font-size: 1.2rem;
+  }
+
+  .hobbies-list li {
+    font-size: 1rem;
+  }
+}
+
+
+
  
   .hobbies{
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Noto Serif TC', serif;
     color: var(--primaryRed);
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -81,7 +176,7 @@
     animation: fadeInUp 1s ease;
   }
   .about {
-    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 800;
     color: var(--primaryRed);
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -91,41 +186,16 @@
   }
   
   .aboutMe {
-    
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Noto Serif TC', serif;
     color: var(--secondary);
     padding: 10px 15px;
     font-size: 1rem;
     line-height: 1.8;
     text-align: justify;
     justify-content: space-between;
-    animation: fadeIn 1s ease 0.5s;
-    animation-fill-mode: both;
+   
   }
   
-  .profile-pic-container {
-  position: relative;
-  width: 30rem; /* Size of the image plus border */
-  height: 30rem;
-  border-radius: 50%; /* Makes it circular */
-  overflow: hidden; /* Ensures the image doesn't spill outside the border */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto; /* Center the container */
-  transition: box-shadow 0.3s ease;
-  background-size: cover; /* This will cover the entire area of the container */
-}
-
-/* If you're using an img tag instead of a background image */
-.profile-pic {
-  position: relative;
-  top: 8%;  /* Move up by 10% of the container height */
-  width: 100%; /* Full width of the parent container */
-  height: auto; /* Maintain the aspect ratio */
-  object-fit: cover; /* This property will cover the area of the container without stretching the image */
-}
-
 
 
   
@@ -150,13 +220,16 @@
   }
 
   .interest-container{
+    font-family: 'Noto Serif TC', serif;
+
     display: flex;
+    flex-grow: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     position: relative;
-    right: 90px;
+    
   }
   .interests{
     padding: 0.5rem 1rem;
@@ -179,42 +252,53 @@
     background-color: white;
   }
   .p-int{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
     position: relative;
     left: 2rem;
     bottom: 1.4em;
     color: var(--secondary);    
-    font-family: 'Tenor Sans', sans-serif;
 
 
-  }
-  @media (max-width: 768px) {
-    #about-section {
-      grid-template-columns: 1fr;
-      margin: 10px;
-      
-    }
-    .profile-pic-container {
-    width: 15rem; /* Smaller size for mobile devices */
-    height: 15rem;
-    margin: 20px auto; /* Less margin on smaller screens */
+  }/* Responsive design adjustments */
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
   }
 
-  .interests{
-  font-size: 1.2em;
-  gap: 10px;
+  .quote-section, .about-me-text, .hobbies-section {
+    flex: none;
+  }
+}
 
-  }
-  .aboutMe{
-    padding: 0;
-  }
+@media (max-width: 768px) {
+  .hobbies-title {
+    font-size: 1.2rem;
   }
 
-  @media (max-width: 480px) {
-    #about-section {
-      grid-template-columns: 1fr;
-      margin: 10px;
-      margin-top: 100px;
-    }
+  .quote-text, .about-me-text p {
+    font-size: 14px;
   }
-  </style>
+}
+
+@media (max-width: 480px) {
+  #about-section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .hobbies-title {
+    font-size: 1rem;
+  }
+
+  .quote-text, .about-me-text p {
+    font-size: 12px;
+  }
+}
+</style>
+
   
