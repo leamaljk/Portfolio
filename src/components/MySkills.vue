@@ -66,7 +66,8 @@ export default {
 }
 
 .skills-heading {
-  font-family: 'Tenor Sans', sans-serif;
+  font-family: 'DM Serif Display', serif;
+  line-height: 1.6;
   color: var(--title);
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -82,8 +83,8 @@ export default {
 }
 
 .skill {
-  font-family: 'Tenor Sans', sans-serif;
-  padding: 0.5rem 1rem;
+  font-family: 'Noto Serif TC', serif;
+  padding: 0.2rem 0.6rem;
   border-radius: 5px;
   text-align: center;
   font-weight: bold;

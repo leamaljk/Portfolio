@@ -1,5 +1,7 @@
 <template>
-    
+            <div class="navigation">
+<MyNavigation></MyNavigation>
+</div> 
   <section id="portfolio">
     <div class="project">
       <img class="project__image" src="../../assets/images/projects/Booki (5).png"  />
@@ -192,8 +194,8 @@ mounted() {
 
 /* LIVE SECTION */
 .live-website {
-font-family: 'Tenor Sans', sans-serif;
-margin-top: 100px;
+  font-family: 'Noto Serif TC', serif;
+  margin-top: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -211,9 +213,10 @@ margin: 0 auto; /* Center the content area horizontally */
 }
 
 .live-website h2 {
-font-size: 2.5em; /* Large font size for the section heading */
-margin-bottom: 20px; /* Spacing between the heading and the content */
-}
+      font-family: 'DM Serif Display', serif;
+      font-size: 3em; 
+      margin-bottom: 20px;
+      }
 
 .live-website p {
 font-size: 1em; /* Standard font size for the content */
@@ -262,8 +265,8 @@ background-color:var(--primaryRed); /* Darker shade on hover for the button */
 }
 
   body {
-    font-family: 'Inconsolata', monospace;
-    margin: 0;
+    font-family: 'Noto Serif TC', serif;
+        margin: 0;
   }
 
   button {
@@ -414,8 +417,8 @@ background-color:var(--primaryRed); /* Darker shade on hover for the button */
   }
 
 .prev, .next {
-font-family: 'Inconsolata', monospace;
-text-transform: uppercase;
+  font-family: 'Noto Serif TC', serif;
+  text-transform: uppercase;
 position: absolute;
 top: 50%;
 transform: translateY(-50%);

@@ -32,7 +32,7 @@
        <!-- CARD 3 -->
        <div class="card">
         <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (11).png" alt="Profile photo" />
+          <img class="card__img" src="../assets/images/icons/img (12).png" alt="Profile photo" />
         </div>
         <div class="card-back">
           <div class="card-content">
@@ -50,9 +50,9 @@
         </div>
         <div class="card-back">
           <div class="card-content">
-            <h2>Knap</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
+            <h2>Making food is easy</h2>
+            <p>Food recipe blog</p>
+            <button @click="goToTailwind">Click Here To See More!</button>
           </div>
         </div>
       </div>
@@ -60,19 +60,19 @@
        <!-- CARD 5 -->
        <div class="card">
         <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (10).png" alt="Profile photo" />
+          <img class="card__img" src="../assets/images/icons/img (15).png" alt="Profile photo" />
         </div>
         <div class="card-back">
           <div class="card-content">
-            <h2>Piikante</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
+            <h2>Light Supply </h2>
+            <p>Your Local Electrician</p>
+            <button @click="goToLS">Click Here To See More!</button>
           </div>
         </div>
       </div>
 
        <!-- CARD 1 -->
-       <div class="card">
+       <!-- <div class="card">
         <div class="card-front">
           <img class="card__img" src="../assets/images/icons/img (14).png" alt="Profile photo" />
         </div>
@@ -83,7 +83,7 @@
             <button @click="goToComponent">Click Here To See More!</button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </template>
  
@@ -98,7 +98,13 @@
      },
      goToMikeDesigns() {
        this.$router.push({ name: 'PhotoGalleryMike' });
-     }
+     },
+     goToTailwind() {
+       this.$router.push({ name: 'PhotoGalleryTailwind' });
+     },
+     goToLS() {
+       this.$router.push({ name: 'PhotoGalleryLS' });
+     },
    },
  };
  </script>

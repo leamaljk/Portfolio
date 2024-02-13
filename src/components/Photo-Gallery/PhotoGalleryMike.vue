@@ -1,6 +1,8 @@
 <template>
+          <div class="navigation">
+<MyNavigation></MyNavigation>
+</div> 
     <div class="app">
-        <button @click="goToHome" class="close-btn">Home Page &#x2718;</button>
     
         <section id="portfolio">
           <div class="project">
@@ -204,11 +206,13 @@
         
       <script>
      import ContactFooter from '../ContactFooter.vue'
+import MyNavigation from '../MyNavigation.vue';
     
         export default {
             components: {
-                'ContactFooter': ContactFooter
-      },   
+    'ContactFooter': ContactFooter,
+    MyNavigation
+},   
     
       name: 'PhotoGallery',
       data() {
@@ -318,7 +322,10 @@
       margin: 40px auto;
       border-radius: 20px;
     }
-    
+    .navigation{
+margin-bottom: 8rem;
+
+}
     .close-btn {
       position: absolute;
       top: 0px;
@@ -344,8 +351,8 @@
       /* LIVE SECTION */
       .live-website {
       width: 90%;
-      font-family: 'Tenor Sans', sans-serif;
-      margin-top: 20px;
+      font-family: 'Noto Serif TC', serif;
+            margin-top: 20px;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -365,10 +372,10 @@
       }
       
       .live-website h2 {
-      font-size: 2.5em; /* Large font size for the section heading */
-      margin-bottom: 20px; /* Spacing between the heading and the content */
+      font-family: 'DM Serif Display', serif;
+      font-size: 3em; 
+      margin-bottom: 20px;
       }
-      
       .live-website p {
       font-size: 1em; /* Standard font size for the content */
       line-height: 1.6; /* For better readability */
@@ -424,8 +431,8 @@
       }
       
         body {
-          font-family: 'Inconsolata', monospace;
-          margin: 0;
+          font-family: 'Noto Serif TC', serif;
+                    margin: 0;
         }
       
         button {
@@ -435,8 +442,8 @@
       
         /* IdLive section */
         .id-live {
-          font-family: 'Tenor Sans', sans-serif;
-          width: 100%;
+          font-family: 'Noto Serif TC', serif;
+                    width: 100%;
           margin-top: 30px;
           position: relative;
           display: grid;
@@ -501,8 +508,8 @@
         }
       
         .grid__title {
-          font-family: 'Inconsolata', monospace;
-          position: absolute;
+          font-family: 'Noto Serif TC', serif;
+                    position: absolute;
           width: 100%;
           text-align: center;
           white-space: nowrap;
@@ -611,8 +618,8 @@
         }
       
       .prev, .next {
-      font-family: 'Inconsolata', monospace;
-      text-transform: uppercase;
+        font-family: 'Noto Serif TC', serif;
+              text-transform: uppercase;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
