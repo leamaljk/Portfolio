@@ -194,7 +194,7 @@ mounted() {
 
 /* LIVE SECTION */
 .live-website {
-  font-family: 'Noto Serif TC', serif;
+  
   margin-top: 100px;
 display: flex;
 justify-content: center;
@@ -213,7 +213,7 @@ margin: 0 auto; /* Center the content area horizontally */
 }
 
 .live-website h2 {
-      font-family: 'DM Serif Display', serif;
+      
       font-size: 3em; 
       margin-bottom: 20px;
       }
@@ -265,7 +265,7 @@ background-color:var(--primaryRed); /* Darker shade on hover for the button */
 }
 
   body {
-    font-family: 'Noto Serif TC', serif;
+    
         margin: 0;
   }
 
@@ -417,7 +417,7 @@ background-color:var(--primaryRed); /* Darker shade on hover for the button */
   }
 
 .prev, .next {
-  font-family: 'Noto Serif TC', serif;
+  
   text-transform: uppercase;
 position: absolute;
 top: 50%;

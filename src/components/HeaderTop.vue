@@ -8,21 +8,10 @@
 
     <div class="photo-section">
       <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
-      <!-- Position SVG around the photo -->
-      <svg class="text-section round" width="20rem" height="20rem" viewBox="0 0 200 200">
-        <!-- Create a circular path for the text to follow -->
-        <path id="circlePath" d="M100,100 m-75,0 a75,75 0 1,0 150,0 a75,75 0 1,0 -150,0" fill="none" />
-        <!-- Apply the text to the path -->
-        <text fill="white">
-          <textPath xlink:href="#circlePath" startOffset="34%" text-anchor="middle" style="font-size: 16px;">
-            I Am building Websites That Tell Your Story.
-          </textPath>
-        </text>
-      </svg>
 
     </div>
-    <div class="logo-sign">
-        <img src="../assets/images/logo/LogoSign (1).png" alt="logo"  >
+    <div >
+        <img class="logo-sign" src="../assets/images/logo/LogoSign (3).png" alt="logo"  >
        </div>
   </div>
 </template>
@@ -45,35 +34,35 @@ html, body {
 
 .logo-sign{
   position: absolute;
- left: -60px;
- top: -100px;
- width: 200px;
- height: 200px;
+ bottom: 190px;
+ width: 180px;
+ height: 180px;
  z-index: 1;
 }
 .logo-sign img{
 overflow: hidden;
-transform: rotate(12deg); 
+
 }
 
 .text-section h1 {
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
   padding-left: 160px;
-  color: rgb(25, 24, 24);
-  font-family: 'DM Serif Display', serif;
+  color: white;
   z-index: 1000;
+  position: relative;
+   
+    top: 80px;
+
 }
 
 .text-section p{
     font-size: 0.8em;
-    color: #333;
+    color: white;
     position: relative;
     left: 110px;
-    bottom: 20px;
-    font-family: 'Noto Serif TC', serif;
+    top: 70px;
     text-transform: uppercase;
-    font-weight: 600;
     z-index: 1000;
     
 }
@@ -86,7 +75,6 @@ transform: rotate(12deg);
     margin:  55px auto;
     border-radius: 200px;
     animation: slideIn 1s ease-out forwards; 
-    font-family: 'TenorSanas', sans-serif;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px; /* Space between columns */
     align-items: center; /* Vertically center */
@@ -95,7 +83,7 @@ transform: rotate(12deg);
     height: 20rem;
     max-width: 1020px; 
     overflow: visible; /* Show the parts of the image that are outside the container */
-
+    
 }
 
 
@@ -104,7 +92,7 @@ transform: rotate(12deg);
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 4s steps(40, end) 1s infinite normal both,
+  animation: typing 6s steps(40, end) 1s infinite normal both,
              blink-caret .75s step-end infinite;
 }
 
@@ -172,63 +160,49 @@ transform: rotate(12deg);
 @media (max-width: 768px) {
   .grid-container {
     padding: 10px;
-    position: relative;
-    top: 3rem;
     width: 289px; /* Make the image responsive to the viewport width */
     height: 289px; /* Maintain aspect ratio */
     max-width: 18.75rem; /* Maximum size of the image */
     max-height: 18.75rem;
-    margin-bottom: 18.75rem;
+    margin-bottom: 14.75rem;
     grid-template-columns: 1fr; /* Stack the sections on top of each other */
     overflow: visible;
   }
 
-  .logo-sign{
-  position: absolute;
- left: 20px;
- top: 60px;
 
- z-index: 1;
-}
-.logo-sign img{
-overflow: hidden;
-transform: rotate(12deg); 
-width: 120px;
- height: 120px;
-}
-  .text-section h1 {
-    color: #000000; /* Text color */
+  .text-section h1{
+    color: #fff;
     position: relative;
-    top: 30px;
-    left: -45px;
-    width: 300px;
+    top: 120px;
+    left: -140px;
+    width: 400px;
     text-align: center;
     justify-content: center;
-    font-size: 2rem; /* Adjust the heading font size for smaller screens */
+    font-size: 1.6rem; /* Adjust the heading font size for smaller screens */
     animation: none;  
+
   }
 
 
 
 .text-section{
   border-radius: 50%;
+  
 }
-.text-section p{
-  display: none;
-}
-  .text-section p, svg{
-    position: relative;
-    bottom: 340px;
-    left: 0px;
-    overflow:visible;
-    font-size: 23px;
-    font-weight: 400;
-    font-family: 'Great Vibes', cursive;  
-  }
+
+
   .typing-effect {
     animation: none;
   }
 
+  .logo-sign{
+  position: absolute;
+ left: 88px;
+ top: 32px;
+width: 110px;
+height: 110px;
+ z-index: 1;
+}
   
  
   .photo-section img {
@@ -239,7 +213,7 @@ width: 120px;
     position: fixed;
     left: 0px;
     top: 200px;
-    border: 10px solid var(--primaryRed) ;
+    border: 2px solid var(--primaryRed) ;
     align-items: center;
     justify-content: center;
     display: flex;

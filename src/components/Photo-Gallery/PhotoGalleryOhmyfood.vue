@@ -288,7 +288,7 @@ margin-bottom: 8rem;
     /* LIVE SECTION */
     .live-website {
     width: 90%;
-    font-family: 'Noto Serif TC', serif;
+    
         margin-top: 20px;
     margin: auto;
     display: flex;
@@ -309,7 +309,6 @@ margin-bottom: 8rem;
     }
     
     .live-website h2 {
-      font-family: 'DM Serif Display', serif;
       font-size: 3em; 
       margin-bottom: 20px;
       }
@@ -369,7 +368,7 @@ margin-bottom: 8rem;
     }
     
       body {
-        font-family: 'Noto Serif TC', serif;
+        
                 margin: 0;
       }
     
@@ -380,7 +379,7 @@ margin-bottom: 8rem;
     
       /* IdLive section */
       .id-live {
-        font-family: 'Noto Serif TC', serif;
+        
                 width: 100%;
         margin-top: 30px;
         position: relative;
@@ -444,7 +443,7 @@ margin-bottom: 8rem;
       }
     
       .grid__title {
-        font-family: 'Noto Serif TC', serif;
+        
                 position: absolute;
         width: 100%;
         text-align: center;
@@ -554,7 +553,7 @@ margin-bottom: 8rem;
       }
     
     .prev, .next {
-      font-family: 'Noto Serif TC', serif;
+      
           text-transform: uppercase;
     position: absolute;
     top: 50%;

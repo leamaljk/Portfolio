@@ -25,6 +25,10 @@ export default {
           'JavaScript',
           'Animation',
           'SASS',
+          'Figma',
+          'Tailwindcss',
+          'Wordpress',
+          'UI/UX',
           'Vue',
           'React',
           'Node.js',
@@ -43,10 +47,8 @@ export default {
         ],
       softSkills: [
           
-        'Teamwork', 'Communication', 'Problem Solving',
-        'Self-motivated', 'Critical Thinking','Kind', 'Interpersonal Skills',
-        'Cooperative', 'Considerate',  'Collaboration',
-        'Attention to detail', 'Organized'
+        
+'Communication', 'Time Management', 'Problem-Solving', 'Adaptability', 'Attention to Detail', 'Self-Motivation', 'Negotiation', 'Empathy and User-Centric Thinking', 'Networking', 'Project Management','Organized'
 
         ],
     };
@@ -66,9 +68,8 @@ export default {
 }
 
 .skills-heading {
-  font-family: 'DM Serif Display', serif;
   line-height: 1.6;
-  color: var(--title);
+  color: var(--primaryRed);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -83,7 +84,6 @@ export default {
 }
 
 .skill {
-  font-family: 'Noto Serif TC', serif;
   padding: 0.2rem 0.6rem;
   border-radius: 5px;
   text-align: center;
@@ -91,14 +91,9 @@ export default {
   white-space: nowrap;
 }
 
-.hard {
-  background-color: #b19afc;
-  color: white;
-  border: 1.3px solid #fff;
 
-}
 
-.soft {
+.soft , .hard{
   background-color: #fff;
   color: #564f70;
   border: 1px solid #564f70;
@@ -106,7 +101,14 @@ export default {
 
 .skill:hover {
   /* transform: translateX(-5px); */
-  background-color: var(--primaryRed);
+  background: linear-gradient(
+        135deg,
+        #e6c146dd 0%, /* Lighter shade of gold */
+        #d3af37d7 25%, /* Your specified gold color */
+        #b8972ccb 50%, /* Darker shade of gold */
+        #d3af37dd 75%, /* Your specified gold color again */
+        #e6c146e1 100% /* Lighter shade of gold to finish */
+    );
   color: #fff;
 }
 

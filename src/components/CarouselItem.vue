@@ -115,7 +115,6 @@ export default {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    font-family: 'Tenor Sans', sans-serif;
   }
   
   .card {

@@ -8,7 +8,6 @@
 
 <style lang="scss">
 :root {
-  font-family: 'Noto Serif TC', serif;
 
   --primaryRed: #7551ebf7;
   --secondary: #2e293e; //for the text
@@ -16,11 +15,34 @@
 }
 
 body {
-  font-family: 'DM Serif Display', serif;
-  object-fit: fill;
-    background-repeat: repeat; /* To prevent the image from repeating */
-    background-position: center; 
-  background-image:url('../src/assets/images/bc (2).jpg') ;
-  }
+  .libre-caslon text-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-caslon text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-caslon text-regular-italic {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+font-family: "Libre Caslon Text", serif;
+font-weight: 400;
+font-style: normal;
+line-height: 1.8;
+
+object-fit: fill;
+
+background-repeat: repeat; /* To prevent the image from repeating */
+background-position: center; 
+background-image:url('../src/assets/images/bc (2).jpg') ;
+}
 
 </style>

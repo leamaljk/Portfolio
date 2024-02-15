@@ -1,116 +1,149 @@
 <template>
-    <footer id="footer">
-      <div class="footer-container">
-        <div class="social-media-links">
-            <h2 class="social-media ">Check out </h2>
-          <a href="https://www.linkedin.com/in/lea-maljkovic" target="_blank" aria-label="linkedin"><font-awesome-icon :icon="['fab', 'linkedin']" beat style="height: 40px; width: 40px;"/></a>
-          <a href="https://github.com/leamaljk" target="_blank" aria-label="github"><font-awesome-icon :icon="['fab', 'github']" beat  style="height: 40px; width: 40px;" /></a>    
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-block logo-container">
+          <img src="@/assets/images/logo/LogoSign (3).png" alt="PearlDesign Logo" class="logo">
         </div>
-        <div class="footer-links">
-            <h2 class="social">Contact</h2>
-          <a href="mailto:lea.zizic@hotmail.com" target="_blank" aria-label="e-mail"><font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
-            <h4 class="contact">PearlDesign2024@outlook.com</h4>
+        <div class="footer-block social-media-links">
+          <h2 class="footer-heading">Let's Connect</h2>
+          <p>Join me on LinkedIn and GitHub for the latest updates and insights into my work.</p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/lea-maljkovic" target="_blank" aria-label="linkedin">
+              <font-awesome-icon :icon="['fab', 'linkedin']" style="height: 40px; width: 40px;"/>
+            </a>
+            <a href="https://github.com/leamaljk" target="_blank" aria-label="github">
+              <font-awesome-icon :icon="['fab', 'github']" style="height: 40px; width: 40px;" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-block contact-links">
+          <h2 class="footer-heading">Get in Touch</h2>
+          <p>Have a project in mind? Drop me an email or give me a call to start our collaboration.</p>
+          <div class="contact-details">
+            <a href="mailto:PearlDesign2024@outlook.com" target="_blank" aria-label="e-mail">
+              <font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
+              <span>PearlDesign2024@outlook.com</span>
+            </a>
+            <a href="tel:+447586326416" target="_blank" aria-label="phone">
+              <font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
+              <span>+4475 86 326-416</span>
+            </a><!-- Contact Details -->
+          </div>
+        </div>
+        <div class="footer-block location-link">
+          <h2 class="footer-heading">Where I Work</h2>
+          <p>Based in Milton Keynes, I serve clients locally and globally, bringing digital visions to life.</p>
+          <a href="https://g.co/kgs/w9Cwgi" target="_blank" aria-label="location">
+            <font-awesome-icon :icon="['fas', 'map-marker-alt']" style="height: 35px; width: 35px;" />
+            <span>I am currently based in Milton Keynes, UK.</span>
           </a>
-          <a href="#" target="_blank" aria-label="phone"><font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
-            <h4 class="contact"> +4475 86 326-416</h4>
-          </a>    
-        
-        </div>
-        <div class="legal-links">
-            <a href="https://g.co/kgs/w9Cwgi" target="_blank" aria-label="location"><font-awesome-icon :icon="['fass', 'location-pin']" bounce class="pin" style="height: 35px; width: 35px;" />
-            <h4 class="contact"> I am currently based <br><br>in Milton Keynes, UK.</h4>
-          </a> 
-        </div>
-        <div class="copyright">
-          © 2024 PearlDesign.<br><br> All Rights Reserved.
         </div>
       </div>
-    </footer>
-  </template>
-  
+     
+    </div>
+    <div class="copyright">
+        © 2024 PearlDesign. All Rights Reserved.
+      </div>
+  </footer>
+</template>
 
+<!-- ... -->
 
-  <script>
-  export default {
-    name: 'FooterComponent'
-  }
-  </script>
-  
-  <style scoped>
-  #footer {
-    margin-top: 40px;
-    font-family: 'Tenor Sans', sans-serif;
-    background-color: var(--primaryRed); /* Replace with the color code you want */
-    color: white; /* Replace with the color code for the text */
-    padding: 20px; /* Adjust padding as needed */
-    font-size: 0.8rem; /* Adjust font-size as needed */
-  }
-  
+<style scoped>
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content {
+  display: contents;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  grid-column: 1 / -1; /* Logo takes full width */
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  justify-self: center; /* Center logo horizontally */
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  color: goldenrod;
+  margin: 10px 0;
+}
+
+.icons a, .contact-details a, .location-link a {
+  color: inherit;
+  transition: color 0.3s;
+  margin: 10px;
+}
+
+.icons a:hover, .contact-details a:hover {
+  color: goldenrod;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.copyright{
+margin: 40px 0;
+font-size: 0.8em;
+
+}
+
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .pin{
-    position: relative;
-    top: 20px;
-  }
-  .copyright{
-    padding: 20px;
-    font-size: 1em;
-    font-weight: 200;
-  }
-  .contact{
-    padding-left: 20px;
-    position: relative;
-    bottom: 6px;
-    font-size: 1.1em;
-    
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .social{
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+  .footer-block {
+    align-items: center;
   }
-  .social-media{
-    position: relative;
-    bottom: 34px;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
+
+  .logo-container {
+    order: -1; /* Logo goes on top */
   }
-  .social-media-links a {
-    padding-left: 10px;
-    margin-right: 10px; /* Adjust spacing as needed */
-    color: inherit; /* Inherits the color from the footer */
-    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 120px;
   }
-  
-  .footer-links a,
-  .legal-links a {
-    display: flex;
-    margin-right: 10px; /* Adjust spacing as needed */
-    color: inherit; /* Inherits the color from the footer */
-    text-decoration: none;
+
+  .footer-heading {
+    font-size: 1rem;
   }
-  
-  /* Icons from Font Awesome - you will need to include the Font Awesome library */
-  .fab {
-    font-size: 1.5em; /* Adjust icon size as needed */
-  }
-  
-  @media (max-width: 600px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .social-media-links a, .footer-links a, .legal-links a {
-      margin-bottom: 10px;
-    }
-  }
-  </style>
-  
+}
+</style>

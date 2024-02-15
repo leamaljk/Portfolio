@@ -1,212 +1,140 @@
 <template>
-  
-    <div id="cards-container">
-      <!-- CARD 1 -->
-      <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (9).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>Booki</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToBooki">Click Here To See More!</button>
-          </div>
-        </div>
+  <div id="cards-container">
+    <!-- Each card will have two main parts: the image showcase and the description -->
+    <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/projects/mac (2).png" alt="Booki project" />
       </div>
-  
- <!-- CARD 2 -->
- <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (6).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>OhMyFood</h2>
-            <p>Integrate a mobile website with animations in CSS</p>
-            <button @click="goToOhmyfood">Click Here To See More!</button>
-          </div>
-        </div>
+      <div class="card-description">
+        <h2>Booki</h2>
+        <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
+        <a href="https://leamaljk.com/Booki/" target="_blank"> <button >VIEW THE PROJECT</button></a>
       </div>
-      
-       <!-- CARD 3 -->
-       <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (12).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>Mike's Design</h2>
-            <p>Optimize an Existing Website</p>
-            <button @click="goToMikeDesigns">Click Here To See More!</button>
-          </div>
-        </div>
-      </div>
-
-       <!-- CARD 4 -->
-       <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (1).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>Making food is easy</h2>
-            <p>Food recipe blog</p>
-            <button @click="goToTailwind">Click Here To See More!</button>
-          </div>
-        </div>
-      </div>
-
-       <!-- CARD 5 -->
-       <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (15).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>Light Supply </h2>
-            <p>Your Local Electrician</p>
-            <button @click="goToLS">Click Here To See More!</button>
-          </div>
-        </div>
-      </div>
-
-       <!-- CARD 1 -->
-       <!-- <div class="card">
-        <div class="card-front">
-          <img class="card__img" src="../assets/images/icons/img (14).png" alt="Profile photo" />
-        </div>
-        <div class="card-back">
-          <div class="card-content">
-            <h2>Grupomania</h2>
-            <p>Turning Mock-up Into a Web Page with HTML and CSS</p>
-            <button @click="goToComponent">Click Here To See More!</button>
-          </div>
-        </div>
-      </div> -->
     </div>
-  </template>
- 
- <script>
- export default {
-   methods: {
-     goToBooki() {
-       this.$router.push({ name: 'PhotoGalleryBooki' });
-     },
-     goToOhmyfood() {
-       this.$router.push({ name: 'PhotoGalleryOhmyfood' });
-     },
-     goToMikeDesigns() {
-       this.$router.push({ name: 'PhotoGalleryMike' });
-     },
-     goToTailwind() {
-       this.$router.push({ name: 'PhotoGalleryTailwind' });
-     },
-     goToLS() {
-       this.$router.push({ name: 'PhotoGalleryLS' });
-     },
-   },
- };
- </script>
- 
+    <!-- ... Repeat for other cards ... -->
+    <div class="card card-reverse">
+      <div class="card-description">
+        <h2>OhMyFood</h2>
+        <p>The webpage is a modern, streamlined online service aimed at food enthusiasts looking to book curated dining experiences in select restaurants. It presents a straightforward, three-step process for choosing a restaurant, creating a personalized menu, and enjoying the dining experience. The interface is clean and minimalistic, with a user-friendly design that guides visitors smoothly from selection to reservation.</p>
+        <a href="https://leamaljk.com/ohmyfood/" target="_blank"><button >VIEW THE PROJECT</button></a>
+      </div>
+      <div class="card-image">
+        <img src="../assets/images/projects/mac (3).png" alt="OhMyFood project" />
+      </div>
+    </div>
+
+    <!-- ... Repeat for other cards ... -->
+     <!-- Each card will have two main parts: the image showcase and the description -->
+     <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/projects/mac (4).png" alt="Booki project" />
+      </div>
+      <div class="card-description">
+        <h2>GoMikeDesigns</h2>
+        <p>The webpage is a portfolio for "GoMike Designs," showcasing the services of Mike, a web designer who specializes in creating websites and graphics for Atlanta-based companies. It emphasizes his commitment to enhancing online presence and recognition for local businesses through bespoke website design, strategic online positioning, and logo creation.</p>
+        <a href="https://leamaljk.com/goMikeDesigns/" target="_blank" > <button>VIEW THE PROJECT</button></a>
+      </div>
+    </div>
+    <!-- ... Repeat for other cards ... -->
+    <div class="card card-reverse">
+      <div class="card-description">
+        <h2>Light Supply</h2>
+        <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
+        <a href="https://www.lightsupplyelectric.com/" target="_blank"> <button >VIEW THE PROJECT</button></a>
+      </div>
+      <div class="card-image">
+        <img src="../assets/images/projects/mac.png" alt="OhMyFood project" />
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
 <style scoped>
 #cards-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  flex-direction: column;
   justify-content: center;
-  font-family: 'Tenor Sans', sans-serif;
-  /* background-color: white; */
-
+  padding: 20px;
 }
+
 
 .card {
-  width: 200px;
-  margin: 20px;
+  background-color: rgba(255, 217, 0, 0.289);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Adjust the ratio to your preference */
+  overflow: hidden;
+  padding: 60px;
 }
 
-
-.card-front{
-border-top-right-radius: 10px;
-border-top-left-radius: 10px;
-justify-content: center;
-align-items: center;
-padding-bottom: 20px;
-padding-top: 20px;
+.card-reverse {
+  background-color: #7551eb43;
+  grid-template-columns: 1fr 1.5fr; /* Text on the left and larger image on the right */
 }
-.card-back{
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-
-}
-
-.card-front,
-.card-back {
+.card-image {
+  position: relative;
   width: 100%;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  
 }
 
-.card-front img {
-  width: 80%;
+.card-image img {
+  width: 100%;
   height: auto;
-  
+  object-fit: cover; /* Adjust as needed to fit the image in the card */
   
 }
 
-.card-content {
-  flex: 1;
+.card-description {
+ 
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  justify-content: center;
+  align-items: center; /* Align text to the left */
+  text-align: center;
+}
+
+.card-description h2 {
+  color:  #4a4949; /* Replace with your actual color variable */
+  margin-bottom: 0px;
+  font-size: 2.5em;
+
+}
+
+.card-description p {
+  margin-bottom: 20px;
+  text-align: justify;
+  margin:20px 10px;
+  color: #000;
+  line-height: 2;
+}
+
+.card-description button {
+  padding: 15px 30px;
+  border: none;
+  background: var(--primaryRed); /* Replace with your actual color variable */
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
   
 }
-.card-content h2{
-color: var(--primaryRed);
-padding-bottom: 10px;
-}
 
-.card-content h2,
-.card-content p {
-  margin: 0;
-}
-
-.card-back button {
-  padding: 8px 16px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  background: var(--primaryRed);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-bottom: 10px;
+.card-description button:hover {
+  background: var(--primaryRed); /* Replace with your actual color variable */
 }
 
 @media (max-width: 768px) {
   .card {
-    margin: auto;
-    width: 100%; 
-    /* Set card width to 100% for mobile devices */
-  }
-  
-  #cards-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
   }
 
-  .card-front img {
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
+  #cards-container {
+    grid-template-columns: 1fr; /* Full width cards on mobile */
+  }
+
+  .card-description button {
+margin-bottom: 20px;
   }
 }
 </style>

@@ -14,9 +14,11 @@
 </div>
 
   <div class="grow2">
-    <p class="aboutMeText">Since starting my role as a Sortation Associate at Amazon in December 2019, I've honed my ability to thrive in fast-paced settings and fine-tuned my attention to detail and efficiency—skills I believe are transferable to front-end design. My educational journey at OpenClassrooms, culminating in an Associate's degree in Web Development, has equipped me with a deep understanding of web design principles, from crafting responsive HTML/CSS pages to integrating and optimizing multimedia content for the web.
+    <p class="aboutMeText">Since starting my role as a Sortation Associate at Amazon in December 2019, I've honed my ability to thrive in fast-paced settings and fine-tuned my attention to detail and efficiency—skills I believe are transferable to front-end design. My educational journey at OpenClassrooms, culminating in an Associate's degree in Web Development, has equipped me with a deep understanding of web design principles, from crafting responsive HTML/CSS pages to integrating and optimizing multimedia content for the web. <br><br>
 
-I've dedicated time to expanding my skill set beyond the basics, mastering tools like Figma for UI/UX design, and delving into technical SEO, web security, and content accessibility to ensure the websites I develop are not only aesthetically pleasing but also performant, secure, and accessible to all users. My projects, a testament to my growing expertise in front-end design, reflect my ability to translate conceptual designs into tangible, interactive web experiences. With a passion for continuous learning and a knack for design, I'm eager to bring my creativity and technical skills to the forefront of the front-end design field.</p>
+I've dedicated time to expanding my skill set beyond the basics, mastering tools like Figma for UI/UX design, and delving into technical SEO, web security, and content accessibility to ensure the websites I develop are not only aesthetically pleasing but also performant, secure, and accessible to all users.
+
+My projects, a testament to my growing expertise in front-end design, reflect my ability to translate conceptual designs into tangible, interactive web experiences. With a passion for continuous learning and a knack for design, I'm eager to bring my creativity and technical skills to the forefront of the front-end design field.</p>
       
   </div>
   <div class="grow3">
@@ -28,7 +30,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
     <li><i class="fas fa-utensils"></i> Cooking</li>
     <li><i class="fas fa-book"></i> Reading</li>
   </ul>
-  <h1 class="about">Hobbies</h1>
 
 </div>
 
@@ -58,12 +59,11 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
     margin-right: 20px;
     border-radius: 15px;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Noto Serif TC', serif;
     animation: fadeIn 1s ease 0.5s;
     animation-fill-mode: both;
   }
@@ -92,16 +92,42 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 
 .stevejobs {
   /* Additional styling for the quote */
-  font-style: italic;
-  font-size: 16px;
+  font-style:italic;
+  font-size: 20px;
+  line-height: 2.2;
+
+  background: linear-gradient(
+        135deg,
+        #e6c146c9 0%, /* Lighter shade of gold */
+        #d3af37c6 25%, /* Your specified gold color */
+        #b8972cc4 50%, /* Darker shade of gold */
+        #d3af37c3 75%, /* Your specified gold color again */
+        #e6c146c5 100% /* Lighter shade of gold to finish */
+    );
+  /* background: linear-gradient(
+        135deg,
+        rgba(255, 215, 0, 0.8) 0%,
+        rgba(227, 197, 25, 0.513) 25%,
+        rgba(255, 215, 0, 0.8) 50%,
+        rgba(227, 197, 25, 0.513) 75%,
+        rgba(255, 215, 0, 0.8) 100%
+    ); */
+  padding: 17px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  color: #000;
 }
 
+/*    
+GOLDEN GRADIENT
+background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
 .grow2 {
   flex-grow: 2; /* Adjust the growth factor as needed for layout */
   display: flex;
   align-items: flex-start; /* Align the content to the top */
-  border-top: 1px solid var(--primaryRed); /* For visual debugging */
-  border-bottom: 1px solid var(--primaryRed); /* For visual debugging */
+  border-top: 1px solid gold; /* For visual debugging */
+  border-bottom: 1px solid gold; /* For visual debugging */
   padding: 20px;
   
   
@@ -109,9 +135,8 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 
 .aboutMeText {
   /* Additional styling for the text */
-  font-family: 'Noto Serif TC', serif;
-  color: var(--secondary);
-}
+
+  color: #333;}
 
 .grow3 {
   /* Additional styling based on your layout */
@@ -119,7 +144,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 }
 
 .hobbies-title {
-  font-family: 'Noto Serif TC', serif;
   color: #333; /* Replace with your color variable or preferred color */
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -133,8 +157,7 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 }
 
 .hobbies-list li {
-  font-family: 'Noto Serif TC', serif;
-  color: black; /* Replace with your color variable or preferred color */
+  color: #333; /* Replace with your color variable or preferred color */
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   align-items: center;
@@ -143,7 +166,7 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 
 .hobbies-list i {
   margin-right: 10px;
-  color: var(--primaryColor); /* Replace with your primary color variable */
+  color: #d3af37; /* Replace with your primary color variable */
 }
 
 /* Include this only if you're using FontAwesome icons */
@@ -166,7 +189,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 
  
   .hobbies{
-    font-family: 'Noto Serif TC', serif;
     color: var(--primaryRed);
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -186,7 +208,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
   }
   
   .aboutMe {
-    font-family: 'Noto Serif TC', serif;
     color: var(--secondary);
     padding: 10px 15px;
     font-size: 1rem;
@@ -220,7 +241,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
   }
 
   .interest-container{
-    font-family: 'Noto Serif TC', serif;
 
     display: flex;
     flex-grow: 2;
@@ -252,7 +272,6 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
     background-color: white;
   }
   .p-int{
-    font-family: 'Noto Serif TC', serif;
     font-weight: 600;
     position: relative;
     left: 2rem;
@@ -272,6 +291,17 @@ I've dedicated time to expanding my skill set beyond the basics, mastering tools
 }
 
 @media (max-width: 768px) {
+
+  .grow1, .quote{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .quote-img{
+    height: 60px;
+    width: 60px;
+  }
   .hobbies-title {
     font-size: 1.2rem;
   }
