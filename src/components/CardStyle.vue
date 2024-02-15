@@ -125,14 +125,17 @@
 }
 
 @media (max-width: 768px) {
-  .card {
+  .card, .card-reverse {
+    padding: 10px;
     grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
   }
 
   #cards-container {
     grid-template-columns: 1fr; /* Full width cards on mobile */
   }
-
+  .card-description{
+    padding: 0;
+  }
   .card-description button {
 margin-bottom: 20px;
   }
