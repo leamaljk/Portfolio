@@ -127,6 +127,19 @@ margin: 10px;
   background: var(--title); /* Replace with your actual color variable */
 }
 
+
+@media (min-width: 767px) and (max-width: 1200px){
+
+  .card, .card-reverse {
+    padding:20px 10px;
+    grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
+  }
+
+  #cards-container {
+    grid-template-columns: 1fr; /* Full width cards on mobile */
+  }
+
+}
 @media (max-width: 768px) {
   .card, .card-reverse {
     padding:20px 10px;
