@@ -151,11 +151,7 @@ overflow: hidden;
 
 }
 
-@media (min-width: 768px) {
-  .round {
-    display: none;
-  }
-}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .grid-container {
@@ -191,9 +187,11 @@ overflow: hidden;
 }
 
 
-  .typing-effect {
-    animation: none;
-  }
+p.typing-effect, .text-section p, h1{
+ display: none;
+ overflow: hidden;
+ animation: none;
+}
 
   .logo-sign{
   position: absolute;
@@ -221,24 +219,18 @@ height: 110px;
     
   }
 
-
-.round {
-  width: 20rem;
-  position: absolute;
-  top: 74%; /* Center vertically */
-  left: 52%; /* Center horizontally */
-  transform: translate(-86%, -20%); /* Adjust the SVG to be centered over the image */
-  height: auto;
 }
 
-
-
-}
-
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .grid-container {
         grid-template-columns: 1fr; /* Stack the sections vertically on small screens */
     }
+
+    p.typing-effect, .text-section p, h1{
+ display: none;
+ overflow: hidden;
+ animation: none;
+}
 }
 
 </style>

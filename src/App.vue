@@ -13,7 +13,11 @@
   --secondary: #2e293e; //for the text
   --title: #747070;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   .libre-caslon text-regular {
   font-family: "Libre Caslon Text", serif;

@@ -64,7 +64,7 @@
   grid-template-rows: auto;
   gap: 20px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 

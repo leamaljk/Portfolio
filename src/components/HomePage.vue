@@ -3,7 +3,7 @@
 <div id="app">
 <MyNavigation /> 
 </div>
-<div  class="header">
+<div>
 <HeaderTop />
 </div>
 <router-view />

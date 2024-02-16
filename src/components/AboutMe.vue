@@ -55,10 +55,9 @@ My projects, a testament to my growing expertise in front-end design, reflect my
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    
     border-radius: 15px;
-    padding: 2rem;
+    padding:2rem 1rem;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90%;
@@ -281,6 +280,11 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 
   }/* Responsive design adjustments */
 @media (max-width: 1024px) {
+  #about-section {
+   margin: auto;
+   padding: auto;
+    
+  }
   .layout {
     flex-direction: column;
   }
@@ -291,7 +295,10 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 }
 
 @media (max-width: 768px) {
-
+  #about-section {
+   margin: auto;
+   
+  }
   .grow1, .quote{
     display: flex;
     flex-direction: column;
@@ -313,8 +320,8 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 
 @media (max-width: 480px) {
   #about-section {
-    margin: 1rem;
-    padding: 1rem;
+   margin: auto;
+    
   }
 
   .about-title {
