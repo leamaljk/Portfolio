@@ -8,7 +8,7 @@
       <div class="card-description">
         <h2>Booki</h2>
         <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
-        <a href="https://leamaljk.com/Booki/" target="_blank"> <button >VIEW THE PROJECT</button></a>
+        <a href="https://leamaljk.com/Booki/"> <button >VIEW THE PROJECT</button></a>
       </div>
     </div>
     <!-- ... Repeat for other cards ... -->
@@ -16,7 +16,7 @@
       <div class="card-description">
         <h2>Oh My Food</h2>
         <p>The webpage is a modern, streamlined online service aimed at food enthusiasts looking to book curated dining experiences in select restaurants. It presents a straightforward, three-step process for choosing a restaurant, creating a personalized menu, and enjoying the dining experience. </p>
-        <a href="https://leamaljk.com/ohmyfood/" target="_blank"><button >VIEW THE PROJECT</button></a>
+        <a href="https://leamaljk.com/ohmyfood/" ><button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
         <img src="../assets/images/projects/mac (3).png" alt="OhMyFood project" />
@@ -32,7 +32,7 @@
       <div class="card-description">
         <h2>Go Mike Designs</h2>
         <p>The webpage is a portfolio for "GoMike Designs," showcasing the services of Mike, a web designer who specializes in creating websites and graphics for Atlanta-based companies. It emphasizes his commitment to enhancing online presence and recognition for local businesses through bespoke website design, strategic online positioning, and logo creation.</p>
-        <a href="https://leamaljk.com/goMikeDesigns/" target="_blank" > <button>VIEW THE PROJECT</button></a>
+        <a href="https://leamaljk.com/goMikeDesigns/" > <button>VIEW THE PROJECT</button></a>
       </div>
     </div>
     <!-- ... Repeat for other cards ... -->
@@ -40,7 +40,7 @@
       <div class="card-description">
         <h2>Light Supply</h2>
         <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
-        <a href="https://www.lightsupplyelectric.com/" target="_blank"> <button >VIEW THE PROJECT</button></a>
+        <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
         <img src="../assets/images/projects/mac.png" alt="OhMyFood project" />

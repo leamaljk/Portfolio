@@ -81,8 +81,8 @@ overflow: hidden;
     gap: 20px; /* Space between columns */
     align-items: center; /* Vertically center */
     justify-items: center; /* Horizontally center */
-    width: 80%; 
-    height: 20rem;
+   
+    max-height: 20rem;
     max-width: 1020px; 
     overflow: visible; /* Show the parts of the image that are outside the container */
     
