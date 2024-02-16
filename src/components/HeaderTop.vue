@@ -169,13 +169,11 @@ overflow: hidden;
   .text-section h1{
     color: #fff;
     position: relative;
-    top: 120px;
-    left: -140px;
-    width: 400px;
-    text-align: center;
-    justify-content: center;
-    font-size: 1.6rem; /* Adjust the heading font size for smaller screens */
-    animation: none;  
+    top: -30px;
+    left: -83px;
+    font-size: 2rem;
+line-height: 4;
+text-align: center;
 
   }
 
@@ -187,7 +185,7 @@ overflow: hidden;
 }
 
 
-p.typing-effect, .text-section p, h1{
+typing-effect, .text-section p{
  display: none;
  overflow: hidden;
  animation: none;
@@ -195,10 +193,10 @@ p.typing-effect, .text-section p, h1{
 
   .logo-sign{
   position: absolute;
- left: 88px;
- top: 32px;
-width: 110px;
-height: 110px;
+ left: 110px;
+ top: 70px;
+width: 70px;
+height: 70px;
  z-index: 1;
 }
   
@@ -226,7 +224,7 @@ height: 110px;
         grid-template-columns: 1fr; /* Stack the sections vertically on small screens */
     }
 
-    p.typing-effect, .text-section p, h1{
+    p.typing-effect, .text-section p{
  display: none;
  overflow: hidden;
  animation: none;
