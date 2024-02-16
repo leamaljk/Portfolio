@@ -115,6 +115,13 @@ li img {
   color: var(--primaryRed);
 }
 
+
+@media (min-width: 767px) and (max-width: 1200px){
+
+
+
+}
+
 @media (max-width: 768px) {
 
  

@@ -148,7 +148,69 @@ overflow: hidden;
 
 }
 
-@media (min-width: 767px) and (max-width: 1200px){
+@media (min-width: 767px) and (max-width: 1250px){
+  .grid-container {
+    padding: 10px;
+    width: 289px; /* Make the image responsive to the viewport width */
+    height: 289px; /* Maintain aspect ratio */
+    max-width: 18.75rem; /* Maximum size of the image */
+    max-height: 18.75rem;
+    margin-bottom: 14.75rem;
+    grid-template-columns: 1fr; /* Stack the sections on top of each other */
+    overflow: visible;
+  }
+
+
+  .text-section h1{
+    color: var(--title);
+    position: relative;
+    top: -30px;
+    left: -83px;
+    font-size: 2rem;
+line-height: 4;
+text-align: center;
+
+  }
+
+
+
+.text-section{
+  border-radius: 50%;
+  
+}
+
+
+typing-effect, .text-section p{
+ display: none;
+ overflow: hidden;
+ animation: none;
+}
+
+  .logo-sign{
+  position: absolute;
+ left: 110px;
+ top: 70px;
+width: 70px;
+height: 70px;
+ z-index: 1;
+}
+  
+ 
+  .photo-section img {
+    width: 289px; /* Make the image responsive to the viewport width */
+    height: 289px; /* Maintain aspect ratio */
+    max-width: 300px; /* Maximum size of the image */
+    max-height: 300px;
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    border: 2px solid var(--primaryRed) ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    
+  }
 
 
 
