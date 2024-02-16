@@ -8,10 +8,9 @@
 
 <style lang="scss">
 :root {
-
-  --primaryRed: #7551eb;
-  --secondary: #2e293e; //for the text
-  --title: #747070;
+  --primaryRed: #D4CAF3 ;
+  --secondary: #7551eb;
+  --title: #4a4949;
 }
 * {
   margin: 0;

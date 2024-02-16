@@ -115,7 +115,7 @@ margin: 10px;
 .card-description button {
   padding: 15px 30px;
   border: none;
-  background: var(--primaryRed); /* Replace with your actual color variable */
+  background: var(--secondary); /* Replace with your actual color variable */
   color: #fff;
   font-weight: 400;
   text-transform: uppercase;
@@ -124,12 +124,12 @@ margin: 10px;
 }
 
 .card-description button:hover {
-  background: var(--primaryRed); /* Replace with your actual color variable */
+  background: var(--title); /* Replace with your actual color variable */
 }
 
 @media (max-width: 768px) {
   .card, .card-reverse {
-    padding: 10px;
+    padding:20px 10px;
     grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
   }
 

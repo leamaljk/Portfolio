@@ -11,7 +11,7 @@
 
     </div>
     <div >
-        <img class="logo-sign" src="../assets/images/logo/LogoSign (3).png" alt="logo"  >
+        <img class="logo-sign" src="../assets/images/logo/LogoSign (2).png" alt="logo"  >
        </div>
   </div>
 </template>
@@ -48,7 +48,7 @@ overflow: hidden;
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
   padding-left: 160px;
-  color: white;
+  color: var(--title);
   z-index: 1000;
   position: relative;
    
@@ -58,7 +58,7 @@ overflow: hidden;
 
 .text-section p{
     font-size: 0.8em;
-    color: white;
+    color: var(--title);
     position: relative;
     left: 110px;
     top: 70px;
@@ -74,6 +74,8 @@ overflow: hidden;
     display: grid;
     margin:  55px auto;
     border-radius: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
     animation: slideIn 1s ease-out forwards; 
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px; /* Space between columns */
@@ -142,6 +144,7 @@ overflow: hidden;
   justify-content: center;
   background-size: cover;
   object-fit: cover; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -167,7 +170,7 @@ overflow: hidden;
 
 
   .text-section h1{
-    color: #fff;
+    color: var(--title);
     position: relative;
     top: -30px;
     left: -83px;

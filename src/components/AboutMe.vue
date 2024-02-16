@@ -200,7 +200,7 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
   }
   .about {
     font-weight: 800;
-    color: var(--primaryRed);
+    color: var(--secondary);
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
