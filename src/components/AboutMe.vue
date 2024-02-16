@@ -58,7 +58,7 @@ My projects, a testament to my growing expertise in front-end design, reflect my
     
     border-radius: 15px;
     padding:2rem 1rem;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 90%;
     margin-left: auto;
@@ -182,6 +182,8 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
   .hobbies-list li {
     font-size: 1rem;
   }
+
+
 }
 
 
@@ -298,6 +300,10 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
   #about-section {
    margin: auto;
    
+  }
+
+  .stevejobs{
+    font-size: 14px;
   }
   .grow1, .quote{
     display: flex;

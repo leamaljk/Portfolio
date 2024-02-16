@@ -9,7 +9,7 @@
 <style lang="scss">
 :root {
 
-  --primaryRed: #7551ebf7;
+  --primaryRed: #7551eb;
   --secondary: #2e293e; //for the text
   --title: #747070;
 }
@@ -42,11 +42,12 @@ font-weight: 400;
 font-style: normal;
 line-height: 1.8;
 
-object-fit: fill;
+object-fit: cover;
 
 background-repeat: repeat; /* To prevent the image from repeating */
 background-position: center; 
-background-image:url('../src/assets/images/bc (2).jpg') ;
+background-image:url('../src/assets/images/bc.jpeg') ;
+
 }
 
 </style>

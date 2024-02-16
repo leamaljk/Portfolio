@@ -45,15 +45,15 @@
   
   <style scoped>
 #skills-section {
-  max-width: 1400px;
+  max-width:100%;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
 }
 
 .skills-title {
-  font-size: 2rem;
-  color: #333;
+ font-size: 2.5em;
+  color: #4a4949;
   margin-bottom: 40px;
 }
 
@@ -61,6 +61,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 20px;
+   
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    border-radius: 15px;
+    padding:2rem 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 1s ease 0.5s;
+    animation-fill-mode: both;
 }
 
 .skill {
@@ -88,7 +101,7 @@
 
 @media (max-width: 768px) {
   .skills-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .skill-icon {

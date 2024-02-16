@@ -15,7 +15,7 @@
     <div class="card card-reverse">
       <div class="card-description">
         <h2>Oh My Food</h2>
-        <p>The webpage is a modern, streamlined online service aimed at food enthusiasts looking to book curated dining experiences in select restaurants. It presents a straightforward, three-step process for choosing a restaurant, creating a personalized menu, and enjoying the dining experience. The interface is clean and minimalistic, with a user-friendly design that guides visitors smoothly from selection to reservation.</p>
+        <p>The webpage is a modern, streamlined online service aimed at food enthusiasts looking to book curated dining experiences in select restaurants. It presents a straightforward, three-step process for choosing a restaurant, creating a personalized menu, and enjoying the dining experience. </p>
         <a href="https://leamaljk.com/ohmyfood/" target="_blank"><button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
@@ -102,11 +102,14 @@ margin: 10px;
 }
 
 .card-description p {
+  background: rgba(255, 255, 255, 0.6);
   margin-bottom: 20px;
   text-align: justify;
   margin:20px 10px;
   color: #000;
   line-height: 2;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .card-description button {
@@ -135,6 +138,9 @@ margin: 10px;
   }
   .card-description{
     padding: 0;
+  }
+  .card-description h2 {
+font-size: 2em;
   }
   .card-description button {
 margin-bottom: 20px;
