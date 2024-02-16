@@ -30,7 +30,7 @@
         <img src="../assets/images/projects/mac (4).png" alt="Booki project" />
       </div>
       <div class="card-description">
-        <h2>GoMikeDesigns</h2>
+        <h2>Go Mike Designs</h2>
         <p>The webpage is a portfolio for "GoMike Designs," showcasing the services of Mike, a web designer who specializes in creating websites and graphics for Atlanta-based companies. It emphasizes his commitment to enhancing online presence and recognition for local businesses through bespoke website design, strategic online positioning, and logo creation.</p>
         <a href="https://leamaljk.com/goMikeDesigns/" target="_blank" > <button>VIEW THE PROJECT</button></a>
       </div>
@@ -70,6 +70,7 @@
 
 .card-reverse {
   background-color: #7551eb43;
+  padding: 60px;
   grid-template-columns: 1fr 1.5fr; /* Text on the left and larger image on the right */
 }
 .card-image {
@@ -85,8 +86,7 @@
 }
 
 .card-description {
- 
-  padding: 20px;
+margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
