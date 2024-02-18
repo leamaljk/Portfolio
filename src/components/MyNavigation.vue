@@ -1,5 +1,6 @@
 <template>
   <header class="fixed-header">
+    
     <div class="container">
       <button class="hamburger" :class="{'is-active': navIsActive}" @click="toggleNav">
   <span class="hamburger-line"></span>

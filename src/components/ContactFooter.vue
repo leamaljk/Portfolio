@@ -29,6 +29,10 @@
               <font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
               <span>+4475 86 326-416</span>
             </a><!-- Contact Details -->
+            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="52px" data-style-width="100%">
+  <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
           </div>
         </div>
         <div class="footer-block location-link">
