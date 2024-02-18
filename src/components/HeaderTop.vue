@@ -1,8 +1,12 @@
 <template>
   <div class="grid-container">
     <div class="text-section">
-      
+      <div class="pearldesign">
       <h1>Pearl Design</h1>
+      <div class="logo-box">
+      <img class="logo-sign" src="../assets/images/logo/LogoSign (2).png" alt="logo"  >
+      </div>
+      </div>
       <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
     </div>
 
@@ -10,9 +14,7 @@
       <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
 
     </div>
-    <div >
-        <img class="logo-sign" src="../assets/images/logo/LogoSign (2).png" alt="logo"  >
-       </div>
+
   </div>
 </template>
 3
@@ -24,23 +26,39 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-    margin: 0;
-    height: 100%; /* Make sure the body takes full viewport height */
+
+
+/* ljubicasti konteiner */
+.grid-container {
+    background-color: var(--primaryRed);
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    flex-direction: row;
+    margin: auto;
+    border-radius: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    animation: slideIn 1s ease-out forwards; 
+    align-items: center; /* Vertically center */
+    justify-items: center; /* Horizontally center */
+    height: 20rem;
+    width: 1200px; 
+    overflow: visible; /* Show the parts of the image that are outside the container */
 }
 
 .logo-sign{
-  position: absolute;
- bottom: 190px;
+  position: relative;
+ bottom: 120px;
+ left: 400px;
  width: 180px;
  height: 180px;
  z-index: 1;
+ margin: 0;
+ padding: 0;
 }
-.logo-sign img{
-overflow: hidden;
+
+.pearldesign{
+  position: relative;
+ top: 50px;
+ left: 100px;
 
 }
 
@@ -51,8 +69,8 @@ overflow: hidden;
   color: var(--title);
   z-index: 1000;
   position: relative;
-   
-    top: 80px;
+  left: 460px;
+  top: 80px;
 
 }
 
@@ -60,33 +78,15 @@ overflow: hidden;
     font-size: 0.8em;
     color: var(--title);
     position: relative;
-    left: 110px;
-    top: 70px;
+
+   left: 580px;
+  bottom: 60px;
     text-transform: uppercase;
     z-index: 1000;
     
 }
 
-/* ljubicasti konteiner */
-.grid-container {
-  
-    background-color: var(--primaryRed);
-    display: grid;
-    margin:  55px auto;
-    border-radius: 200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 
-    animation: slideIn 1s ease-out forwards; 
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between columns */
-    align-items: center; /* Vertically center */
-    justify-items: center; /* Horizontally center */
-   
-    max-height: 20rem;
-    max-width: 1020px; 
-    overflow: visible; /* Show the parts of the image that are outside the container */
-    
-}
 
 
 .typing-effect {
@@ -128,14 +128,11 @@ overflow: hidden;
         opacity: 1; /* Fully opaque */
     }
 }
-.photo-section{
-    position: relative;
-    left: 100px; 
-}
+
 .photo-section img {
-  position: relative;
-  top: 8%;
-  left: -10px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
@@ -164,8 +161,8 @@ overflow: hidden;
   .text-section h1{
     color: var(--title);
     position: relative;
-    top: -30px;
-    left: -83px;
+    left: -180px;
+    top: -70px;
     font-size: 2rem;
 line-height: 4;
 text-align: center;
@@ -186,10 +183,11 @@ typing-effect, .text-section p{
  animation: none;
 }
 
+
   .logo-sign{
   position: absolute;
- left: 110px;
- top: 70px;
+  left: 0px;
+ top: 20px;
 width: 70px;
 height: 70px;
  z-index: 1;
@@ -234,8 +232,8 @@ height: 70px;
   .text-section h1{
     color: var(--title);
     position: relative;
-    top: -30px;
-    left: -83px;
+    left: -180px;
+    top: -70px;
     font-size: 2rem;
 line-height: 4;
 text-align: center;
@@ -258,8 +256,8 @@ typing-effect, .text-section p{
 
   .logo-sign{
   position: absolute;
- left: 110px;
- top: 70px;
+ left: 0px;
+ top: 20px;
 width: 70px;
 height: 70px;
  z-index: 1;
