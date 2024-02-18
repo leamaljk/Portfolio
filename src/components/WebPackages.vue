@@ -87,21 +87,21 @@ export default {
 
 #basic{
   background-color: #7551eb43;
-  padding: 20px 10px;
+  padding: 20px ;
   border-radius: 10px;
   
 }
 
 #professional{
   background-color: rgba(255, 217, 0, 0.289);
-  padding: 20px 10px;
+  padding: 20px;
   border-radius: 10px;
 
 }
 
 #maintenance{
   background-color:#cbcbcb;
-  padding: 20px 10px;
+  padding: 20px ;
   border-radius: 10px;
   
 }
