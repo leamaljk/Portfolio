@@ -153,8 +153,12 @@
     max-width: 18.75rem; /* Maximum size of the image */
     max-height: 18.75rem;
     margin-bottom: 14.75rem;
-    grid-template-columns: 1fr; /* Stack the sections on top of each other */
+    display: flex; 
+    flex-direction: column;
     overflow: visible;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -177,12 +181,11 @@ text-align: center;
 }
 
 
-typing-effect, .text-section p{
+.typing-effect, .text-section{
  display: none;
- overflow: hidden;
+ overflow: none;
  animation: none;
 }
-
 
   .logo-sign{
   position: absolute;
@@ -224,8 +227,11 @@ height: 70px;
     max-width: 18.75rem; /* Maximum size of the image */
     max-height: 18.75rem;
     margin-bottom: 14.75rem;
-    grid-template-columns: 1fr; /* Stack the sections on top of each other */
+    display: flex;/* Stack the sections on top of each other */
+    flex-direction: column;
     overflow: visible;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -248,9 +254,9 @@ text-align: center;
 }
 
 
-typing-effect, .text-section p{
+.typing-effect, .text-section {
  display: none;
- overflow: hidden;
+ overflow: none;
  animation: none;
 }
 
@@ -283,11 +289,8 @@ height: 70px;
 }
 
 @media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack the sections vertically on small screens */
-    }
-
-    p.typing-effect, .text-section p{
+  
+    .typing-effect p, .text-section p{
  display: none;
  overflow: hidden;
  animation: none;
