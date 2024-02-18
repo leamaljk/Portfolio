@@ -2,7 +2,6 @@
     <div id="app">
       <button @click="goToHome" class="close-btn">Home Page &#x2718;</button>
 
-      <div><PhotoGalleryBooki /></div>
       
     </div>
 
@@ -15,13 +14,11 @@
 
 <script>
 
-import PhotoGalleryBooki from '../components/Photo-Gallery/PhotoGalleryBooki.vue'
 import ContactFooter from '../components/ContactFooter.vue'
 
 export default {
 
   components: {
-    'PhotoGalleryBooki': PhotoGalleryBooki,
     'ContactFooter': ContactFooter
   },
   methods: {

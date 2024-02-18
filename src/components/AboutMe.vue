@@ -14,12 +14,17 @@
 </div>
 
   <div class="grow2">
-    <p class="aboutMeText">Since starting my role as a Sortation Associate at Amazon in December 2019, I've honed my ability to thrive in fast-paced settings and fine-tuned my attention to detail and efficiency—skills I believe are transferable to front-end design. My educational journey at OpenClassrooms, culminating in an Associate's degree in Web Development, has equipped me with a deep understanding of web design principles, from crafting responsive HTML/CSS pages to integrating and optimizing multimedia content for the web. <br><br>
+    <p class="aboutMeText">
+      At Pearl Design, my mission is grounded in the belief that a website should be as unique as the individual or company it represents. I'm not Steve Jobs, but I'm inspired by his philosophy. In every project I undertake, my goal is to build websites that tell your story—embracing the spirit of originality and personal flair that sets you apart.
+      <br><br>
+      Starting as a Sortation Associate at Amazon in December 2019, I learned the value of speed and precision. These bustling environments taught me how important it is to keep an eye on the details, no matter how fast-paced the work gets. It's this blend of speed and accuracy I bring to the world of front-end design.
 
-I've dedicated time to expanding my skill set beyond the basics, mastering tools like Figma for UI/UX design, and delving into technical SEO, web security, and content accessibility to ensure the websites I develop are not only aesthetically pleasing but also performant, secure, and accessible to all users.
+Through my studies at OpenClassrooms, earning an Associate's degree in Web Development, I've built a solid understanding of the core principles of web design. I know how to put together responsive websites and how to make sure they're packed with content that looks great and loads quickly.
+<br><br>
+Beyond the basics, I've also gotten to grips with Figma for UI/UX design, and I've dug into the technical side of SEO, web security, and making sure websites are accessible to everyone. I believe that a website should not only look good but also work well and be easy for anyone to use.
 
-My projects, a testament to my growing expertise in front-end design, reflect my ability to translate conceptual designs into tangible, interactive web experiences. With a passion for continuous learning and a knack for design, I'm eager to bring my creativity and technical skills to the forefront of the front-end design field.</p>
-      
+The projects I've worked on show my journey and growth in front-end design. They're proof of my ability to turn ideas into real, working websites that people can interact with. As I continue to learn and develop my skills, I'm excited to take on new challenges and contribute to the front-end design community.
+</p>
   </div>
   <div class="grow3">
   <ul class="hobbies-list">
@@ -142,6 +147,7 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
   padding: 20px;
 }
 
+
 .hobbies-title {
   color: #333; /* Replace with your color variable or preferred color */
   font-size: 1.5rem;
@@ -189,23 +195,15 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 
 
  
-  .hobbies{
-    color: var(--primaryRed);
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: left;
-    animation: fadeInUp 1s ease;
-  }
+
   .about {
     font-weight: 800;
-    color: var(--secondary);
-    font-size: 2rem;
+    font-size: 2.5em;
+    color: #4a4949;
     margin-bottom: 1rem;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
+    text-align: center;
   }
   
   .aboutMe {

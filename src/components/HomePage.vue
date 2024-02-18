@@ -20,6 +20,9 @@
 <CardStyle />
 </div>
 <div>
+  <WebPackages></WebPackages>
+</div>
+<div>
 <ContactFooter />
 </div>
 </template>
@@ -33,6 +36,8 @@ import AboutMe from '../components/AboutMe.vue';
 import CardStyle from '../components/CardStyle.vue';
 import ContactFooter from '../components/ContactFooter.vue'
 import SkillsIcons from './SkillsIcons.vue';
+import WebPackages from './WebPackages.vue';
+
 
 
 export default {
@@ -44,7 +49,7 @@ export default {
     'AboutMe': AboutMe,
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
-    SkillsIcons
+    SkillsIcons, WebPackages
 },
 };
 

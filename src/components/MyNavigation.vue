@@ -18,9 +18,10 @@
           </li>
           <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
           <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#about-section" class="nav-link" @click="closeNav">About Me</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#skills-section" class="nav-link" @click="closeNav">Skills</router-link></li>
           <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#footer" class="nav-link" @click="closeNav">Work with me</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>
+          <li><img src="../assets/images/logo/LogoSign (3).png" alt="logo" width="25px" height="25px"/><router-link to="/#footer" class="nav-link" @click="closeNav">Contact</router-link></li>
+
         </ul>
       </nav>
     </div>
