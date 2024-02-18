@@ -58,7 +58,7 @@
 .pearldesign{
   position: relative;
  top: 50px;
- left: 100px;
+ left: 80px;
 
 }
 
@@ -79,8 +79,8 @@
     color: var(--title);
     position: relative;
 
-   left: 580px;
-  bottom: 60px;
+   left: 550px;
+   bottom: 40px;
     text-transform: uppercase;
     z-index: 1000;
     
@@ -153,20 +153,17 @@
     max-width: 18.75rem; /* Maximum size of the image */
     max-height: 18.75rem;
     margin-bottom: 14.75rem;
-    display: flex; 
-    flex-direction: column;
+    grid-template-columns: 1fr; /* Stack the sections on top of each other */
     overflow: visible;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
   }
+
 
 
   .text-section h1{
     color: var(--title);
     position: relative;
-    left: -180px;
-    top: -70px;
+    top: -30px;
+    left: -83px;
     font-size: 2rem;
 line-height: 4;
 text-align: center;
@@ -181,16 +178,17 @@ text-align: center;
 }
 
 
-.typing-effect, .text-section{
+typing-effect, .text-section p{
  display: none;
- overflow: none;
+ overflow: hidden;
  animation: none;
 }
 
+
   .logo-sign{
   position: absolute;
-  left: 0px;
- top: 20px;
+ left: 110px;
+ top: 70px;
 width: 70px;
 height: 70px;
  z-index: 1;
@@ -227,19 +225,22 @@ height: 70px;
     max-width: 18.75rem; /* Maximum size of the image */
     max-height: 18.75rem;
     margin-bottom: 14.75rem;
-    display: flex;/* Stack the sections on top of each other */
-    flex-direction: column;
+    grid-template-columns: 1fr; /* Stack the sections on top of each other */
     overflow: visible;
-    align-items: center;
-    justify-content: center;
   }
 
+  .pearldesign{
+  position: relative;
+ top: 0px;
+ left: 0px;
+
+}
 
   .text-section h1{
     color: var(--title);
     position: relative;
-    left: -180px;
-    top: -70px;
+    top: -30px;
+    left: -83px;
     font-size: 2rem;
 line-height: 4;
 text-align: center;
@@ -254,16 +255,16 @@ text-align: center;
 }
 
 
-.typing-effect, .text-section {
+typing-effect, .text-section p{
  display: none;
- overflow: none;
+ overflow: hidden;
  animation: none;
 }
 
   .logo-sign{
   position: absolute;
- left: 0px;
- top: 20px;
+ left: 100px;
+ top: 60px;
 width: 70px;
 height: 70px;
  z-index: 1;
@@ -289,8 +290,11 @@ height: 70px;
 }
 
 @media (max-width: 480px) {
-  
-    .typing-effect p, .text-section p{
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack the sections vertically on small screens */
+    }
+
+    p.typing-effect, .text-section p{
  display: none;
  overflow: hidden;
  animation: none;
