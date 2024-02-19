@@ -157,7 +157,12 @@
     overflow: visible;
   }
 
+  .pearldesign{
+  position: relative;
+ top: 10px;
+ left: 0px;
 
+}
 
   .text-section h1{
     color: var(--title);
@@ -186,9 +191,9 @@ typing-effect, .text-section p{
 
 
   .logo-sign{
-  position: absolute;
- left: 110px;
- top: 70px;
+    position: absolute;
+ left: 100px;
+ top: 60px;
 width: 70px;
 height: 70px;
  z-index: 1;
