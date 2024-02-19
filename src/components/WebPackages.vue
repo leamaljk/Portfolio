@@ -17,7 +17,7 @@
     </div>
 
     <div class="package" >
-      <div class="header">Professional</div>
+      <div class="header">Premium</div>
       <div class="price-range">£1600 - £2200</div>
       <ul class="features" id="professional">
         <li>Up to 10 pages of your content</li>
