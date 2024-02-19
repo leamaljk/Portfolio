@@ -49,4 +49,14 @@ background-image:url('../src/assets/images/bc.jpeg') ;
 
 }
 
+@media (max-width: 1200px) {
+  body{
+background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed; /* Keep the background image fixed during scroll */
+  background-size: cover; /* Ensure the image covers the whole viewport */
+  height: 100vh; /* Minimum height of 100% of the viewport */
+  margin: 0;
+  }
+}
 </style>
