@@ -49,25 +49,4 @@ background-image:url('../src/assets/images/bc.jpeg') ;
 
 }
 
-@media (min-width: 767px) and (max-width: 1250px){
-body{
-  background-position: center center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-attachment: fixed; /* Keep the background image fixed during scroll */
-  background-size: cover; /* Ensure the image covers the whole viewport */
-  height: 100vh; /* Minimum height of 100% of the viewport */
-  margin: 0;
-  }
-}
-
-@media (max-width: 768px) {
-body{
-  background-position: center center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-attachment: fixed; /* Keep the background image fixed during scroll */
-  background-size: cover; /* Ensure the image covers the whole viewport */
-  height: 100vh; /* Minimum height of 100% of the viewport */
-  margin: 0;
-  }
-}
 </style>
