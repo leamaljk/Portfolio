@@ -10,6 +10,7 @@
         <li>Optional Logo Design / Business Card Prints: Additional cost</li>
         <li>FREE 1-year domain name</li>
         <li>FREE 1-year web hosting</li>
+        <li>FREE e-mail address</li>
         <li>Website security / HTTPS certificate</li>
         <li>FREE 1-month Website Maintenance Package</li>
       </ul>
@@ -27,6 +28,7 @@
         <li>250 FREE Business Card Prints</li>
         <li>FREE 1-year domain name</li>
         <li>FREE 1-year web hosting</li>
+        <li>FREE e-mail address</li>
         <li>Website security / HTTPS certificate</li>
         <li>FREE 1-month Website Maintenance Package</li>
       </ul>
