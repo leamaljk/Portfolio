@@ -11,7 +11,7 @@
 <style lang="scss">
 :root {
   --primaryRed: #D4CAF3 ;
-  --secondary: #7551eb;
+  --secondary: #5C3D99;
   --title: #4a4949;
 }
 * {

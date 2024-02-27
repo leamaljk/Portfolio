@@ -74,10 +74,10 @@
           });
   
           if (response.ok) {
-            alert('Thank you for your submission!');
+            alert('Thanks for letting me know! I will get back to you as soon as possible.');
             this.form = { firstName: '', lastName: '', email: '', phone: '', enquiry: '' }; // Reset form
           } else {
-            alert('Submission failed. Please try again.');
+            alert('Failed to send a message. Please try again.');
           }
         } catch (error) {
           alert('An error occurred. Please try again.');
@@ -149,12 +149,14 @@
     border: 1px solid #ccc; /* Consistent border size */
     border-radius: 5px;
     transition: border-color 0.3s; /* Smooth transition for border color */
+    font-family: "Libre Caslon Text", serif;
+
   }
   
   /* Style for when the user focuses on an input */
   .form-group input:focus,
   .form-group textarea:focus {
-    border-color: #007bff; /* Focus color */
+    border-color: #5C3D99; /* Focus color */
     outline: none; /* Remove default focus outline */
   }
   

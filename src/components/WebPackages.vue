@@ -123,7 +123,7 @@ export default {
   font-size: 28px;
 
   font-weight: bold;
-  color: #666;
+  color: #5C3D99;
   margin-bottom: 20px;
 }
 
