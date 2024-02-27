@@ -7,9 +7,11 @@
       <img class="logo-sign" src="../assets/images/logo/LogoSign (2).png" alt="logo"  >
       </div>
       </div>
-      <p class="typing-effect">I Am building Websites That Tell Your Story.</p>
+      <p class="typing-effect">Building Websites That Tell Your Story.</p>
     </div>
-
+<div>
+  <CallToAction></CallToAction>
+</div>
     <div class="photo-section">
       <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic"/>
 
@@ -17,7 +19,16 @@
 
   </div>
 </template>
-3
+
+<script>
+import CallToAction from './CallToAction.vue';
+
+export default {
+  components: {
+ CallToAction, 
+},
+};
+</script>
 
 
 <style scoped>
@@ -46,7 +57,7 @@
 
 .logo-sign{
   position: relative;
- bottom: 120px;
+ bottom: 95px;
  left: 400px;
  width: 180px;
  height: 180px;
@@ -62,6 +73,8 @@
 
 }
 
+
+
 .text-section h1 {
   font-size: 2.5em; /* Large font size */
   margin-bottom: 20px;
@@ -70,7 +83,7 @@
   z-index: 1000;
   position: relative;
   left: 460px;
-  top: 80px;
+  top: 0px;
 
 }
 
@@ -79,36 +92,13 @@
     color: var(--title);
     position: relative;
 
-   left: 550px;
+   left: 622px;
    bottom: 40px;
     text-transform: uppercase;
     z-index: 1000;
     
 }
 
-
-
-
-.typing-effect {
-  border-right: .15em solid #fff; /* The typwriter cursor */
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 6s steps(40, end) 1s infinite normal both,
-             blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
-}
 
 
 .text-section, .photo-section {
@@ -190,10 +180,11 @@ typing-effect, .text-section p{
 }
 
 
-  .logo-sign{
-    position: absolute;
- left: 100px;
- top: 60px;
+
+.logo-sign{
+  position: absolute;
+ left: 150px;
+ top: 65px;
 width: 70px;
 height: 70px;
  z-index: 1;
@@ -223,6 +214,7 @@ height: 70px;
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  
   .grid-container {
     padding: 10px;
     width: 289px; /* Make the image responsive to the viewport width */
@@ -268,8 +260,8 @@ typing-effect, .text-section p{
 
   .logo-sign{
   position: absolute;
- left: 100px;
- top: 60px;
+ left: 150px;
+ top: 65px;
 width: 70px;
 height: 70px;
  z-index: 1;

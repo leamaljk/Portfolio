@@ -2,9 +2,7 @@
   <footer id="footer">
     <div class="footer-container">
       <div class="footer-content">
-        <div class="footer-block logo-container">
-          <img src="@/assets/images/logo/LogoSign (3).png" alt="PearlDesign Logo" class="logo">
-        </div>
+       
         <div class="footer-block social-media-links">
           <h2 class="footer-heading">Let's Connect</h2>
           <p>Join me on LinkedIn and GitHub for the latest updates and insights into my work.</p>
@@ -19,7 +17,7 @@
         </div>
         <div class="footer-block contact-links">
           <h2 class="footer-heading">Get in Touch</h2>
-          <p>Have a project in mind? Drop me an email or give me a call to start our collaboration.</p>
+          <p>Have a project in mind? Drop me an email or fill out this form and I will get back to you.</p>
           <div class="contact-details">
             <a href="mailto:PearlDesign2024@outlook.com" target="_blank" aria-label="e-mail">
               <font-awesome-icon :icon="['fas', 'envelope']" style="height: 35px; width: 35px;"/>
@@ -29,9 +27,7 @@
               <font-awesome-icon :icon="['fas', 'phone']" style="height: 35px; width: 35px;" />
               <span>+4475 86 326-416</span>
             </a><!-- Contact Details -->
-            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="52px" data-style-width="100%">
-  <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
-</div>
+           
 <!-- End TrustBox widget -->
           </div>
         </div>
@@ -47,8 +43,11 @@
      
     </div>
     <div class="copyright">
+      
         © 2024 PearlDesign. All Rights Reserved.
+        
       </div>
+      
   </footer>
 </template>
 
@@ -86,11 +85,7 @@
   grid-column: 1 / -1; /* Logo takes full width */
 }
 
-.logo {
-  width: 150px;
-  height: auto;
-  justify-self: center; /* Center logo horizontally */
-}
+
 
 .footer-heading {
   font-size: 1.25rem;
