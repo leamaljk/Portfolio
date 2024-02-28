@@ -46,6 +46,17 @@
         <img src="../assets/images/projects/mac.png" alt="OhMyFood project" />
       </div>
     </div>
+<!-- last card -->
+    <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/projects/Component 1 (1).png" alt="Booki project" />
+      </div>
+      <div class="card-description">
+        <h2>Cuppa Coffee</h2>
+        <p>This web page is a promotional site for "Cuppa Coffee," designed with WordPress CMS, showcasing the coffee shop's products, values, and team. It highlights the quality of their coffee, brewing technology, and commitment to sustainability. </p>
+        <a href="https://dev-cuppa-charm-cafe.pantheonsite.io/" > <button>VIEW THE PROJECT</button></a>
+      </div>
+    </div>
   </div>
 </template>
 
