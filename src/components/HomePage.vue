@@ -4,12 +4,10 @@
 <MyNavigation /> 
 </div>
 <div>
-<HeaderTop />
+<HeaderTop></HeaderTop>
 </div>
 <router-view />
-<!-- <div>
-    <TypingArrow></TypingArrow>
-</div> -->
+
 <div>
 <AboutMe />
 </div>
@@ -43,6 +41,7 @@ import ContactForm from './ContactForm.vue';
 
 
 
+
 export default {
   components: {
     // 'ToggleTheme': ToggleTheme,
@@ -52,7 +51,8 @@ export default {
     'AboutMe': AboutMe,
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
-    SkillsIcons, WebPackages, ContactForm
+    SkillsIcons, WebPackages, ContactForm,
+   
 },
 };
 

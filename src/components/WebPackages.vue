@@ -1,5 +1,9 @@
 <template>
+  <div class="web">
+  <h1 >Web Packages</h1>
+</div>
   <div id="web-packages">
+    
     <div class="package" >
       <div class="header">Standard</div>
       <div class="price-range">£700 - £1100</div>
@@ -67,6 +71,13 @@ export default {
   margin: 0 auto;
   padding: 20px;
 }
+.web h1{
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #4a4949;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
 
 .package {
   background-color: #f9f9f9;

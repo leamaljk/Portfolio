@@ -74,7 +74,7 @@
   display: inline-block;
   position: absolute;
   left: 50px;
-  top: 80px;
+  top: 72px;
   /* Animation */
   animation: pulseAnimation 2s infinite;
 }
@@ -95,7 +95,7 @@
   display: inline-block;
   position: absolute;
   left: 50px;
-  top: 80px;
+  top: 72px;
   /* Animation */
   animation: pulseAnimation 2s infinite;
 }

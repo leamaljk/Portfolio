@@ -1,5 +1,6 @@
 <template>
   <div class="grid-container">
+    
     <div class="text-section">
       <div class="pearldesign">
       <h1>Pearl Design</h1>
@@ -154,13 +155,13 @@ export default {
 
 }
 
-  .text-section h1{
+.text-section h1{
     color: var(--title);
     position: relative;
-    top: -30px;
-    left: -83px;
+    top: -36px;
+    left: -100px;
     font-size: 2rem;
-line-height: 4;
+line-height: 3.5;
 text-align: center;
 
   }
@@ -184,7 +185,7 @@ typing-effect, .text-section p{
 .logo-sign{
   position: absolute;
  left: 150px;
- top: 65px;
+ top: 70px;
 width: 70px;
 height: 70px;
  z-index: 1;
@@ -236,10 +237,10 @@ height: 70px;
   .text-section h1{
     color: var(--title);
     position: relative;
-    top: -30px;
-    left: -83px;
+    top: -36px;
+    left: -100px;
     font-size: 2rem;
-line-height: 4;
+line-height: 3.5;
 text-align: center;
 
   }
@@ -261,7 +262,7 @@ typing-effect, .text-section p{
   .logo-sign{
   position: absolute;
  left: 150px;
- top: 65px;
+ top: 70px;
 width: 70px;
 height: 70px;
  z-index: 1;
