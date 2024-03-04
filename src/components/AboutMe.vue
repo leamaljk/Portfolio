@@ -3,6 +3,9 @@
     <div class="profile-title">
       <h1 class="about">About Me</h1>
       <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic" />
+      <img src="../assets/images/family.jpg" alt="My profile photo" class="profile-pic" />
+      <img src="../assets/images/hana.jpg" alt="My profile photo" class="profile-pic" />
+
     </div>
 
     <section class="layout">
@@ -150,7 +153,7 @@ export default {
   } 
   .profile-title{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
@@ -163,7 +166,8 @@ export default {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    margin-left: 60px;
+    margin: 10px;
+    margin-left: 20px;
   }
 
   
