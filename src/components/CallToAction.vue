@@ -2,7 +2,7 @@
     <div>
 <!-- Place this in your HTML where you want the CTA button to appear -->
 <div class="cta-container">
-  <a href="#container" class="cta-button">Get in Touch</a>
+  <a href="#container" class="cta-button">Contact Me</a>
 </div>
 
     </div>
@@ -16,22 +16,20 @@
 /* Add this to your CSS file */
 .cta-container {
 
-  text-align: center; /* Center the button container */
-  margin: 70px 0; /* Add space above the CTA button */
+  text-align: left; /* Center the button container */
+  margin: 40px 0; /* Add space above the CTA button */
 }
 
 .cta-button {
-  padding: 15px 30px;
+  font-size: 20px;
+  padding: 10px 32px;
   background-color: #5C3D99; /* A color that stands out but matches the scheme */
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 40px;
+  
   transition: transform 0.3s ease;
   display: inline-block;
-  position: relative;
-  left: 280px;
-  top:20px;
+
   /* Animation */
   animation: pulseAnimation 2s infinite;
 }
@@ -61,20 +59,17 @@
 
 @media (min-width: 767px) and (max-width: 1250px){
     .cta-button {
- width: 70px;
- height: 70px;
-  padding: 15px 10px ;
+      text-align: center;
+        justify-content: center;
+        align-items: center;
   background-color: #5C3D99; /* A color that stands out but matches the scheme */
   color: white;
   text-decoration: none;
-  font-size: 10px;
-  font-weight: bold;
-  border-radius: 40px;
+  font-size: 16px;
+
   transition: transform 0.3s ease;
   display: inline-block;
-  position: absolute;
-  left: 50px;
-  top: 72px;
+  padding: 10px 32px;
   /* Animation */
   animation: pulseAnimation 2s infinite;
 }
@@ -82,23 +77,22 @@
 
 @media (max-width: 768px) {
     .cta-button {
- width: 70px;
- height: 70px;
-  padding: 15px 10px ;
+  
   background-color: #5C3D99; /* A color that stands out but matches the scheme */
   color: white;
   text-decoration: none;
-  font-size: 10px;
-  font-weight: bold;
-  border-radius: 40px;
+  font-size: 12px;
+  padding: 10px 32px;
   transition: transform 0.3s ease;
   display: inline-block;
-  position: absolute;
-  left: 50px;
-  top: 72px;
+
   /* Animation */
   animation: pulseAnimation 2s infinite;
 }
+.cta-container {
 
+text-align: center; 
+
+}
 }
 </style>
