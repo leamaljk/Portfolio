@@ -2,9 +2,9 @@
   <div id="about-section">
     <div class="profile-title">
       <h1 class="about">About Me</h1>
-      <img v-lazy="require('@/assets/images/profile-pic.jpg')" alt="My profile photo" class="profile-pic" />
-      <img v-lazy="require('@/assets/images/family.jpg')" alt="My profile photo" class="profile-pic" />
-      <img v-lazy="require('@/assets/images/hana.jpg')" alt="My profile photo" class="profile-pic" />
+      <img src="../assets/images/profile-pic.jpg" alt="My profile photo" class="profile-pic" />
+      <img src="../assets/images/family.jpg" alt="My profile photo" class="profile-pic" />
+      <img src="../assets/images/hana.jpg" alt="My profile photo" class="profile-pic" />
 
     </div>
 

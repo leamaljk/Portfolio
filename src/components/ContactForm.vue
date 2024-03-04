@@ -2,7 +2,7 @@
     <div id="container">
       <div class="content">
         <div class="logo">
-          <img v-lazy="require('@/assets/images/logo/LogoSign (2).png')" alt="PearlDesign Logo" >
+          <img src="@/assets/images/logo/LogoSign (2).png" alt="PearlDesign Logo" >
         </div>
         <h1>
           Pearl Design - Web Design Services
