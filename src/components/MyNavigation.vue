@@ -14,7 +14,6 @@
         <ul>
           <li class="nav-logo">
             <router-link to="/" @click="closeNav">
-              <!-- <img src="../assets/images/logo/LogoSign.png" alt="logo" /> -->
             </router-link>
           </li>
           <li><img src="../assets/images/logo/LogoSign (2).png" alt="logo" width="25px" height="25px"/><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
@@ -118,11 +117,7 @@ li img {
 }
 
 
-@media (min-width: 767px) and (max-width: 1200px){
 
-
-
-}
 
 @media (max-width: 768px) {
 

@@ -1,17 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '../components/HomePage.vue';
-import SeeMore from '../components/SeeMore.vue'
 
 const routes = [
   {
     path: '/',
     name: 'HomePage',
     component: HomePage
-  },
-   {
-    path: '/seeMore',
-    name: 'SeeMore',
-    component: SeeMore
   }
   // If AboutMe is a section in HomePage, no need for a separate route here
 ];

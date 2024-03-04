@@ -55,12 +55,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'WebPackages',
-  // You can add component logic here
-}
-</script>
+
 
 <style scoped>
 #web-packages {

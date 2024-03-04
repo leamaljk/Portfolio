@@ -81,11 +81,6 @@
   align-items: center;
 }
 
-.logo-container {
-  grid-column: 1 / -1; /* Logo takes full width */
-}
-
-
 
 .footer-heading {
   font-size: 1.25rem;
@@ -131,15 +126,9 @@ font-size: 0.8em;
     align-items: center;
   }
 
-  .logo-container {
-    order: -1; /* Logo goes on top */
-  }
 }
 
 @media (max-width: 480px) {
-  .logo {
-    width: 120px;
-  }
 
   .footer-heading {
     font-size: 1rem;

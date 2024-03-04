@@ -196,12 +196,7 @@ export default {
   padding: 20px;
 }
 
-.quote-img {
-  align-self: start; /* Align the image to the top */
-  margin-right: 20px; /* Right margin for space between the image and the text */
-  width: 50px; /* Set the image width */
-  height: auto; /* Maintain aspect ratio */
-}
+
 
 .stevejobs {
   /* Additional styling for the quote */
@@ -216,14 +211,7 @@ export default {
         #d3af37af 75%, /* Your specified gold color again */
         #e6c146b0 100% /* Lighter shade of gold to finish */
     );
-  /* background: linear-gradient(
-        135deg,
-        rgba(255, 215, 0, 0.8) 0%,
-        rgba(227, 197, 25, 0.513) 25%,
-        rgba(255, 215, 0, 0.8) 50%,
-        rgba(227, 197, 25, 0.513) 75%,
-        rgba(255, 215, 0, 0.8) 100%
-    ); */
+
   padding: 17px;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
@@ -260,13 +248,6 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 }
 
 
-.hobbies-title {
-  color: #333; /* Replace with your color variable or preferred color */
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 .hobbies-list {
   list-style: none; /* Removes default list styling */
@@ -292,31 +273,13 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 /* Responsive design adjustments */
 @media (max-width: 768px) {
  
-
-  .hobbies-title {
-    font-size: 1.2rem;
-  }
-
   .hobbies-list li {
     font-size: 1rem;
   }
 
 
 }
-  
-  .aboutMe {
-    color: var(--secondary);
-    padding: 10px 15px;
-    font-size: 1rem;
-    line-height: 1.8;
-    text-align: justify;
-    justify-content: space-between;
-   
-  }
-  
 
-
-  
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -337,46 +300,6 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
     }
   }
 
-  .interest-container{
-
-    display: flex;
-    flex-grow: 2;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    
-  }
-  .interests{
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--secondary);
-    background-color: var(--primaryRed); /* Your primary color */
-    color: white;
-    border-radius: 2rem; /* Rounded borders */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 2.4rem;
-    max-height: 2rem;
-    
-  }
-  .interests:hover{
-    transform: translateX(-10px);
-    transition: all .3s ease;
-    background-color: white;
-  }
-  .p-int{
-    font-weight: 600;
-    position: relative;
-    left: 2rem;
-    bottom: 1.4em;
-    color: var(--secondary);    
-
-
-  }/* Responsive design adjustments */
 @media (max-width: 1024px) {
   #about-section {
     margin-top: 60px;
@@ -388,9 +311,6 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
     flex-direction: column;
   }
 
-  .quote-section, .about-me-text, .hobbies-section {
-    flex: none;
-  }
 
   .grow1, .grow2, .grow3{
     width: 100%;
@@ -435,17 +355,6 @@ width: 100%;
     
   }
 
-  .quote-img{
-    height: 60px;
-    width: 60px;
-  }
-  .hobbies-title {
-    font-size: 1.2rem;
-  }
-
-  .quote-text, .about-me-text p {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -454,17 +363,6 @@ width: 100%;
    margin-top: 60px;
   }
 
-  .about-title {
-    font-size: 1.5rem;
-  }
-
-  .hobbies-title {
-    font-size: 1rem;
-  }
-
-  .quote-text, .about-me-text p {
-    font-size: 12px;
-  }
 }
 </style>
 
