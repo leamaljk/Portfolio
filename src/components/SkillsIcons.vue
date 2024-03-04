@@ -3,7 +3,7 @@
       <h1 class="skills-title">Skills</h1>
       <div id="skills-container">
         <div v-for="skill in skills" :key="skill.name" class="skill">
-          <img :src="skill.icon" :alt="skill.name" class="skill-icon">
+          <img v-lazy="skill.icon" :alt="skill.name" class="skill-icon">
           <span class="skill-name">{{ skill.name }}</span>
         </div>
       </div>
