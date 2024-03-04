@@ -29,9 +29,9 @@
             </a><!-- Contact Details -->
            
 <!-- TrustBox widget - Review Collector -->
-<div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="62px" data-style-width="100%">
+<!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="62px" data-style-width="100%">
   <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
-</div>
+</div> -->
 <!-- End TrustBox widget -->
           </div>
         </div>
