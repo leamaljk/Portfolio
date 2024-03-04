@@ -1,5 +1,7 @@
 <template>
+
   <div id="cards-container">
+    <h1 class="about">Projects</h1>
     <!-- Each card will have two main parts: the image showcase and the description -->
     <div class="card">
       <div class="card-image">
@@ -69,7 +71,15 @@
   justify-content: center;
   padding: 20px;
 }
-
+.about {
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #4a4949;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    animation: fadeInUp 2s ease;
+    text-align: center;
+  }
 
 .card {
   background-color: rgba(255, 217, 0, 0.289);
