@@ -47,7 +47,7 @@ object-fit: cover;
 
 background-repeat: repeat; /* To prevent the image from repeating */
 background-position: center; 
-background-image:url('../src/assets/images/bc.jpeg') ;
+background-image:url('../src/assets/images/bc.webp') ;
 
 }
 

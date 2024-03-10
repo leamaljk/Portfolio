@@ -2,7 +2,7 @@
     <div id="container">
       <div class="content">
         <div class="logo">
-          <img src="@/assets/images/logo/LogoSign (4).png" alt="PearlDesign Logo" >
+          <img src="@/assets/images/logo/LogoSign (4).webp" alt="PearlDesign Logo" >
         </div>
         <h1>
           Pearl Design - Web Design Services

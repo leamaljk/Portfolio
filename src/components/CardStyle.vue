@@ -6,7 +6,7 @@
 
     <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/mac.png" alt="Light Supply project" />
+        <img src="../assets/images/projects/mac.webp" alt="Light Supply project" />
       </div>
       <div class="card-description">
         <h2>Light Supply</h2>
@@ -22,7 +22,7 @@
         <a href="https://leamaljk.com/ohmyfood/" ><button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
-        <img src="../assets/images/projects/mac (3).png" alt="OhMyFood project" />
+        <img src="../assets/images/projects/mac (3).webp" alt="OhMyFood project" />
       </div>
     </div>
 
@@ -30,7 +30,7 @@
      <!-- Each card will have two main parts: the image showcase and the description -->
      <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/mac (4).png" alt="Booki project" />
+        <img src="../assets/images/projects/mac (4).webp" alt="Booki project" />
       </div>
       <div class="card-description">
         <h2>Go Mike Designs</h2>
@@ -46,13 +46,13 @@
         <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
-        <img src="../assets/images/projects/mac (2).png" alt="Booki project" />
+        <img src="../assets/images/projects/mac (2).webp" alt="Booki project" />
       </div>
     </div>
 <!-- last card -->
     <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/Component 1 (1).png" alt="Booki project" />
+        <img src="../assets/images/projects/Component 1 (1).webp" alt="Booki project" />
       </div>
       <div class="card-description">
         <h2>Cuppa Coffee</h2>
