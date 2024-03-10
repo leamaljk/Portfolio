@@ -8,10 +8,10 @@ import VueLazyload from 'vue-lazyload'; // Import vue-lazyload
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
 
 // Add Font Awesome icons to the library
-library.add(fas, faGithub, faLinkedin);
+library.add(fas, faGithub, faLinkedin, faSquareInstagram);
 
 // Create app instance
 const app = createApp(App);

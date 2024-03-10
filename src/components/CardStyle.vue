@@ -1,15 +1,16 @@
 <template>
 
   <div id="cards-container">
-    <h1 class="about">Projects</h1>
+    <h1 class="about">Portfolio</h1>
     <!-- Each card will have two main parts: the image showcase and the description -->
+
     <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/mac (2).png" alt="Booki project" />
+        <img src="../assets/images/projects/mac.png" alt="Light Supply project" />
       </div>
       <div class="card-description">
-        <h2>Booki</h2>
-        <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
+        <h2>Light Supply</h2>
+        <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
         <a href="https://leamaljk.com/Booki/"> <button >VIEW THE PROJECT</button></a>
       </div>
     </div>
@@ -40,12 +41,12 @@
     <!-- ... Repeat for other cards ... -->
     <div class="card card-reverse">
       <div class="card-description">
-        <h2>Light Supply</h2>
-        <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
+        <h2>Booki</h2>
+        <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
         <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
-        <img src="../assets/images/projects/mac.png" alt="OhMyFood project" />
+        <img src="../assets/images/projects/mac (2).png" alt="Booki project" />
       </div>
     </div>
 <!-- last card -->

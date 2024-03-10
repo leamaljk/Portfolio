@@ -8,19 +8,20 @@
 </div>
 <router-view />
 
+
+<div>
+<CardStyle />
+</div>
+
+<div>
+  <WebPackages></WebPackages>
+</div>
 <div>
 <AboutMe />
 </div>
 <div>
 <SkillsIcons></SkillsIcons>
 </div>
-<div>
-<CardStyle />
-</div>
-<div>
-  <WebPackages></WebPackages>
-</div>
-
 <div>
   <ContactForm></ContactForm>
 <ContactFooter />

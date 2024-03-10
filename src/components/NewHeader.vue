@@ -4,7 +4,7 @@
         <img src="../assets/images/work.jpg" alt="Background" />
       </div>
       <div class="content">
-        <img src="../assets/images/logo/LogoSign (2).png" alt="Logo" class="logo" />
+        <img src="../assets/images/logo/LogoSign (4).png" alt="Logo" class="logo" />
         <h1>Pearl Design</h1>
         <h2>Web design services</h2>
         <p class="slogan">Building Websites That Tell Your Story</p>

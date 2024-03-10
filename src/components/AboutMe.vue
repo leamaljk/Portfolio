@@ -9,11 +9,7 @@
     </div>
 
     <section class="layout">
-      <div class="grow1 quote">
-        <p class="stevejobs">
-    "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
-  </p>
-      </div>
+     
 
       <div class="grow2">
         <p class="aboutMeText">
@@ -48,7 +44,11 @@
     <li><i class="fas fa-book"></i> Reading</li>
   </ul>
       </div>
-      
+      <div class="grow1 quote">
+        <p class="stevejobs">
+    "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
+  </p>
+      </div>
     </section>
     <button @click="toggleShowMore" class="read-more-button">
           {{ showMore ? 'Read Less' : 'Read More' }}
@@ -252,12 +252,14 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 .hobbies-list {
   list-style: none; /* Removes default list styling */
   padding: 0;
+  
 }
 
 .hobbies-list li {
   color: #333; /* Replace with your color variable or preferred color */
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  justify-content: center;
   align-items: center;
   display: flex;
 }

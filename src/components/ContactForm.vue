@@ -2,7 +2,7 @@
     <div id="container">
       <div class="content">
         <div class="logo">
-          <img src="@/assets/images/logo/LogoSign (2).png" alt="PearlDesign Logo" >
+          <img src="@/assets/images/logo/LogoSign (4).png" alt="PearlDesign Logo" >
         </div>
         <h1>
           Pearl Design - Web Design Services
@@ -99,6 +99,10 @@
   align-items: center; /* This will center the image vertically */
   height: 160px; /* You need a specific height to align items in the center vertically */
   margin: 20px;
+}
+
+h1{
+  color: goldenrod;
 }
 
 .logo img {
@@ -206,9 +210,24 @@ button:hover {
     #container {
       flex-direction: column;
       align-items: center;
+
+    }
+
+    .logo img{
+      width: 120px;
+      padding: 0;
+    }
+    .content h1 
+    {
+      font-size: x-large;
+    }
+    .content p 
+    {
+      font-size: small;
     }
     
     .content, .form {
+
       max-width: 100%; /* On small screens, allow the content and form to fill the available space */
     }
   }

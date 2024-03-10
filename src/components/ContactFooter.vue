@@ -13,6 +13,9 @@
             <a href="https://github.com/leamaljk" target="_blank" aria-label="github">
               <font-awesome-icon :icon="['fab', 'github']" style="height: 40px; width: 40px;" />
             </a>
+            <a href="https://www.instagram.com/pearldesign2024/" target="_blank" aria-label="github">
+              <font-awesome-icon :icon="['fab', 'square-instagram']" style="height: 40px; width: 40px;" />
+            </a>
           </div>
         </div>
         <div class="footer-block contact-links">
