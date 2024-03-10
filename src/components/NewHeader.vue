@@ -26,14 +26,11 @@ import CallToAction from './CallToAction.vue';
   
   <style scoped>
   
-  body {
-background-image: none;
-  }
+
   .header {
     height: 100vh;
     display: flex;
     padding: 20px 0px;
-    
     text-align: left;
     align-items: center;
     position: relative;
@@ -100,6 +97,13 @@ background-image: none;
         align-items: center;
         padding: 10px;
         margin-left: 0;
+    }
+
+   .header, .background-image img {
+   
+   width: 100%;
+   height: 650px;
+
     }
     .logo {
       max-width: 100px;
