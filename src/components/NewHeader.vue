@@ -42,7 +42,6 @@ import CallToAction from './CallToAction.vue';
    
     width: 100%;
     height: 100vh;
-    background-color: var(--primaryRed);
     object-fit: cover;
     background-position: center;
     position: absolute;
