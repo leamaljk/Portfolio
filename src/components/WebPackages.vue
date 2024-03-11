@@ -72,7 +72,7 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
 .web h1{
@@ -193,7 +193,26 @@ button:hover {
     flex-wrap: wrap;
   }
   .package {
-    margin: 20px;
+   
+   max-width: 300px;    
+   width: 100%;
+   }
+}
+
+
+@media (min-width: 320px) {
+  #web-packages {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    
   }
+  .package {
+   
+  max-width: 300px;    
+  width: 100%;
+  }
+
 }
 </style>
