@@ -43,11 +43,11 @@ font-weight: 400;
 font-style: normal;
 line-height: 1.8;
 
-object-fit: cover;
-
-background-repeat: repeat; /* To prevent the image from repeating */
-background-position: center; 
-background-image:url('../src/assets/images/bc.jpeg') ;
+background-size:auto;
+background-repeat: no-repeat; /* To prevent the image from repeating */
+background-position: center;
+background-image: url('../src/assets/images/bc.jpeg');
+background-attachment: fixed; /* This makes the background stay fixed during scrolling */
 
 }
 
