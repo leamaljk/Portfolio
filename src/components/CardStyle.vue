@@ -11,7 +11,8 @@
       <div class="card-description">
         <h2>Light Supply</h2>
         <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
-        <a href="https://leamaljk.com/Booki/"> <button >VIEW THE PROJECT</button></a>
+        <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
+
       </div>
     </div>
     <!-- ... Repeat for other cards ... -->
@@ -43,7 +44,7 @@
       <div class="card-description">
         <h2>Booki</h2>
         <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
-        <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
+        <a href="https://leamaljk.com/Booki/"> <button >VIEW THE PROJECT</button></a>
       </div>
       <div class="card-image">
         <img src="../assets/images/projects/mac (2).webp" alt="Booki project" />

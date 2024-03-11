@@ -1,7 +1,7 @@
 <template>
     <header class="header">
       <div class="background-image">
-        <img src="../assets/images/work (1).webp" alt="Background" />
+        <img src="../assets/images/work.webp" alt="Background" />
       </div>
       <div class="content">
         <img src="../assets/images/logo/LogoSign (4).webp" alt="Logo" class="logo" />
