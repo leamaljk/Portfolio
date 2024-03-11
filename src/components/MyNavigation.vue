@@ -113,7 +113,7 @@ li img {
 }
 
 .nav-link:hover {
-  color: var(--primaryRed);
+  color: goldenrod;
 }
 
 

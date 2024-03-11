@@ -192,6 +192,9 @@ h1{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+
 }
 
 button:hover {

@@ -129,7 +129,8 @@ export default {
   transition: background-color 0.3s ease;
   display: block; /* Make the button a block element to fill the width */
   width: max-content; /* Set the width of button to match its content */
-  
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
 }
 
 .read-more-button:hover {

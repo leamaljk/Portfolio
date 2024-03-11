@@ -1,59 +1,68 @@
 <template>
   <div class="web">
-  <h1 >Web Packages</h1>
-</div>
+    <h1>Web Packages</h1>
+  </div>
   <div id="web-packages">
     
-    <div class="package" >
+    <div class="package training">
+      <div class="header">CMS Training & Documentation</div>
+      <p class="features">Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently.</p>
+      <p class="features">I believe in transparency and provide upfront, all-inclusive pricing with no hidden fees. This is what you can expect when contacting me. My packages are designed to give you control and understanding of your web presence.</p>
+      <a href="#footer"><button>Learn More</button></a>
+    </div>
+
+    <div class="package">
       <div class="header">Standard</div>
       <div class="price-range">£700 - £1100</div>
       <ul class="features" id="basic">
-        <li>Up to 4 pages of your content (Example: Home, About, Menu, Services, Contact, ..)</li>
-        <li>Desktop, Tablet & Mobile-friendly</li>
-        <li>Basic SEO: Fundamental optimization</li>
-        <li>Optional Logo Design / Business Card Prints: Additional cost</li>
-        <li>FREE 1-year domain name</li>
-        <li>FREE 1-year web hosting</li>
-        <li>FREE e-mail address</li>
-        <li>Website security / HTTPS certificate</li>
-        <li>FREE 1-month Website Maintenance Package</li>
+        <li>Up to 4 custom pages (Home, About, Services, Contact, etc.)</li>
+        <li>Responsive design across all devices</li>
+        <li>Basic SEO for fundamental online visibility</li>
+        <li>1-year free domain registration</li>
+        <li>1-year complimentary hosting service</li>
+        <li>Professional e-mail address setup</li>
+        <li>Robust website security with HTTPS certificate</li>
+        <li>1 month of Website Maintenance Package at no extra cost</li>
+        <li>* Optional Logo Design and Business Card Printing available</li>
       </ul>
-      <a href="#footer"><button>Call Now</button></a>
+      <a href="#footer"><button>Learn More</button></a>
     </div>
 
-    <div class="package" >
+    <div class="package">
       <div class="header">Premium</div>
       <div class="price-range">£1600 - £2200</div>
       <ul class="features" id="professional">
-        <li>Up to 10 pages of your content</li>
-        <li>Desktop, Tablet & Mobile-friendly</li>
-        <li>Optimization & Performance SEO</li>
-        <li>Logo and Business Card Design</li>
-        <li>250 FREE Business Card Prints</li>
-        <li>FREE 1-year domain name</li>
-        <li>FREE 1-year web hosting</li>
-        <li>FREE e-mail address</li>
-        <li>Website security / HTTPS certificate</li>
-        <li>FREE 1-month Website Maintenance Package</li>
+        <li>Up to 10 custom pages tailored to your content</li>
+        <li>Optimized responsive layout for a seamless multi-device experience</li>
+        <li>Advanced SEO and performance optimization</li>
+        <li>Logo and Business Card Design included</li>
+        <li>250 business card prints provided free</li>
+        <li>1-year free domain name</li>
+        <li>1-year complimentary web hosting</li>
+        <li>Secure e-mail address setup</li>
+        <li>Guaranteed website security with HTTPS certificate</li>
+        <li>1-month trial of Website Maintenance Package for free</li>
       </ul>
-      <a href="#footer"><button>Call Now</button></a>
+      <a href="#footer"><button>Learn More</button></a>
     </div>
 
-    <div class="package" >
+    <div class="package">
       <div class="header">Website Maintenance</div>
       <div class="price-per-hour">£60 per hour</div>
       <ul class="features" id="maintenance">
-        <li>Website Updates: Regular updates</li>
-        <li>Security Checks</li>
-        <li>Performance Optimization</li>
-        <li>Content Updates</li>
-        <li>Tech Support</li>
+        <li>Regular website content updates</li>
+        <li>Detailed security checks</li>
+        <li>Ongoing performance optimization</li>
+        <li>Content updates as requested</li>
+        <li>Responsive technical support</li>
       </ul>
-      <a href="#footer"><button>Call Now</button></a>
-
+      <a href="#footer"><button>Learn More</button></a>
     </div>
+
+    
   </div>
 </template>
+
 
 
 
@@ -61,7 +70,7 @@
 #web-packages {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -80,7 +89,7 @@
   margin: 20px;
   padding: 20px;
   width: 100%;
-  max-width: 360px; /* Adjust based on your design */
+  max-width: 320px; /* Adjust based on your design */
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -162,6 +171,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
 }
 
 button:hover {
