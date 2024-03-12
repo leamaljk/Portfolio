@@ -51,4 +51,22 @@ background-attachment: fixed; /* This makes the background stay fixed during scr
 
 }
 
+
+@media (max-width: 768px) {
+body{
+  background-attachment: scroll;
+  background-repeat: repeat; 
+
+}
+
+}
+
+@media (max-width: 480px) {
+
+  body{
+    background-repeat: repeat; 
+
+  background-attachment: scroll;
+}
+}
 </style>

@@ -5,7 +5,7 @@
        
         <div class="footer-block social-media-links">
           <h2 class="footer-heading">Let's Connect</h2>
-          <p>Join me on LinkedIn and GitHub for the latest updates and insights into my work.</p>
+          <p>Join me for the latest updates and insights into my work.</p>
           <div class="icons">
             <a href="https://www.linkedin.com/in/lea-maljkovic" target="_blank" aria-label="linkedin">
               <font-awesome-icon :icon="['fab', 'linkedin']" style="height: 40px; width: 40px;"/>
@@ -96,12 +96,14 @@
 }
 
 .icons a, .contact-details a, .location-link a {
+  display: flex;
+  flex-direction: column;
   color: inherit;
   transition: color 0.3s;
   margin: 10px;
 }
 
-.icons a:hover, .contact-details a:hover {
+.icons a:hover, .contact-details a:hover, .location-link a:hover {
   color: goldenrod;
 }
 

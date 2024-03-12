@@ -5,16 +5,16 @@
           <img src="@/assets/images/logo/LogoSign (4).webp" alt="PearlDesign Logo" >
         </div>
         <h1>
-          Pearl Design - Web Design Services
+          Pearl Design <br> Web Design Services
         </h1>
         <p>Interested in driving your business forward?
             If you'd like to discuss your project, please fill out this contact form. I'll review your information and get back to you as soon as possible to discuss how I can help. 
             I'm here to answer any questions you may have and look forward to hearing from you.
         </p>
 <!-- TrustBox widget - Review Collector -->
-<!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">
+<div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">
   <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
-</div> -->
+</div>
 <!-- End TrustBox widget -->
       </div>
       <form @submit.prevent="submitForm" class="form">
@@ -95,14 +95,14 @@
   
   .logo {
   display: flex;
-  justify-content: center; /* This will center the image horizontally */
-  align-items: center; /* This will center the image vertically */
+  justify-content: left; /* This will center the image horizontally */
+  align-items: left; /* This will center the image vertically */
   height: 160px; /* You need a specific height to align items in the center vertically */
   margin: 20px;
 }
 
 h1{
-  color: goldenrod;
+  color: var(--title);
 }
 
 .logo img {
@@ -112,8 +112,8 @@ h1{
 
   
   #container {
-    background-color: #333;
-  color: #fff;
+    background: rgba(255, 255, 255, 0.9);
+  color: #333;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

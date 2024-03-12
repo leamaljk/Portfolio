@@ -170,7 +170,9 @@ export default {
     margin: 10px;
     margin-left: 20px;
   }
-
+  .profile-title img:hover, .hobbies-list li:hover{
+    transform: scale(1.2);
+  }
   
   .about {
     font-weight: 800;

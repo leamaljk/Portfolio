@@ -155,6 +155,7 @@ margin: 10px;
 
   .card, .card-reverse {
     padding:20px 10px;
+    margin: 0;
     grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
   }
 
@@ -170,6 +171,7 @@ margin: 10px;
   }
 
   #cards-container {
+    margin: 0;
     grid-template-columns: 1fr; /* Full width cards on mobile */
   }
   .card-description{
