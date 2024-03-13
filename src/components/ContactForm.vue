@@ -218,6 +218,7 @@ button:hover {
 
     .logo img{
       width: 120px;
+      height: 120px;
       padding: 0;
     }
     .content h1 
