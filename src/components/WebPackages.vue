@@ -99,11 +99,11 @@
 }
 
 .package:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Larger shadow for hover effect */
+  transform: scale(1.02);  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Larger shadow for hover effect */
 }
 
 #basic{
-  background-color: #7551eb43;
+  background-color: #e6e6fa;
   padding: 20px ;
   border-radius: 10px;
   

@@ -35,7 +35,8 @@ import CallToAction from './CallToAction.vue';
     align-items: center;
     position: relative;
     color: var(--title);
-    background-color: #d4caf3bc;
+    background-color: #e6e6fa9c;
+
   }
   
   .background-image img {

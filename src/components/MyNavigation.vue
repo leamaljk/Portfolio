@@ -114,6 +114,7 @@ li img {
 
 .nav-link:hover {
   color: goldenrod;
+  
 }
 
 
