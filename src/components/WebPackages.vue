@@ -117,7 +117,7 @@
 }
 
 #maintenance{
-  background-color:#cbcbcb;
+  background-color: #5c3d9951;
   padding: 20px ;
   border-radius: 10px;
   
