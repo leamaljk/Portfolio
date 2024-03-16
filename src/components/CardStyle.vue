@@ -92,7 +92,7 @@
 }
 
 .card-reverse {
-  background-color: #7551eb43;
+  background-color: #9898ff4a;
   padding: 60px;
   grid-template-columns: 1fr 1.5fr; /* Text on the left and larger image on the right */
 }
