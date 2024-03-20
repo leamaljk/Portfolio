@@ -158,18 +158,10 @@
 button {
   padding: 10px 30px;
   font-size: 16px;
-  color: #4a4949;
+  color: #fff;
   font-weight: 600 ;
-  background: linear-gradient(
-        135deg,
-        #e6c146c9 0%, /* Lighter shade of gold */
-        #d3af37c6 25%, /* Your specified gold color */
-        #b8972cc4 50%, /* Darker shade of gold */
-        #d3af37c3 75%, /* Your specified gold color again */
-        #e6c146c5 100% /* Lighter shade of gold to finish */
-    );
+  background: var(--secondary);
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;

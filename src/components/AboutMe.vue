@@ -4,7 +4,6 @@
       <h1 class="about">About Me</h1>
       <img src="../assets/images/profile-pic.webp" alt="My profile photo" class="profile-pic" />
       <img src="../assets/images/family.webp" alt="My profile photo" class="profile-pic" />
-      <img src="../assets/images/hana.webp" alt="My profile photo" class="profile-pic" />
 
     </div>
 
@@ -33,8 +32,8 @@
 
       </div>
 
-      <div class="grow3">
-        <!--  hobbies list here... -->
+      <!-- <div class="grow3">
+      
         <ul class="hobbies-list">
     <li><i class="fas fa-running"></i> Pilates</li>
     <li><i class="fas fa-guitar"></i> Guitar</li>
@@ -43,12 +42,12 @@
     <li><i class="fas fa-utensils"></i> Cooking</li>
     <li><i class="fas fa-book"></i> Reading</li>
   </ul>
-      </div>
-      <div class="grow1 quote">
+      </div> -->
+      <!-- <div class="grow1 quote">
         <p class="stevejobs">
     "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
   </p>
-      </div>
+      </div> -->
     </section>
     <button @click="toggleShowMore" class="read-more-button">
           {{ showMore ? 'Read Less' : 'Read More' }}
@@ -70,6 +69,23 @@
   <br><br>
   Learning is part of life.. 🎓
 </p>
+
+      <div class="grow3">
+      
+        <ul class="hobbies-list">
+    <li><i class="fas fa-running"></i> Pilates</li>
+    <li><i class="fas fa-guitar"></i> Guitar</li>
+    <li><i class="fas fa-dumbbell"></i> Gym</li>
+    <li><i class="fas fa-plane"></i> Traveling</li>
+    <li><i class="fas fa-utensils"></i> Cooking</li>
+    <li><i class="fas fa-book"></i> Reading</li>
+  </ul>
+      </div>
+      <div class="grow1 quote">
+        <p class="stevejobs">
+    "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
+  </p>
+      </div>
 
         </div>
   </div>
@@ -119,7 +135,7 @@ export default {
   }
 
   .read-more-button {
-  background-color: #d3af37; /* or use your secondary color */
+  background-color: var(--secondary); /* or use your secondary color */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -134,8 +150,14 @@ export default {
 }
 
 .read-more-button:hover {
-  background-color: #bca24b; /* a darker shade of your secondary color for hover effect */
-}
+  background: linear-gradient(
+        135deg,
+        #e6c146 0%, /* Lighter shade of gold */
+        #d3af37 25%, /* Your specified gold color */
+        #b8972c 50%, /* Darker shade of gold */
+        #d3af37 75%, /* Your specified gold color again */
+        #e6c146 100% /* Lighter shade of gold to finish */
+    );}
 
 .additional-content {
   display: block; /* This ensures that the content flows down from the button */
@@ -146,7 +168,7 @@ export default {
   border-bottom: 1px solid gold;
   
     padding: 10px 20px ;
-    width: 70%;
+    width: 100%;
     text-align: justify;
     align-content: center;
     justify-content: center;
@@ -195,7 +217,7 @@ export default {
   display: flex; /* Use flexbox for internal alignment */
   align-items: flex-start; /* Align items to the top */
   justify-content: flex-start; /* Align items to the left */
-  width: 30%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -221,15 +243,11 @@ export default {
   color: #000;
 }
 
-/*    
-GOLDEN GRADIENT
-background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
 .grow2 {
   flex-grow: 2; /* Adjust the growth factor as needed for layout */
   display: flex;
   align-items: flex-start; /* Align the content to the top */
- width: 70%;
+  width: 100%;
   padding: 20px;
   
   
@@ -253,14 +271,19 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 
 
 .hobbies-list {
+  display: flex;
+  flex-direction: row;
   list-style: none; /* Removes default list styling */
-  padding: 0;
+  padding: 20px;
+  margin-right:20px ;
   
 }
 
 .hobbies-list li {
   color: #333; /* Replace with your color variable or preferred color */
   font-size: 1.2rem;
+  padding: 20px;
+  margin-right:20px ;
   margin-bottom: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -268,6 +291,8 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 }
 
 .hobbies-list i {
+  padding: 20px;
+  margin-right:20px ;
   margin-right: 10px;
   color: #d3af37; /* Replace with your primary color variable */
 }
@@ -275,15 +300,6 @@ background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%,
 /* Include this only if you're using FontAwesome icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
-/* Responsive design adjustments */
-@media (max-width: 768px) {
- 
-  .hobbies-list li {
-    font-size: 1rem;
-  }
-
-
-}
 
   @keyframes fadeInUp {
     from {
@@ -359,6 +375,21 @@ width: 100%;
     flex-direction: column;
     
   }
+  .hobbies-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 0; /* Remove any margin for the list */
+    padding: 0; /* Remove any padding for the list */
+  }
+
+  .hobbies-list li {
+    /* Adjust styles for each list item as needed */
+    font-size: 1rem; /* Adjust the font size if necessary */
+    padding: 0.2rem; /* Add padding to give some space around the text */
+  }
+
+
 
 }
 
@@ -367,7 +398,26 @@ width: 100%;
    margin: auto;
    margin-top: 60px;
   }
+  .hobbies-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  
+}
 
+.hobbies-list li {
+  color: #333; /* Replace with your color variable or preferred color */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies-list i {
+  margin-right: 10px;
+  color: #d3af37; /* Replace with your primary color variable */
+}
 }
 </style>
 

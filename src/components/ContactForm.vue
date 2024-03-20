@@ -1,22 +1,5 @@
 <template>
     <div id="container">
-      <div class="content">
-        <div class="logo">
-          <img src="@/assets/images/logo/LogoSign (4).webp" alt="PearlDesign Logo" >
-        </div>
-        <h1>
-          Pearl Design <br> Web Design Services
-        </h1>
-        <p>Interested in driving your business forward?
-            If you'd like to discuss your project, please fill out this contact form. I'll review your information and get back to you as soon as possible to discuss how I can help. 
-            I'm here to answer any questions you may have and look forward to hearing from you.
-        </p>
-<!-- TrustBox widget - Review Collector -->
-<div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">
-  <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
-</div>
-<!-- End TrustBox widget -->
-      </div>
       <form @submit.prevent="submitForm" class="form">
       <div class="form-group">
         <label for="firstName">First Name:</label>
@@ -42,6 +25,24 @@
         <button type="submit" class="submit-btn">Submit</button>
       </div>
     </form>
+      <div class="content">
+        <div class="logo">
+          <img src="@/assets/images/logo/LogoSign (4).webp" alt="PearlDesign Logo" >
+        </div>
+        <h1>
+          Pearl Design <br> Web Design Services
+        </h1>
+        <p>Interested in driving your business forward?
+            If you'd like to discuss your project, please fill out this contact form. I'll review your information and get back to you as soon as possible to discuss how I can help. 
+            I'm here to answer any questions you may have and look forward to hearing from you.
+        </p>
+<!-- TrustBox widget - Review Collector -->
+<div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">
+  <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
+</div>
+<!-- End TrustBox widget -->
+      </div>
+     
     </div>
   </template>
 
@@ -167,7 +168,7 @@ h1{
   /* Style for when the user has entered valid input */
   .form-group input:valid,
   .form-group textarea:valid {
-    border-bottom: 3px solid green; /* Indicates valid input */
+    border-bottom: 3px solid var(--secondary); /* Indicates valid input */
   }
   
   /* Style for when the user has entered invalid input */
@@ -177,20 +178,12 @@ h1{
   }
   
   button {
-  padding: 10px 30px;
+    padding: 10px 30px;
   font-size: 16px;
   color: #fff;
   font-weight: 600 ;
-  background: linear-gradient(
-        135deg,
-        #e6c146 0%, /* Lighter shade of gold */
-        #d3af37 25%, /* Your specified gold color */
-        #b8972c 50%, /* Darker shade of gold */
-        #d3af37 75%, /* Your specified gold color again */
-        #e6c146 100% /* Lighter shade of gold to finish */
-    );
+  background: var(--secondary);
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
@@ -198,13 +191,13 @@ h1{
 }
 
 button:hover {
-    background: linear-gradient(
+  background: linear-gradient(
         135deg,
-        #e6c146c9 0%, /* Lighter shade of gold */
-        #d3af37c6 25%, /* Your specified gold color */
-        #b8972cc4 50%, /* Darker shade of gold */
-        #d3af37c3 75%, /* Your specified gold color again */
-        #e6c146c5 100% /* Lighter shade of gold to finish */
+        #e6c146 0%, /* Lighter shade of gold */
+        #d3af37 25%, /* Your specified gold color */
+        #b8972c 50%, /* Darker shade of gold */
+        #d3af37 75%, /* Your specified gold color again */
+        #e6c146 100% /* Lighter shade of gold to finish */
     );
 
 }
