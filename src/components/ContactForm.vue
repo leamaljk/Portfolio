@@ -104,6 +104,7 @@
 
 h1{
   color: var(--title);
+  font-family: "Libre Caslon Text", serif;
 }
 
 .logo img {
@@ -185,8 +186,8 @@ h1{
   background: var(--secondary);
   border: none;
   cursor: pointer;
-  font-family: "Libre Caslon Text", serif;
   font-weight: 400;
+  text-transform: uppercase;
 
 }
 

@@ -39,9 +39,12 @@ body {
 }
 
 font-family: "Libre Caslon Text", serif;
+
 font-weight: 400;
 font-style: normal;
-line-height: 1.8;
+font-family: 'Arial', sans-serif; /* Use your preferred font-family */
+
+line-height: 2;
 
 background-size:auto;
 background-repeat: no-repeat; /* To prevent the image from repeating */

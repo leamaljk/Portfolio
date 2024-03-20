@@ -52,6 +52,7 @@
 }
 
 .skills-title {
+  font-family: "Libre Caslon Text", serif;
  font-size: 2.5em;
   color: #4a4949;
   margin-bottom: 40px;

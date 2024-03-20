@@ -81,6 +81,7 @@
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
+    font-family: "Libre Caslon Text", serif;
   }
 
 .card {
@@ -121,6 +122,7 @@ margin: 10px;
   color:  #4a4949; /* Replace with your actual color variable */
   margin-bottom: 0px;
   font-size: 2.5em;
+  font-family: "Libre Caslon Text", serif;
 
 }
 

@@ -81,6 +81,7 @@
     color: #4a4949;
     letter-spacing: 1.5px;
     text-align: center;
+    font-family: "Libre Caslon Text", serif;
   }
 
 .package {
@@ -103,6 +104,7 @@
 }
 
 #basic{
+  
   background-color: #e6e6fa;
   padding: 20px ;
   border-radius: 10px;
@@ -125,6 +127,7 @@
 
 
 .header {
+  font-family: "Libre Caslon Text", serif;
  border-bottom: #666 1px solid;
  font-size: 1.8em;
     color: #4a4949;
@@ -133,10 +136,11 @@
   
 }
 
+
 .price-range,
 .price-per-hour {
   font-size: 28px;
-
+  font-family: "Libre Caslon Text", serif;
   font-weight: bold;
   color: #666;
   margin-bottom: 20px;
@@ -150,7 +154,8 @@
 
 .features li {
   margin-bottom: 2px;
-  font-size: 18px;
+  font-size: 21px;
+  line-height: 1.6;
   color: #333;
   border-bottom: #a5a5a5 1px solid;
 }
@@ -163,8 +168,8 @@ button {
   background: var(--secondary);
   border: none;
   cursor: pointer;
-  font-family: "Libre Caslon Text", serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 button:hover {

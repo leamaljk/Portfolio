@@ -68,12 +68,14 @@ import CallToAction from './CallToAction.vue';
   }
   
   h1 {
+    font-family: "Libre Caslon Text", serif;
     color: var(--title);
     margin: 0;
     padding: 0;
     font-size: 2.7em; /* Adjust based on your preference */
   }
   h2{
+    font-family: "Libre Caslon Text", serif;
     font-weight: 100;
     font-size: 2.2em;
   }

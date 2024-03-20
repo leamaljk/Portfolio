@@ -32,22 +32,6 @@
 
       </div>
 
-      <!-- <div class="grow3">
-      
-        <ul class="hobbies-list">
-    <li><i class="fas fa-running"></i> Pilates</li>
-    <li><i class="fas fa-guitar"></i> Guitar</li>
-    <li><i class="fas fa-dumbbell"></i> Gym</li>
-    <li><i class="fas fa-plane"></i> Traveling</li>
-    <li><i class="fas fa-utensils"></i> Cooking</li>
-    <li><i class="fas fa-book"></i> Reading</li>
-  </ul>
-      </div> -->
-      <!-- <div class="grow1 quote">
-        <p class="stevejobs">
-    "Your time is limited, don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary." - Steve Jobs
-  </p>
-      </div> -->
     </section>
     <button @click="toggleShowMore" class="read-more-button">
           {{ showMore ? 'Read Less' : 'Read More' }}
@@ -145,7 +129,6 @@ export default {
   transition: background-color 0.3s ease;
   display: block; /* Make the button a block element to fill the width */
   width: max-content; /* Set the width of button to match its content */
-  font-family: "Libre Caslon Text", serif;
   font-weight: 400;
 }
 
@@ -197,6 +180,7 @@ export default {
   }
   
   .about {
+    font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     font-size: 2.5em;
     color: #4a4949;
@@ -225,7 +209,7 @@ export default {
 
 .stevejobs {
   /* Additional styling for the quote */
-  font-style:italic;
+ 
   font-size: 20px;
   line-height: 2.2;
   background: linear-gradient(
@@ -254,6 +238,7 @@ export default {
 }
 
 .aboutMeText {
+  
   /* Additional styling for the text */
   text-align: justify;
     align-content: center;
@@ -266,6 +251,7 @@ export default {
   /* Additional styling based on your layout */
   padding: 20px;
   width: 30%;
+  font-family: "Libre Caslon Text", serif;
 }
 
 
@@ -369,6 +355,7 @@ width: 100%;
 
   .stevejobs{
     font-size: 14px;
+    font-family: "Libre Caslon Text", serif;
   }
   .grow1, .quote{
     display: flex;
