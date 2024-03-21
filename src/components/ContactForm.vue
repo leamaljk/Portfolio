@@ -114,7 +114,7 @@ h1{
 
   
   #container {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
   color: #333;
     display: flex;
     flex-wrap: wrap;

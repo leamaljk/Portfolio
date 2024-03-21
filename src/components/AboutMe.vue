@@ -209,9 +209,10 @@ export default {
 
 .stevejobs {
   /* Additional styling for the quote */
- 
   font-size: 20px;
-  line-height: 2.2;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  line-height: 2.4;
   background: linear-gradient(
         135deg,
         #e6c146a2 0%, /* Lighter shade of gold */
@@ -355,7 +356,6 @@ width: 100%;
 
   .stevejobs{
     font-size: 14px;
-    font-family: "Libre Caslon Text", serif;
   }
   .grow1, .quote{
     display: flex;

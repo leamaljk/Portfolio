@@ -80,7 +80,6 @@ export default {
   color: #333;
   text-align: center;
   position: relative;
-  font-family: 'Arial', sans-serif; /* Use your preferred font-family */
 }
 
 .background-image {

@@ -40,36 +40,36 @@ body {
 
 font-family: "Libre Caslon Text", serif;
 
-font-weight: 400;
-font-style: normal;
-font-family: 'Arial', sans-serif; /* Use your preferred font-family */
+font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+line-height: 1.8;
 
-line-height: 2;
-
-background-size:auto;
+background-size:cover;
 background-repeat: no-repeat; /* To prevent the image from repeating */
 background-position: center;
-background-image: url('../src/assets/images/bc.jpeg');
+background-image: url('../src/assets/images/bg (2) (1).webp');
 background-attachment: fixed; /* This makes the background stay fixed during scrolling */
 
 }
 
 
-@media (max-width: 768px) {
-body{
-  background-attachment: scroll;
-  background-repeat: repeat; 
+// @media (max-width: 768px) {
+// body{
+//   background-attachment: scroll;
+//   background-repeat: repeat; 
 
-}
+// }
 
-}
+// }
 
-@media (max-width: 480px) {
+// @media (max-width: 480px) {
 
-  body{
-    background-repeat: repeat; 
+//   body{
+//     background-repeat: repeat; 
 
-  background-attachment: scroll;
-}
-}
+//   background-attachment: scroll;
+// }
+// }
 </style>
