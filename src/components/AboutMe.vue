@@ -96,8 +96,8 @@ export default {
 
   
   #about-section {
-    border-top: 2px solid gold; /* For visual debugging */
-  border-bottom: 2px solid gold;
+    border-top: 2px solid #fef9ae; /* For visual debugging */
+  border-bottom: 3px solid #fef9ae;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
@@ -105,7 +105,7 @@ export default {
     border-radius: 15px;
     padding:2rem 1rem;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -114,7 +114,7 @@ export default {
   }
 
   #about-section:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   }
 
