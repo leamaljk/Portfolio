@@ -27,7 +27,7 @@
     </form>
       <div class="content">
         <div class="logo">
-          <img src="@/assets/images/logo/LogoSign (4).webp" alt="PearlDesign Logo" >
+          <img src="@/assets/images/logo/LogoSign (2).png" alt="PearlDesign Logo" >
         </div>
         <h1>
           Pearl Design <br> Web Design Services
