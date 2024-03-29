@@ -6,7 +6,8 @@
       <div class="content">
         <img src="../assets/images/logo/LogoSign (2).png" alt="Logo" class="logo" />
         <h1>Pearl Design</h1>
-        <h2>Web design services</h2>
+        <h2>        <img src="../assets/images/logo/ser.png" alt="Logo" width="64px"  class="service-icon" />
+Web design services</h2>
         <p class="slogan">Building Websites That Tell Your Story</p>
         <CallToAction></CallToAction>
       </div>
@@ -25,8 +26,15 @@ import CallToAction from './CallToAction.vue';
   </script>
   
   <style scoped>
-  
 
+
+.service-icon {
+  transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+  transform: translateY(5px);
+}
   .header {
     height: 100vh;
     display: flex;
@@ -72,21 +80,25 @@ import CallToAction from './CallToAction.vue';
   h1 {
     font-family: "Libre Caslon Text", serif;
     color: var(--title);
-    margin: 0;
-    padding: 0;
+    
     font-size: 2.7em; /* Adjust based on your preference */
   }
   h2{
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 2.2em;
+    padding-bottom: 10px;
+    border-top: 1px dotted white;
+
+    border-bottom: 1px dotted white;
   }
   
   .slogan {
     color: var(--secondary);
     letter-spacing: 2.6px;
     text-transform: uppercase;
-    font-size: 1em; /* Adjust based on your preference */
+    font-size: 1em;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted white;
   }
   .content h1, h2, p{
         padding-top: 10px;
@@ -95,6 +107,8 @@ import CallToAction from './CallToAction.vue';
   
   /* Responsive adjustments */
   @media (max-width: 768px) {
+    
+
     .header, .content{
         text-align: center;
         justify-content: center;
@@ -128,6 +142,10 @@ import CallToAction from './CallToAction.vue';
 
     .content h1, h2, p{
         padding-top: 10px;
+        display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
     }
   }
   
