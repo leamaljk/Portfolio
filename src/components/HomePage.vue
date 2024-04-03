@@ -1,5 +1,5 @@
 <template>
-    
+<CookiesInfo></CookiesInfo>
 <div id="app">
 <MyNavigation /> 
 </div>
@@ -26,9 +26,12 @@
   <ContactForm></ContactForm>
 <ContactFooter />
 </div>
+<TermsAndConditions></TermsAndConditions>
 </template>
 
 <script>
+import CookiesInfo from '../components/CookiesInfo.vue';
+
 import MyNavigation from '../components/MyNavigation.vue';
 
 import AboutMe from '../components/AboutMe.vue';
@@ -38,19 +41,20 @@ import SkillsIcons from './SkillsIcons.vue';
 import WebPackages from './WebPackages.vue';
 import ContactForm from './ContactForm.vue';
 import NewHeader from './NewHeader.vue';
+import TermsAndConditions from './TermsAndConditions.vue';
 
 
 
 
 export default {
   components: {
-
+    CookiesInfo,
     'MyNavigation': MyNavigation,
     'AboutMe': AboutMe,
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
     SkillsIcons, WebPackages, ContactForm,
-    NewHeader
+    NewHeader,TermsAndConditions
 },
 };
 

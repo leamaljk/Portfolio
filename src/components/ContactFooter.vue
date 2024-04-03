@@ -50,7 +50,7 @@
     <div class="copyright">
 
       © 2024       <img src="../assets/images/logo/LogoSign (4).webp" width="20px" height="20px" alt="Background" />
-PearlDesign. All Rights Reserved.
+PearlDesign. All Rights Reserved. 
     </div>
   </footer>
 </template>

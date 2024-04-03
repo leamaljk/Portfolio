@@ -192,14 +192,7 @@ h1{
 }
 
 button:hover {
-  background: linear-gradient(
-        135deg,
-        #e6c146 0%, /* Lighter shade of gold */
-        #d3af37 25%, /* Your specified gold color */
-        #b8972c 50%, /* Darker shade of gold */
-        #d3af37 75%, /* Your specified gold color again */
-        #e6c146 100% /* Lighter shade of gold to finish */
-    );
+  background: var(--title);
 
 }
   /* Responsive design styles */
