@@ -67,10 +67,13 @@
   <style scoped>
   .policy-container h2 {
     cursor: pointer;
+    border-bottom: dotted var(--title) 1px;
     color: var(--secondary); /* Using your secondary color */
   }
   .policy-container ul {
     list-style-type: none;
   }
+
+ 
   </style>
   
