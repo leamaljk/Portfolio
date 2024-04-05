@@ -30,9 +30,9 @@
 
     <div class="package">
       <div class="header">Premium</div>
-      <div class="price-range">£1600 - £2200</div>
+      <div class="price-range">£1600 - £2600+</div>
       <ul class="features" id="professional">
-        <li>Up to 10 custom pages tailored to your content</li>
+        <li>Up to 10 or more custom pages tailored to your content</li>
         <li>Optimized responsive layout for a seamless multi-device experience</li>
         <li>Advanced SEO and performance optimization</li>
         <li>Logo and Business Card Design included</li>
