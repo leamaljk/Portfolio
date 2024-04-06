@@ -85,7 +85,7 @@
   }
 
 .card {
-  background-color: #fef9aeb0;
+  background-color: #fdfacdaf;
   display: grid;
   grid-template-columns: 1.5fr 1fr; /* Adjust the ratio to your preference */
   overflow: hidden;
@@ -93,7 +93,7 @@
 }
 
 .card-reverse {
-  background-color: #aaaafe4a;
+  background-color: #d0d8feb5;
   padding: 60px;
   grid-template-columns: 1fr 1.5fr; /* Text on the left and larger image on the right */
 }

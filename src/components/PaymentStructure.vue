@@ -11,13 +11,13 @@
   
       <h2 @click="toggle('cancellationByClient')">Cancellation by the Client</h2>
       <div v-if="visible.cancellationByClient">
-        <h2>Before the Second Installment:</h2>
+        <h3 class="h2second">Before the Second Installment:</h3>
         <p>If you decide to cancel the project after making the first installment but before the second installment is paid:</p>
         <ul>
           <li><strong>Refund:</strong> You will be entitled to a refund of 25% of the total project fee. This means half of your initial installment will be returned to you.</li>
           <li><strong>Non-Refundable:</strong> The remaining 25% of the total fee covers the time and resources Pearl Design has invested in the project up to that point, including any work done during the planning and preliminary design phase.</li>
         </ul>
-        <h2>After the Second Installment:</h2>
+        <h3 class="h2second"> After the Second Installment:</h3>
         <p>Once the second installment is paid, indicating that the build phase has begun, you may still cancel, but:</p>
         <ul>
           <li><strong>Refund:</strong> No refunds will be available, as these funds cover the development work already underway or completed.</li>
@@ -68,12 +68,17 @@
   .policy-container h2 {
     cursor: pointer;
     border-bottom: dotted var(--title) 1px;
-    color: var(--secondary); /* Using your secondary color */
   }
   .policy-container ul {
     list-style-type: none;
   }
+.h2second {
+    color: var(--title);
+}
 
+h2{
+    color: var(--secondary);
+}
  
   </style>
   
