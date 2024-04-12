@@ -2,6 +2,7 @@
     <div class="policy-container">
       <h2 @click="toggle('paymentStructure')">Payment Structure</h2>
       <div v-if="visible.paymentStructure">
+        <p>Let's keep our payment plan straightforward: if our preferred methods <strong>differ</strong>, we'll simply split the payment into two installments. I'm all for making things easier for my clients.</p>
         <p>Payments for our web design services are divided into two main installments to make the process transparent and manageable for both parties:</p>
         <ul>
           <li><strong>First Installment (50% of the Total Fee):</strong> This installment is required to kick off the project. It covers the initial consultations, detailed project planning, and any preliminary designs or frameworks we create based on our discussions. This payment signals your agreement to the project's scope, terms, and understanding of your needs.</li>
@@ -20,7 +21,7 @@
         <h3 class="h2second"> After the Second Installment:</h3>
         <p>Once the second installment is paid, indicating that the build phase has begun, you may still cancel, but:</p>
         <ul>
-          <li><strong>Refund:</strong> No refunds will be available, as these funds cover the development work already underway or completed.</li>
+          <li><strong>Refund: </strong> Refunds may not be available, as these funds cover the development work already underway or completed.</li>
         </ul>
       </div>
   

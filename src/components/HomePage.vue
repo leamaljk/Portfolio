@@ -23,7 +23,10 @@
 <SkillsIcons></SkillsIcons>
 </div>
 <div>
-  <ContactForm></ContactForm>
+    <CannyFeedback></CannyFeedback>
+  </div>
+<div>
+<ContactForm></ContactForm>
 <ContactFooter />
 </div>
 <TermsAndConditions></TermsAndConditions>
@@ -42,6 +45,7 @@ import WebPackages from './WebPackages.vue';
 import ContactForm from './ContactForm.vue';
 import NewHeader from './NewHeader.vue';
 import TermsAndConditions from './TermsAndConditions.vue';
+import CannyFeedback from './CannyFeedback.vue';
 
 
 
@@ -54,7 +58,7 @@ export default {
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
     SkillsIcons, WebPackages, ContactForm,
-    NewHeader,TermsAndConditions
+    NewHeader,TermsAndConditions, CannyFeedback
 },
 };
 

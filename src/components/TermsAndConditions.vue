@@ -1,8 +1,8 @@
 <template>
   <div class="terms-container">
-    <button class="toggle-button" @click="toggleShowTerms">View Terms & Conditions</button>
+    <button class="toggle-button" @click="toggleShowTerms">Privacy Policy & Terms and Conditions</button>
     <div v-if="showTerms" class="terms-content">
-      <h1 class="title">Terms & Conditions</h1>
+      <h1 class="title">Privacy Policy & Terms and Conditions</h1>
       <p class="last-updated">Last updated: 1st of January 2024</p>
       <p>By using pearldesign2024.com and the services and information offered on this website, you are agreeing to these terms and conditions.</p>
       <p>Please make sure you agree with these terms and conditions, which you will be directed to read prior to making your purchase.</p>

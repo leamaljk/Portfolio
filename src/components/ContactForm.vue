@@ -103,8 +103,14 @@
 }
 
 h1{
-  color: var(--title);
   font-family: "Libre Caslon Text", serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    color: #4a4949;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    animation: fadeInUp 2s ease;
+    text-align: left;
 }
 
 .logo img {
