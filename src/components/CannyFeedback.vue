@@ -2,6 +2,7 @@
    <div id="feedback-container">
     <h1>I Value Your Feedback</h1>
     <h2>Please share your thoughts on your recent experience with me.</h2>
+    <p>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. Thank you for your time.</p>
     <div data-canny />
   </div>
   </template>
@@ -10,19 +11,19 @@
   /* global Canny */
   const BoardToken = '7429456d-9ad5-354b-af62-0b78f056c6c7';
   
-  export default {
-    mounted() {
-      (function(w,d,i,s){function l(){if(!d.getElementById(i)){var f=d.getElementsByTagName(s)[0],e=d.createElement(s);e.type="text/javascript",e.async=!0,e.src="https://canny.io/sdk.js",f.parentNode.insertBefore(e,f)}}if("function"!=typeof w.Canny){var c=function(){c.q.push(arguments)};c.q=[],w.Canny=c,"complete"===d.readyState?l():w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})(window,document,"canny-jssdk","script");
-  
-      Canny('render', {
-        boardToken: BoardToken,
-        basePath: null, // See step 2
-        ssoToken: null, // See step 3,
-        theme: 'light', // options: light [default], dark, auto
-      });
-    }
+export default {
+  mounted() {
+    (function(w,d,i,s){function l(){if(!d.getElementById(i)){var f=d.getElementsByTagName(s)[0],e=d.createElement(s);e.type="text/javascript",e.async=!0,e.src="https://canny.io/sdk.js",f.parentNode.insertBefore(e,f)}}if("function"!=typeof w.Canny){var c=function(){c.q.push(arguments)};c.q=[],w.Canny=c,"complete"===d.readyState?l():w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})(window,document,"canny-jssdk","script");
+
+    Canny('render', {
+      boardToken: BoardToken,
+      basePath: null, // See step 2
+      ssoToken: null, // See step 3,
+      theme: 'light', // options: light [default], dark, auto
+    });
   }
-  </script>
+}
+</script>
   
   <style scoped>
   
@@ -53,8 +54,33 @@
   #feedback-container h2 {
     color: var(--secondary);
     text-align: center;
-    margin-bottom: 20px;
+    
     font-weight: 200;
      
   }
+  #feedback-container p {
+    color: var(--title);
+    text-align: center;
+    margin-bottom: 40px;
+     
+  }
+  @media (max-width: 768px) {
+    #feedback-container h1 {
+    font-size: 2rem;
+  }
+  #feedback-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+  @media (max-width: 480px) {
+    #feedback-container h1 {
+    font-size: 2rem;
+  }
+
+  #feedback-container h2 {
+    font-size: 1.2rem;
+  }
+
+}
 </style>

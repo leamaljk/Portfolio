@@ -216,11 +216,11 @@ button:hover {
     }
     .content h1 
     {
-      font-size: x-large;
+      font-size: 2rem;
     }
     .content p 
     {
-      font-size: small;
+      font-size: 1rem;
     }
     
     .content, .form {
