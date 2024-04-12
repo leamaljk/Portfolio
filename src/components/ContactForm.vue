@@ -206,17 +206,31 @@ button:hover {
     #container {
       flex-direction: column;
       align-items: center;
-
+      justify-content: center;
+      align-content: center;
+      text-align: justify;
     }
 
     .logo img{
       width: 120px;
       height: 120px;
       padding: 0;
+      display: flex;
+      flex-direction: column;
     }
+
+    .logo{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
     .content h1 
     {
       font-size: 2rem;
+      text-align: center;
     }
     .content p 
     {
@@ -225,7 +239,7 @@ button:hover {
     
     .content, .form {
 
-      max-width: 100%; /* On small screens, allow the content and form to fill the available space */
+      width: 100%; /* On small screens, allow the content and form to fill the available space */
     }
   }
   </style>

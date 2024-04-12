@@ -1,6 +1,9 @@
 <template>
    <div id="feedback-container">
-    <h1>I Value Your Feedback</h1>
+    <h1 class="square">I Value Your Feedback 
+        <img src="../assets/images/logo/square.png" alt="My profile photo" class="profile-title" />
+
+    </h1>
     <h2>Please share your thoughts on your recent experience with me.</h2>
     <p>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. Thank you for your time.</p>
     <div data-canny />
@@ -27,19 +30,23 @@ export default {
   
   <style scoped>
   
-  iframe {
+ body { 
   font-family: 'Raleway', sans-serif;
 }
-
+.textV2.headingMd {
+font-size: 1rem;
+font-family: 'Raleway', sans-serif;
+text-transform: uppercase;
+}
   #feedback-container {
     font-family: "Raleway", sans-serif;
     max-width: 1200px;
     margin: auto;
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   #feedback-container h1 {
     font-family: "Libre Caslon Text", serif;
@@ -64,7 +71,38 @@ export default {
     margin-bottom: 40px;
      
   }
+
+  .profile-title {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 40px;
+    margin-left: 20px;
+    border: 1px dotted var(--secondary);
+  }
+  .profile-title:hover {
+    transform: scale(1.2);
+  }
+
   @media (max-width: 768px) {
+
+    .square{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .profile-title{
+        position: relative;
+        top: 0px;
+    }
     #feedback-container h1 {
     font-size: 2rem;
   }

@@ -105,21 +105,21 @@
 
 #basic{
   
-  background-color: #aaaafe4a;
+  background-color: #dce2ffd3;
   padding: 20px ;
   border-radius: 10px;
   
 }
 
 #professional{
-  background-color: #fcf9c4eb;
+  background-color: #fffbbdc9;
   padding: 20px;
   border-radius: 10px;
 
 }
 
 #maintenance{
-  background-color: #fdfdeb;
+  background-color: #f1f1f1;
   padding: 20px ;
   border-radius: 10px;
   
