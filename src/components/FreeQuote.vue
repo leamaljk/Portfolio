@@ -70,8 +70,8 @@ border-radius: 8px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0 8px; /* Adjust padding here to match the closed state */
-  background-color: white; /* or any color you prefer */
+  padding: 0 10px; /* Adjust padding here to match the closed state */
+  background: rgba(255, 255, 255, 0.7);
   font-family: "Raleway", sans-serif;
   border-radius: 8px;
   border: none;
@@ -94,7 +94,7 @@ border-radius: 8px;
   
   .accordion-button {
     font-family: "Raleway", sans-serif;
-     background: rgba(255, 255, 255, 0.9);
+     background: rgba(255, 255, 255, 0.6);
     color: #444;
     cursor: pointer;
     padding: 8px;
@@ -106,13 +106,17 @@ border-radius: 8px;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.4s ease;
-    font-size: 1.5 rem;
+    font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
   }
   
   .accordion-button:hover {
-    background-color: var(--lavander);
+    background-color: rgba(230, 230, 250, 0.488);
+  }
+
+  .accordion-button:active {
+    background-color: #fffbbdc1;
   }
   
   .toggle-icon {

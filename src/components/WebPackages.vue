@@ -30,7 +30,7 @@
         <li>1 month of Website Maintenance Package at no extra cost</li>
         <li>* Optional Logo Design and Business Card Printing available</li>
       </ul>
-      <a href="#footer"><button>Learn More</button></a>
+      <a href="#footer"><button>Get a quote</button></a>
     </div>
 
     <div class="package">
@@ -48,7 +48,7 @@
         <li>Guaranteed website security with HTTPS certificate</li>
         <li>1-month trial of Website Maintenance Package for free</li>
       </ul>
-      <a href="#footer"><button>Learn More</button></a>
+      <a href="#footer"><button>Get a quote</button></a>
     </div>
 
     <div class="package">
@@ -139,10 +139,11 @@ export default {
 
 
 .header {
-  font-family: "Libre Caslon Text", serif;
+
  border-bottom: #666 1px solid;
- font-size: 1.8em;
-    color: #4a4949;
+ font-size: 1.25rem;
+ text-transform: uppercase;
+  color: var(--title);
   margin-bottom: 10px;
   font-weight: bold;
   
@@ -161,13 +162,13 @@ export default {
 .features {
   list-style: none;
   padding: 0;
-  font-size: 21px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .features li {
   margin-bottom: 2px;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.6;
   color: #333;
   border-bottom: #a5a5a5 1px solid;
@@ -200,8 +201,22 @@ button:hover {
    max-width: 300px;    
    width: 100%;
    }
+   .features li {
+ 
+    font-size: 20px;
+   }
 }
-
+@media (min-width: 480px) {
+  .features li {
+ 
+    font-size: 20px;
+  }
+  .package {
+   
+      
+   width: 100%;
+   }
+}
 
 @media (min-width: 320px) {
   #web-packages {
@@ -210,6 +225,10 @@ button:hover {
     flex-wrap: wrap;
   
     
+  }
+  .features li {
+ 
+    font-size: 20px;
   }
   .package {
    
