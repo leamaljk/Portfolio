@@ -13,7 +13,7 @@
 
     <div class="package">
       <div class="header">Standard</div>
-      <div class="price-range">£700 - £1100</div>
+      <!-- <div class="price-range">£700 - £1100</div> -->
       <ul class="features" id="basic">
         <li>Up to 4 custom pages (Home, About, Services, Contact, etc.)</li>
         <li>Responsive design across all devices</li>
@@ -30,7 +30,7 @@
 
     <div class="package">
       <div class="header">Premium</div>
-      <div class="price-range">£1600 - £2600+</div>
+      <!-- <div class="price-range">£1600 - £2600+</div> -->
       <ul class="features" id="professional">
         <li>Up to 10 or more custom pages tailored to your content</li>
         <li>Optimized responsive layout for a seamless multi-device experience</li>
@@ -48,7 +48,7 @@
 
     <div class="package">
       <div class="header">Website Maintenance</div>
-      <div class="price-per-hour">£60 per hour</div>
+      <!-- <div class="price-per-hour">£60 per hour</div> -->
       <ul class="features" id="maintenance">
         <li>Regular website content updates</li>
         <li>Detailed security checks</li>
