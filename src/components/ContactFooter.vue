@@ -212,6 +212,7 @@ export default {
   border: 1px #ffffff dotted;
   padding: 10px;
   border-radius: 50%;
+  color: var(--secondary);
 }
 
 /* Media Queries for Responsiveness */
