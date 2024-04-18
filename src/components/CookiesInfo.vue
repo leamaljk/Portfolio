@@ -1,7 +1,7 @@
 <template>
     <div class="cookie-consent-wrapper" v-if="isVisible">
       <div class="cookie-consent-modal">
-        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <p>This website uses cookies to ensure you get the best experience on our website. </p>
         <button @click="closeModal">Got it!</button>
       </div>
     </div>
@@ -57,7 +57,7 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: var(--title);
   }
   </style>
   

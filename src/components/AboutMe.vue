@@ -25,8 +25,8 @@
   <br><br>
   Before deciding to go freelancing...
   <br><br>
-  Before my decision to freelance, I was always working as an employee "for someone", and this decision initially worried me to say the least because you never know the outcome. 
-  You feel secure in a company; they take care of everything concerning you. No worries at all. 
+  Before my decision to freelance, I was always working as an employee "for someone", and this decision initially worried me to say the least because I can never know the outcome. 
+  I felt secure in a company; they were take care of everything concerning me. No worries at all. 
   <!-- Put here the content that is visible before clicking "Read more" -->
         </p>
 

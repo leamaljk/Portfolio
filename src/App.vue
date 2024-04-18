@@ -13,6 +13,8 @@
   --primaryRed: #D4CAF3 ;
   --secondary: #5C3D99;
   --title: #4a4949;
+  --yellow: #fffbbdc9;
+  --lavander: #dce2ffd3;
 }
 * {
   margin: 0;

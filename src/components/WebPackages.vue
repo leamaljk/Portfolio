@@ -1,7 +1,12 @@
 <template>
   <div class="web">
     <h1>Web Packages</h1>
-  </div>
+    
+</div>
+<div>
+<FreeQuote></FreeQuote>
+
+</div>
   <div id="web-packages">
     
     <div class="package training">
@@ -64,7 +69,14 @@
 </template>
 
 
-
+<script>
+import FreeQuote from '../components/FreeQuote.vue';
+export default {
+  components: {
+    FreeQuote
+},
+};
+</script>
 
 <style scoped>
 #web-packages {
@@ -105,14 +117,14 @@
 
 #basic{
   
-  background-color: #dce2ffd3;
+  background-color: var(--lavander);
   padding: 20px ;
   border-radius: 10px;
   
 }
 
 #professional{
-  background-color: #fffbbdc9;
+  background-color: var(--yellow);
   padding: 20px;
   border-radius: 10px;
 
