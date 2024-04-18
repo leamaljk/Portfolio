@@ -13,19 +13,19 @@
       <div class="grow2">
         <p class="aboutMeText">
           <!-- Your initial content here... -->
-          Hello dear ones, thank you for going the distance to meet me.
+          Hello and thank you for going the distance to meet me.
   My name is Lea, and I work under the name Pearl Design. 
-  Isn't that such a wonderful name, Pearl Design? 🙂
-  You're probably wondering what that has to do with building website designs. Well, what does Apple have to do with electronics? Now you get me. 😉
+  <br>
+  Wonderful name, isn't it? 🙂
+  You're probably wondering what that has to do with building website designs. Well, what does Apple have to do with electronics? 😉
   <br><br>
   Let me tell you a little bit more about myself...
   <br><br>
-  I am also a mom of an adorable little girl who fills my days with joy, and the wife to a beloved husband who is my biggest support in life. 
-  Each morning as I embrace my little girl, the world pauses for a moment. Her laughter is my reminder of what truly matters.
+  I am also a mom of an adorable little girl, and the wife to a beloved husband. 
   <br><br>
   Before deciding to go freelancing...
   <br><br>
-  Before my decision to freelance, I was always working as an employee "somewhere", and this decision initially worried me to say the least because you never know the outcome. 
+  Before my decision to freelance, I was always working as an employee "for someone", and this decision initially worried me to say the least because you never know the outcome. 
   You feel secure in a company; they take care of everything concerning you. No worries at all. 
   <!-- Put here the content that is visible before clicking "Read more" -->
         </p>
