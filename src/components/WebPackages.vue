@@ -94,6 +94,7 @@ export default {
     letter-spacing: 1.5px;
     text-align: center;
     font-family: "Libre Caslon Text", serif;
+    margin-bottom: 20px;
   }
 
 .package {
@@ -112,7 +113,7 @@ export default {
 }
 
 .package:hover {
-  transform: scale(1.02);  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Larger shadow for hover effect */
+  transform: scale(1.02);  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Larger shadow for hover effect */
 }
 
 #basic{
