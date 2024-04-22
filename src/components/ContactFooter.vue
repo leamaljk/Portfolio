@@ -244,7 +244,7 @@ export default {
     margin: 0.75rem 0;
   }
   .copyright{
-    font-size: small;
+    font-size: 12px;
   }
 }
 
@@ -255,7 +255,7 @@ export default {
 
  
   .copyright{
-    font-size: small;
+    font-size: 12px;
   }
   .icons {
     flex-direction: column;

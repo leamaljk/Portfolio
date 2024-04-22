@@ -218,6 +218,11 @@ import NewHeader from './NewHeader.vue';
   cursor: pointer;
   font-size: 2.2em;
 }
+.slide-background {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* This will ensure the image covers the slide area */
+}
 
 }
 </style>
