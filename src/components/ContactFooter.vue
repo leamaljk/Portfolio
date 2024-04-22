@@ -243,6 +243,9 @@ export default {
   .footer-block {
     margin: 0.75rem 0;
   }
+  .copyright{
+    font-size: small;
+  }
 }
 
 @media (max-width: 480px) {
@@ -251,7 +254,9 @@ export default {
   }
 
  
-
+  .copyright{
+    font-size: small;
+  }
   .icons {
     flex-direction: column;
   }

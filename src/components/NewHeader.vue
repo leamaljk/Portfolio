@@ -1,29 +1,29 @@
 <template>
-    <header class="header">
-      <div class="background-image">
-        <img src="../assets/images/work.webp" alt="Background" />
-      </div>
-      <div class="content">
-        <img src="../assets/images/logo/LogoSign (2).png" alt="Logo" class="logo" />
-        <h1>Pearl Design</h1>
-        <h2>        <img src="../assets/images/logo/ser.png" alt="Logo" width="64px"  class="service-icon" />
+  <header class="header">
+    <ImageSlideshow />
+    <div class="content">
+      <img src="../assets/images/logo/LogoSign (2).png" alt="Logo" class="logo" />
+      <h1>Pearl Design</h1>
+      <h2><img src="../assets/images/logo/ser.png" alt="Logo" width="64px" class="service-icon" />
 Web design services</h2>
-        <p class="slogan">Building Websites That Tell Your Story</p>
-        <CallToAction></CallToAction>
-      </div>
-    </header>
-  </template>
-  
-  <script>
-import CallToAction from './CallToAction.vue';
+      <p class="slogan">Building Websites That Tell Your Story</p>
+      <CallToAction></CallToAction>
+    </div>
+  </header>
+</template>
 
-  export default {
-    name: 'ResponsiveHeader',
-    components: {
-        CallToAction
-    }
-  };
-  </script>
+<script>
+import CallToAction from './CallToAction.vue';
+import ImageSlideshow from './ImageSlideshow.vue';
+
+export default {
+components: {
+  CallToAction,
+  ImageSlideshow
+}
+};
+</script>
+
   
   <style scoped>
 
@@ -120,7 +120,7 @@ import CallToAction from './CallToAction.vue';
    .header, .background-image img {
    
    width: 100%;
-   height: 650px;
+   height: 100vh;
 
     }
     .logo {
@@ -146,6 +146,10 @@ import CallToAction from './CallToAction.vue';
 align-items: center;
 justify-content: center;
 align-content: center;
+    }
+    .service-icon{
+position: relative;
+left: 25px;
     }
   }
   

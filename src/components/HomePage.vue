@@ -4,7 +4,7 @@
 <MyNavigation /> 
 </div>
 <div>
-  <NewHeader></NewHeader>
+  <ImageSlideshow />
 </div>
 <router-view />
 
@@ -43,7 +43,7 @@ import ContactFooter from '../components/ContactFooter.vue'
 import SkillsIcons from './SkillsIcons.vue';
 import WebPackages from './WebPackages.vue';
 import ContactForm from './ContactForm.vue';
-import NewHeader from './NewHeader.vue';
+import ImageSlideshow from './ImageSlideshow.vue';
 import TermsAndConditions from './TermsAndConditions.vue';
 import CannyFeedback from './CannyFeedback.vue';
 
@@ -58,7 +58,7 @@ export default {
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
     SkillsIcons, WebPackages, ContactForm,
-    NewHeader,TermsAndConditions, CannyFeedback
+    ImageSlideshow,TermsAndConditions, CannyFeedback
 },
 };
 

@@ -175,13 +175,13 @@ h1{
   /* Style for when the user has entered valid input */
   .form-group input:valid,
   .form-group textarea:valid {
-    border-bottom: 3px solid var(--secondary); /* Indicates valid input */
+    border-bottom: 3px solid goldenrod; /* Indicates valid input */
   }
   
   /* Style for when the user has entered invalid input */
   .form-group input:invalid,
   .form-group textarea:invalid {
-    border-bottom: 3px solid goldenrod; /* Indicates invalid input */
+    border-bottom: 3px solid var(--secondary); /* Indicates invalid input */
   }
   
   button {
