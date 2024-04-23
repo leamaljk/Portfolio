@@ -43,7 +43,7 @@ components: {
     align-items: center;
     position: relative;
     color: var(--title);
-    background: rgba(255, 255, 255, 0.6); /* semi-transparent white background */
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtle shadow for depth */
 
 
