@@ -16,12 +16,12 @@
             <router-link to="/" @click="closeNav">
             </router-link>
           </li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/#about-section" class="nav-link" @click="closeNav">About Me</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/#feedback-container" class="nav-link" @click="closeNav">Feedback</router-link></li>
-          <li><img src="../assets/images/logo/LogoSign (4).webp" alt="logo" width="25px" height="25px"/><router-link to="/#container" class="nav-link" @click="closeNav">Contact</router-link></li>
+          <li><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
+          <li><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
+          <li><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>
+          <li><router-link to="/#about-section" class="nav-link" @click="closeNav">About Me</router-link></li>
+          <li><router-link to="/#feedback-container" class="nav-link" @click="closeNav">Feedback</router-link></li>
+          <li><router-link to="/#container" class="nav-link" @click="closeNav">Contact</router-link></li>
 
         </ul>
       </nav>
@@ -68,6 +68,7 @@ body {
   margin: auto;
   width: 100%;
   top: 0;
+  font-size: 1.1em;
   
 }
 
@@ -114,7 +115,9 @@ li img {
 }
 
 .nav-link:hover {
-  color: goldenrod;
+  color: var(--secondary);
+  font-weight: 600;
+  transform: scale(1.2);
   
 }
 

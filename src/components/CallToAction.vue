@@ -23,10 +23,10 @@
 .cta-button {
   font-size: 20px;
   padding: 10px 32px;
-  background-color: #5C3D99; /* A color that stands out but matches the scheme */
+  background-color: var(--secondary); /* A color that stands out but matches the scheme */
   color: white;
   text-decoration: none;
-  
+  border: 2px #D9D9D9 solid;
   transition: transform 0.3s ease;
   display: inline-block;
 

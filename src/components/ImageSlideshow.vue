@@ -44,17 +44,14 @@
       </div>
       
     </div>
-    <NewHeader class="NewHeader"></NewHeader>
+    
   </div>
 </template>
 
 <script>
-import NewHeader from './NewHeader.vue';
 
 export default {
-  components: {
-    NewHeader
-  },
+ 
   name: 'ImageSlideshow',
   data() {
     return {
@@ -68,6 +65,8 @@ export default {
         { image: require('../assets/images/slides/5.png') },
         { image: require('../assets/images/slides/6.png') },
         { image: require('../assets/images/slides/7.png') },
+        { image: require('../assets/images/slides/8.png') },
+
 
       ],
       mobileSlides: [
@@ -166,7 +165,7 @@ export default {
 .arrow, .mobile-arrow {
   cursor: pointer;
   font-size: 3em;
-  color: var(--secondary);
+  color: var(--primaryRed);
   user-select: none;
   padding: 0 1%;
   transition: transform 0.2s;
@@ -189,7 +188,7 @@ export default {
   height: 10px;
   width: 10px;
   margin: 0 5px;
-  background-color: var(--secondary);
+  background-color: var(--primaryRed);
   border: 2px solid #fff;
   border-radius: 50%;
   display: inline-block;
@@ -205,14 +204,10 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .NewHeader {
-    display: none;
-  }
+ 
 }
 
 @media (max-width: 480px) {
-  .NewHeader {
-    display: none;
-  }
+  
 }
 </style>

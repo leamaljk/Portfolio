@@ -79,7 +79,7 @@ components: {
   
   h1 {
     font-family: "Libre Caslon Text", serif;
-    color: black;
+    color: #D9D9D9;
     
     font-size: 2.7em; /* Adjust based on your preference */
   }
@@ -88,12 +88,12 @@ components: {
     font-size: 2.2em;
     padding-bottom: 10px;
     border-top: 1px dotted white;
-
+color: #D9D9D9;
     border-bottom: 1px dotted white;
   }
   
   .slogan {
-    color: var(--secondary);
+    color: #D9D9D9;
     letter-spacing: 2.6px;
     text-transform: uppercase;
     font-size: 1em;

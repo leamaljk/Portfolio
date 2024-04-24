@@ -102,7 +102,7 @@ export default {
 }
 
 .title {
-  color: var(--title);
+  color: var(--secondary);
   margin-bottom: 0.5rem;
 }
 
@@ -114,12 +114,12 @@ export default {
 
 .last-updated {
   font-style: italic;
-  color: var(--title);
+  color: var(--secondary);
   margin-bottom: 1rem;
 }
 
 p {
-  color: var(--title);
+  color: var(--text);
   line-height: 1.6;
   margin-bottom: 1rem;
 }

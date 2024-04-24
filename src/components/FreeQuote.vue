@@ -58,10 +58,11 @@
   <style scoped>
 
 .accordion{
-width: 82%;
+width: 60%;
 align-items: center;
 justify-content: center;
 margin: auto;
+margin-bottom: 3rem;
 font-family: "Raleway", sans-serif;
 border-radius: 8px;
 
@@ -85,8 +86,8 @@ border-radius: 8px;
 }
   .accordion-item {
     font-family: "Raleway", sans-serif;
-    margin-bottom: 2px;
-    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border: 1px solid var(--darkergray);
     border-radius: 8px;
     
     
@@ -95,7 +96,7 @@ border-radius: 8px;
   .accordion-button {
     font-family: "Raleway", sans-serif;
      background: rgba(255, 255, 255, 0.6);
-    color: #444;
+    color: var(--secondary);
     cursor: pointer;
     padding: 8px;
     width: 100%;
@@ -112,11 +113,11 @@ border-radius: 8px;
   }
   
   .accordion-button:hover {
-    background-color: rgba(230, 230, 250, 0.488);
+    background-color: var(--primaryRed);
   }
 
   .accordion-button:active {
-    background-color: #fffbbdc1;
+    background-color: var(--darkergray);
   }
   
   .toggle-icon {
@@ -125,6 +126,17 @@ border-radius: 8px;
     color: var(--secondary);
   }
   
+  @media (max-width: 768px) {
+    .accordion{
+width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion{
+width: 90%;
+  }
+}
 
   </style>
   

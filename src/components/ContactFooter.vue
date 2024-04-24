@@ -144,17 +144,6 @@ export default {
     transform: translateY(0);
   }
 }
-.social-media-links {
-  --animation-delay: 0.3s; /* Delay for social media links */
-}
-
-.contact-links {
-  --animation-delay: 0.6s; /* Delay for contact links */
-}
-
-.location-link {
-  --animation-delay: 0.9s; /* Delay for location link */
-}
 
 .footer-heading {
   font-size: 1.5rem;
@@ -166,6 +155,7 @@ export default {
 .footer-content p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: var(--text);
 }
 
 .icons {

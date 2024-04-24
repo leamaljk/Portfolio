@@ -26,13 +26,12 @@
       </div>
     </form>
       <div class="content">
-        <div class="logo">
-          <img src="@/assets/images/logo/LogoSign (2).png" alt="PearlDesign Logo" >
-        </div>
+        
         <h1>
-          Pearl Design <br> Web Design Services
+          <br>
+          Interested in driving your business forward?
         </h1>
-        <p>Interested in driving your business forward?
+        <p>
             If you'd like to discuss your project, please fill out this contact form. I'll review your information and get back to you as soon as possible to discuss how I can help. 
             I'm here to answer any questions you may have and look forward to hearing from you.
         </p>
@@ -120,7 +119,7 @@ h1{
 
   
   #container {
-    background: rgba(255, 255, 255, 0.2);
+    background:var(--secondary);
   color: #333;
     display: flex;
     flex-wrap: wrap;
@@ -135,6 +134,16 @@ h1{
     flex: 1;
     max-width: 600px;
   }
+
+  .content h1{
+    color: var(--primaryRed);
+    
+  }
+
+  .content p{
+    color: var(--primaryRed);
+    
+  }
   
   .form {
     flex: 1;
@@ -145,6 +154,7 @@ h1{
   }
   
   .form-group {
+    color: var(--primaryRed);
     margin-bottom: 15px;
     display: block; /* Make sure form-group is a block to contain its elements correctly */
   }
@@ -161,44 +171,45 @@ h1{
     border: 1px solid #ccc; /* Consistent border size */
     border-radius: 5px;
     transition: border-color 0.3s; /* Smooth transition for border color */
-    font-family: "Libre Caslon Text", serif;
+    font-family: "Raleway", sans-serif;
 
   }
   
   /* Style for when the user focuses on an input */
   .form-group input:focus,
   .form-group textarea:focus {
-    border-color: #5C3D99; /* Focus color */
+    border-color: var(--white); /* Focus color */
     outline: none; /* Remove default focus outline */
   }
   
   /* Style for when the user has entered valid input */
   .form-group input:valid,
   .form-group textarea:valid {
-    border-bottom: 3px solid goldenrod; /* Indicates valid input */
+    border-bottom: 3px solid var(--title); /* Indicates valid input */
   }
   
   /* Style for when the user has entered invalid input */
   .form-group input:invalid,
   .form-group textarea:invalid {
-    border-bottom: 3px solid var(--secondary); /* Indicates invalid input */
+    border-bottom: 3px solid var(--white); /* Indicates invalid input */
   }
   
   button {
     padding: 10px 30px;
   font-size: 16px;
-  color: #fff;
+  color: var(--secondary);
   font-weight: 600 ;
-  background: var(--secondary);
+  background: var(--white);
   border: none;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
 
 }
 
 button:hover {
   background: var(--title);
+  color: var(--primaryRed);
 
 }
   /* Responsive design styles */

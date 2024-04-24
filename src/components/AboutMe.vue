@@ -3,7 +3,6 @@
     <div class="profile-title">
       <h1 class="about">About Me</h1>
       <img src="../assets/images/profile-pic.webp" alt="My profile photo" class="profile-pic" />
-      <img src="../assets/images/family.webp" alt="My profile photo" class="profile-pic" />
 
     </div>
 
@@ -96,27 +95,21 @@ export default {
 
   
   #about-section {
-    border-top: 2px solid #fef9ae; /* For visual debugging */
-  border-bottom: 3px solid #fef9ae;
+   
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+   
     
     border-radius: 15px;
     padding:2rem 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+   
+    width: 90%;
+    margin: auto;
     animation: fadeIn 1s ease 0.5s;
     animation-fill-mode: both;
   }
 
-  #about-section:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-  }
 
   .read-more-button {
   background-color: var(--secondary); /* or use your secondary color */
@@ -141,8 +134,7 @@ export default {
 }
 
 .second-part{
-  border-top: 1px solid gold; /* For visual debugging */
-  border-bottom: 1px solid gold;
+
   
     padding: 10px 20px ;
     width: 100%;
@@ -176,9 +168,9 @@ export default {
   .about {
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
-    font-size: 2.5em;
-    color: #4a4949;
-    margin-bottom: 1rem;
+    font-size: 3em;
+    color:var(--title);
+    margin: 3rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
@@ -207,19 +199,12 @@ export default {
   font-family: "Raleway", sans-serif;
   font-style: italic;
   line-height: 2.4;
-  background: linear-gradient(
-        135deg,
-        #e6c146a2 0%, /* Lighter shade of gold */
-        #d3af37af 25%, /* Your specified gold color */
-        #b8972cc1 50%, /* Darker shade of gold */
-        #d3af37af 75%, /* Your specified gold color again */
-        #e6c146b0 100% /* Lighter shade of gold to finish */
-    );
+  background: var(--secondary);
 
   padding: 17px;
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  color: #000;
+  color: var(--primaryRed);
 }
 
 .grow2 {
@@ -275,7 +260,7 @@ export default {
   padding: 20px;
   margin-right:20px ;
   margin-right: 10px;
-  color: #d3af37; /* Replace with your primary color variable */
+  color: var(--title); /* Replace with your primary color variable */
 }
 
 /* Include this only if you're using FontAwesome icons */
@@ -316,6 +301,9 @@ export default {
 
   .grow1, .grow2, .grow3{
     width: 100%;
+  }
+  .about {
+    font-size: 2rem;
   }
 }
 
@@ -370,7 +358,9 @@ width: 100%;
     padding: 0.2rem; /* Add padding to give some space around the text */
   }
 
-
+  .about{
+    font-size: 2rem;
+  }
 
 }
 
@@ -384,6 +374,9 @@ width: 100%;
   padding: 0;
   
 }
+.about {
+    font-size: 2rem;
+  }
 
 .hobbies-list li {
   color: #333; /* Replace with your color variable or preferred color */
@@ -397,7 +390,7 @@ width: 100%;
 
 .hobbies-list i {
   margin-right: 10px;
-  color: #d3af37; /* Replace with your primary color variable */
+  color: var(--title); /* Replace with your primary color variable */
 }
 }
 </style>

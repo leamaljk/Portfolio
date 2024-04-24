@@ -9,7 +9,7 @@
         <img src="../assets/images/projects/mac.webp" alt="Light Supply project" />
       </div>
       <div class="card-description">
-        <h2>Light Supply</h2>
+        <h2 class="reverse-text">Light Supply</h2>
         <p>The webpage is a professional showcase for "Light Supply," an electrical services provider. It effectively highlights the electrician’s expertise and range of services, from standard electrical installations to specialized tasks like EV charger installation. The design features a clean, organized layout that outlines the electrician's qualifications, work process, and service offerings.</p>
         <a href="https://www.lightsupplyelectric.com/"> <button >VIEW THE PROJECT</button></a>
 
@@ -18,7 +18,7 @@
     <!-- ... Repeat for other cards ... -->
     <div class="card card-reverse">
       <div class="card-description">
-        <h2>Oh My Food</h2>
+        <h2 class="right-text">Oh My Food</h2>
         <p>The webpage is a modern, streamlined online service aimed at food enthusiasts looking to book curated dining experiences in select restaurants. It presents a straightforward, three-step process for choosing a restaurant, creating a personalized menu, and enjoying the dining experience. </p>
         <a href="https://leamaljk.com/ohmyfood/" ><button >VIEW THE PROJECT</button></a>
       </div>
@@ -34,7 +34,7 @@
         <img src="../assets/images/projects/mac (4).webp" alt="Booki project" />
       </div>
       <div class="card-description">
-        <h2>Go Mike Designs</h2>
+        <h2 class="reverse-text">Go Mike Designs</h2>
         <p>The webpage is a portfolio for "GoMike Designs," showcasing the services of Mike, a web designer who specializes in creating websites and graphics for Atlanta-based companies. It emphasizes his commitment to enhancing online presence and recognition for local businesses through bespoke website design, strategic online positioning, and logo creation.</p>
         <a href="https://leamaljk.com/goMikeDesigns/" > <button>VIEW THE PROJECT</button></a>
       </div>
@@ -42,7 +42,7 @@
     <!-- ... Repeat for other cards ... -->
     <div class="card card-reverse">
       <div class="card-description">
-        <h2>Booki</h2>
+        <h2 class="right-text">Booki</h2>
         <p>The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery. </p>
         <a href="https://leamaljk.com/Booki/"> <button >VIEW THE PROJECT</button></a>
       </div>
@@ -56,7 +56,7 @@
         <img src="../assets/images/projects/Component 1 (1).webp" alt="Booki project" />
       </div>
       <div class="card-description">
-        <h2>Cuppa Coffee</h2>
+        <h2 class="reverse-text">Cuppa Coffee</h2>
         <p>This web page is a promotional site for "Cuppa Coffee," designed with WordPress CMS, showcasing the coffee shop's products, values, and team. It highlights the quality of their coffee, brewing technology, and commitment to sustainability. </p>
         <a href="https://dev-cuppa-charm-cafe.pantheonsite.io/" > <button>VIEW THE PROJECT</button></a>
       </div>
@@ -75,9 +75,9 @@
 }
 .about {
     font-weight: 800;
-    font-size: 2.5em;
-    color: #4a4949;
-    margin-bottom: 1rem;
+    font-size: 3em;
+    color:var(--title);
+    margin: 2rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
@@ -85,7 +85,7 @@
   }
 
 .card {
-  background-color: #fffbbdc9;
+  background-color:var(--primaryRed);
   display: grid;
   grid-template-columns: 1.5fr 1fr; /* Adjust the ratio to your preference */
   overflow: hidden;
@@ -93,7 +93,7 @@
 }
 
 .card-reverse {
-  background-color: #dce2ffd3;
+  background-color: var(--darkergray);
   padding: 60px;
   grid-template-columns: 1fr 1.5fr; /* Text on the left and larger image on the right */
 }
@@ -117,13 +117,19 @@ margin: 10px;
   align-items: center; /* Align text to the left */
   text-align: center;
 }
-
-.card-description h2 {
-  color:  #4a4949; /* Replace with your actual color variable */
-  margin-bottom: 0px;
+.right-text {
+  color:var(--white);
+    margin-bottom: 0px;
   font-size: 2.5em;
   font-family: "Libre Caslon Text", serif;
 
+}
+
+.reverse-text{
+  color: var(--text);
+  margin-bottom: 0px;
+  font-size: 2.5em;
+  font-family: "Libre Caslon Text", serif;
 }
 
 .card-description p {
@@ -164,6 +170,9 @@ margin: 10px;
   #cards-container {
     grid-template-columns: 1fr; /* Full width cards on mobile */
   }
+  .about {
+    font-size: 2rem;
+  }
 
 }
 @media (max-width: 768px) {
@@ -171,7 +180,12 @@ margin: 10px;
     padding:20px 10px;
     grid-template-columns: 1fr; /* Stack image and description on top of each other on mobile */
   }
-
+  .about {
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
   #cards-container {
     margin: 0;
     grid-template-columns: 1fr; /* Full width cards on mobile */
@@ -188,6 +202,11 @@ margin-bottom: 20px;
 }
 
 @media (max-width: 480px) {
+
+
+ h2{
+    font-size: 2rem;
+  }
   #cards-container {
     width: 100%;
     grid-template-columns: 1fr; /* Full width cards on mobile */

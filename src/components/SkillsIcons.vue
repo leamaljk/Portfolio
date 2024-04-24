@@ -45,17 +45,17 @@
   
   <style scoped>
 #skills-section {
-  max-width:100%;
-  margin: 40px auto;
+  max-width:90%;
+  margin: auto;
   padding: 20px;
   text-align: center;
 }
 
 .skills-title {
   font-family: "Libre Caslon Text", serif;
- font-size: 2.5em;
-  color: #4a4949;
-  margin-bottom: 40px;
+ font-size: 3em;
+  color: var(--title);
+  margin: 3rem 0;
 }
 
 #skills-container {
@@ -65,14 +65,12 @@
    
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
+    
     border-radius: 15px;
     padding:2rem 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 93%;
-    margin-left: auto;
-    margin-right: auto;
+    
+    width: 100%;
+    margin: auto;
     animation: fadeIn 1s ease 0.5s;
     animation-fill-mode: both;
 }

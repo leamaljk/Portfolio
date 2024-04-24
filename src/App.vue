@@ -10,11 +10,12 @@
 
 <style lang="scss">
 :root {
-  --primaryRed: #D4CAF3 ;
-  --secondary: #5C3D99;
-  --title: #4a4949;
-  --yellow: #fffbbdc9;
-  --lavander: #dce2ffd3;
+  --primaryRed: #F1F1F1 ;
+  --secondary: #4B3F98;
+  --title: #8C52FF;
+  --darkergray: #A6A6A6;
+  --text: #333;
+  --white: #fff;
 }
 * {
   margin: 0;
@@ -51,7 +52,7 @@ line-height: 1.8;
 background-size:cover;
 background-repeat: no-repeat; /* To prevent the image from repeating */
 background-position: center;
-background-image: url('../src/assets/images/bg (2) (1).webp');
+// background-image: url('../src/assets/images/bg (2) (1).webp');
 background-attachment: fixed; /* This makes the background stay fixed during scrolling */
 
 }

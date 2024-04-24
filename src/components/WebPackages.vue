@@ -11,8 +11,8 @@
     
     <div class="package training">
       <div class="header">CMS Training & Documentation</div>
-      <p class="features">Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently.</p>
-      <p class="features">I believe in transparency and provide upfront, all-inclusive pricing with no hidden fees. This is what you can expect when contacting me. My packages are designed to give you control and understanding of your web presence.</p>
+      <p class="CMS">Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently.
+      <br><br>I believe in transparency and provide upfront, all-inclusive pricing with no hidden fees. This is what you can expect when contacting me. My packages are designed to give you control and understanding of your web presence.</p>
       <a href="#footer"><button>Learn More</button></a>
     </div>
 
@@ -89,12 +89,12 @@ export default {
 }
 .web h1{
     font-weight: 800;
-    font-size: 2.5em;
-    color: #4a4949;
+    font-size: 3em;
+    color:var(--title);
     letter-spacing: 1.5px;
     text-align: center;
     font-family: "Libre Caslon Text", serif;
-    margin-bottom: 20px;
+    margin: 3rem 0;
   }
 
 .package {
@@ -118,34 +118,50 @@ export default {
 
 #basic{
   
-  background-color: var(--lavander);
+  background-color: var(--darkergray);
   padding: 20px ;
   border-radius: 10px;
+  color: var(--white);
   
 }
 
+#basic li{
+  border-bottom: var(--white) 1px solid;
+
+}
+
 #professional{
-  background-color: var(--yellow);
+  background-color: var(--primaryRed);
+  color: #333;
   padding: 20px;
   border-radius: 10px;
 
 }
 
+#professional li{
+  border-bottom: var(--white) 1px solid;
+
+}
+
 #maintenance{
-  background-color: #f1f1f1;
+  background-color: var(--white);
   padding: 20px ;
   border-radius: 10px;
+  color: var(--secondary);
   
 }
 
+#maintenance li{
+  border-bottom: var(--primaryRed) 1px solid;
+
+}
 
 .header {
 
- border-bottom: #666 1px solid;
  font-size: 1.25rem;
  text-transform: uppercase;
   color: var(--title);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: bold;
   
 }
@@ -159,7 +175,12 @@ export default {
   color: #666;
   margin-bottom: 20px;
 }
-
+.CMS{
+  background-color: var(--secondary);
+  color: var(--primaryRed);
+  padding: 20px ;
+  border-radius: 10px;
+}
 .features {
   list-style: none;
   padding: 0;
@@ -171,8 +192,8 @@ export default {
   margin-bottom: 2px;
   font-size: 20px;
   line-height: 1.6;
-  color: #333;
-  border-bottom: #a5a5a5 1px solid;
+  
+ 
 }
 
 button {
@@ -192,6 +213,9 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  .web h1{
+    font-size: 2rem;
+  }
   #web-packages {
     flex-direction: row;
     justify-content: center;
@@ -212,6 +236,10 @@ button:hover {
  
     font-size: 20px;
   }
+
+  .web h1{
+    font-size: 2rem;
+  }
   .package {
    
       
@@ -220,6 +248,9 @@ button:hover {
 }
 
 @media (min-width: 320px) {
+  .web h1{
+    font-size: 2rem;
+  }
   #web-packages {
     flex-direction: row;
     justify-content: center;

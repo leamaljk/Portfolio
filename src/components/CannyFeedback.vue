@@ -5,7 +5,7 @@
 
     </h1>
     <h2>Please share your thoughts on your recent experience with me.</h2>
-    <p>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. Thank you for your time.</p>
+    <p>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. <br> Thank you for your time.</p>
     <div data-canny />
   </div>
   </template>
@@ -44,29 +44,27 @@ text-transform: uppercase;
     margin: auto;
     margin-bottom: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   #feedback-container h1 {
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
-    font-size: 2.5em;
-    color: #4a4949;
-    margin-bottom: 1rem;
+    font-size: 3em;
+    color:var(--title);
+    margin: 3rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
   }
   #feedback-container h2 {
-    color: var(--secondary);
+    color:#333;
     text-align: center;
     
     font-weight: 200;
      
   }
   #feedback-container p {
-    color: var(--title);
+    color: var(--darkergray);
     text-align: center;
     margin-bottom: 40px;
      
