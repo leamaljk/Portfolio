@@ -54,10 +54,13 @@
 .skills-title {
   font-family: "Libre Caslon Text", serif;
  font-size: 3em;
-  color: var(--title);
+  color: var(--secondary);
   margin: 3rem 0;
 }
 
+.skills-title:hover{
+  color: var(--title);
+}
 #skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

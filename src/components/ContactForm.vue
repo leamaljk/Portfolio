@@ -178,7 +178,7 @@ h1{
   /* Style for when the user focuses on an input */
   .form-group input:focus,
   .form-group textarea:focus {
-    border-color: var(--white); /* Focus color */
+    border-color: var(--title); /* Focus color */
     outline: none; /* Remove default focus outline */
   }
   
@@ -191,7 +191,7 @@ h1{
   /* Style for when the user has entered invalid input */
   .form-group input:invalid,
   .form-group textarea:invalid {
-    border-bottom: 3px solid var(--white); /* Indicates invalid input */
+    border-bottom: 3px solid var(--darkergray); /* Indicates invalid input */
   }
   
   button {

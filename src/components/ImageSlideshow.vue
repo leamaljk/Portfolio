@@ -70,7 +70,7 @@ export default {
 
       ],
       mobileSlides: [
-        { image: require('../assets/images/mobileSlides/1.webp') },
+        { image: require('../assets/images/mobileSlides/1.png') },
         { image: require('../assets/images/mobileSlides/2.webp') },
         { image: require('../assets/images/mobileSlides/3.webp') },
         { image: require('../assets/images/mobileSlides/4.webp') },

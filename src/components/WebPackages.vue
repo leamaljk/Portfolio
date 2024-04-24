@@ -1,6 +1,6 @@
 <template>
-  <div class="web">
-    <h1>Web Packages</h1>
+  <div >
+    <h1 class="web">Web Packages</h1>
     
 </div>
 <div>
@@ -87,16 +87,18 @@ export default {
   margin: auto;
   padding: 20px;
 }
-.web h1{
+.web {
     font-weight: 800;
     font-size: 3em;
-    color:var(--title);
+    color:var(--secondary);
     letter-spacing: 1.5px;
     text-align: center;
     font-family: "Libre Caslon Text", serif;
     margin: 3rem 0;
   }
-
+.web:hover{
+color: var(--title);
+}
 .package {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -213,60 +215,47 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  .web h1{
-    font-size: 2rem;
-  }
   #web-packages {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .package {
-   
+  .package {  
    max-width: 300px;    
    width: 100%;
    }
    .features li {
- 
     font-size: 20px;
    }
+ 
 }
 @media (min-width: 480px) {
   .features li {
- 
     font-size: 20px;
   }
-
-  .web h1{
-    font-size: 2rem;
-  }
   .package {
-   
-      
    width: 100%;
    }
 }
 
 @media (min-width: 320px) {
-  .web h1{
-    font-size: 2rem;
-  }
+  .web{
+font-size: 2.6rem;
+   }
   #web-packages {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-  
-    
   }
   .features li {
- 
     font-size: 20px;
   }
   .package {
-   
+  
   max-width: 300px;    
   width: 100%;
   }
+   
 
 }
 </style>

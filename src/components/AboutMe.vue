@@ -169,11 +169,15 @@ export default {
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     font-size: 3em;
-    color:var(--title);
+    color:var(--secondary);
     margin: 3rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
+  }
+
+  .about:hover{
+    color: var(--title);
   }
   .layout {
   display: flex;

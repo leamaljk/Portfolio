@@ -50,11 +50,15 @@ text-transform: uppercase;
     font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     font-size: 3em;
-    color:var(--title);
+    color:var(--secondary);
     margin: 3rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
+  }
+
+  #feedback-container h1:hover{
+    color: var(--title);
   }
   #feedback-container h2 {
     color:#333;
