@@ -76,7 +76,9 @@ export default {
         { image: require('../assets/images/mobileSlides/4.png') },
         { image: require('../assets/images/mobileSlides/5.png') },
         { image: require('../assets/images/mobileSlides/6.png') },
-        { image: require('../assets/images/mobileSlides/7.png') }
+        { image: require('../assets/images/mobileSlides/7.png') },
+        { image: require('../assets/images/mobileSlides/8.png') },
+        { image: require('../assets/images/mobileSlides/9.png') }
         // Additional mobile slides...
       ],
       isMobile: window.innerWidth < 768
