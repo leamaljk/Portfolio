@@ -79,7 +79,7 @@ components: {
   
   h1 {
     font-family: "Libre Caslon Text", serif;
-    color: var(--title);
+    color: black;
     
     font-size: 2.7em; /* Adjust based on your preference */
   }

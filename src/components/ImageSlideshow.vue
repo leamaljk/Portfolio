@@ -193,14 +193,15 @@ export default {
   border: 2px solid #fff;
   border-radius: 50%;
   display: inline-block;
-  padding: 2px;
+  padding: 2.6px;
   opacity: 0.5;
   transition: opacity 0.6s ease, transform 0.2s ease;
 }
 
 .indicators > span.active, .mobile-indicators > span.active {
   opacity: 1;
-  transform: scale(1.2);
+  transform: scale(1.6);
+
 }
 
 @media (max-width: 768px) {
