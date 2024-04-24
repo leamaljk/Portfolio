@@ -70,15 +70,15 @@ export default {
 
       ],
       mobileSlides: [
-        { image: require('../assets/images/mobileSlides/1.png') },
-        { image: require('../assets/images/mobileSlides/2.png') },
-        { image: require('../assets/images/mobileSlides/3.png') },
-        { image: require('../assets/images/mobileSlides/4.png') },
-        { image: require('../assets/images/mobileSlides/5.png') },
-        { image: require('../assets/images/mobileSlides/6.png') },
-        { image: require('../assets/images/mobileSlides/7.png') },
-        { image: require('../assets/images/mobileSlides/8.png') },
-        { image: require('../assets/images/mobileSlides/9.png') }
+        { image: require('../assets/images/mobileSlides/1.webp') },
+        { image: require('../assets/images/mobileSlides/2.webp') },
+        { image: require('../assets/images/mobileSlides/3.webp') },
+        { image: require('../assets/images/mobileSlides/4.webp') },
+        { image: require('../assets/images/mobileSlides/5.webp') },
+        { image: require('../assets/images/mobileSlides/6.webp') },
+        { image: require('../assets/images/mobileSlides/7.webp') },
+        { image: require('../assets/images/mobileSlides/8.webp') },
+        { image: require('../assets/images/mobileSlides/9.webp') }
         // Additional mobile slides...
       ],
       isMobile: window.innerWidth < 768
