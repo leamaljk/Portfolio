@@ -76,14 +76,16 @@
 .about {
     font-weight: 800;
     font-size: 3em;
-    color:var(--title);
+    color:var(--secondary);
     margin: 2rem 0;
     letter-spacing: 1.5px;
     animation: fadeInUp 2s ease;
     text-align: center;
     font-family: "Libre Caslon Text", serif;
   }
-
+.about:hover{
+color: var(--title);
+}
 .card {
   background-color:var(--primaryRed);
   display: grid;

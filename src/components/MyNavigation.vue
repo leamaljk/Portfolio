@@ -16,6 +16,7 @@
             <router-link to="/" @click="closeNav">
             </router-link>
           </li>
+          <li> <img class="logo" src="@/assets/images/NoviLogo/9.png" alt="PearlDesign Logo" > </li>
           <li><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
           <li><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
           <li><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>
@@ -71,7 +72,9 @@ body {
   font-size: 1.1em;
   
 }
-
+.logo{
+  width: 100px;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;

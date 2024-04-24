@@ -1,7 +1,7 @@
 <template>
    <div id="feedback-container">
     <h1 class="square">I Value Your Feedback 
-        <img src="../assets/images/logo/square.png" alt="My profile photo" class="profile-title" />
+        <img src="../assets/images/NoviLogo/2.png" alt="My profile photo" class="profile-title" />
 
     </h1>
     <h2>Please share your thoughts on your recent experience with me.</h2>

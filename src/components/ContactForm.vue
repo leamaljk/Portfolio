@@ -2,6 +2,7 @@
     <div id="container">
       <form @submit.prevent="submitForm" class="form">
       <div class="form-group">
+        
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" v-model="form.firstName" required>
       </div>
@@ -24,17 +25,21 @@
       <div class="form-group">
         <button type="submit" class="submit-btn">Submit</button>
       </div>
+      
     </form>
       <div class="content">
         
         <h1>
-          <br>
+          
           Interested in driving your business forward?
         </h1>
         <p>
             If you'd like to discuss your project, please fill out this contact form. I'll review your information and get back to you as soon as possible to discuss how I can help. 
             I'm here to answer any questions you may have and look forward to hearing from you.
         </p>
+        <div class="logo">
+          <img src="@/assets/images/NoviLogo/10.png" alt="PearlDesign Logo" >
+        </div>
 <!-- TrustBox widget - Review Collector -->
 <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">
   <a href="https://uk.trustpilot.com/review/pearldesign2024.com" target="_blank" rel="noopener">Trustpilot</a>
@@ -95,10 +100,9 @@
   
   .logo {
   display: flex;
-  justify-content: left; /* This will center the image horizontally */
-  align-items: left; /* This will center the image vertically */
-  height: 160px; /* You need a specific height to align items in the center vertically */
-  margin: 20px;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  height: 400px; /* You need a specific height to align items in the center vertically */
 }
 
 h1{
@@ -129,15 +133,20 @@ h1{
   }
   
   .content {
-    align-items: center;
-    justify-content:center;
+   text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+    
     flex: 1;
     max-width: 600px;
   }
 
   .content h1{
+    margin-top: 30px;
+    text-align: center;
     color: var(--primaryRed);
-    
+    font-size: 2rem;
   }
 
   .content p{
@@ -167,7 +176,7 @@ h1{
   .form-group input,
   .form-group textarea {
     width: 100%; /* Full width */
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc; /* Consistent border size */
     border-radius: 5px;
     transition: border-color 0.3s; /* Smooth transition for border color */
@@ -223,8 +232,7 @@ button:hover {
     }
 
     .logo img{
-      width: 120px;
-      height: 120px;
+      width: 200px;
       padding: 0;
       display: flex;
       flex-direction: column;

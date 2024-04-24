@@ -45,13 +45,15 @@
             <span>Milton Keynes, UK</span>
           </a>
         </div>
+        <div class="copyright">
+          <img  src="@/assets/images/NoviLogo/11.png" alt="PearlDesign Logo" width="70px"  />
+      © 2024 PearlDesign. All Rights Reserved. 
+      
+    </div>
       </div>
+      
     </div>
-    <div class="copyright">
-
-      © 2024       <img src="../assets/images/logo/LogoSign (4).webp" width="20px" height="20px" alt="Background" />
-PearlDesign. All Rights Reserved. 
-    </div>
+   
   </footer>
 </template>
 
@@ -122,7 +124,7 @@ export default {
   width: 100%;
   margin: auto;
   padding: 0 2rem;
-  background: rgba(255, 255, 255, 0.5); /* semi-transparent white background */
+  background: #4b3f9812; /* semi-transparent white background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtle shadow for depth */
 }
 .footer-block.in-view {
@@ -155,7 +157,7 @@ export default {
 .footer-content p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: var(--text);
+  color: var(--white);
 }
 
 .icons {
@@ -182,7 +184,7 @@ export default {
   justify-content: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--white);
 }
 
 .contact-details span, .location-link span {
