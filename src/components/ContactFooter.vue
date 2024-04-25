@@ -46,7 +46,7 @@
           </a>
         </div>
         <div class="copyright">
-          <img  src="@/assets/images/NoviLogo/11.png" alt="PearlDesign Logo" width="70px"  />
+          <img  src="@/assets/images/NoviLogo/15.png" alt="PearlDesign Logo" width="70px"  />
       © 2024 PearlDesign. All Rights Reserved. 
       
     </div>

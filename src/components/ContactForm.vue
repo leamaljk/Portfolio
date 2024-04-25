@@ -38,7 +38,9 @@
             I'm here to answer any questions you may have and look forward to hearing from you.
         </p>
         <div class="logo">
-          <img src="@/assets/images/NoviLogo/10.png" alt="PearlDesign Logo" >
+          <router-link to="/" class="nav-link" @click="closeNav"> 
+          <img src="@/assets/images/NoviLogo/14.png" alt="PearlDesign Logo" >
+          </router-link>
         </div>
 <!-- TrustBox widget - Review Collector -->
 <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="65d24fbc801b6ca4358e2aaf" data-style-height="60px" data-style-width="100%">

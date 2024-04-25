@@ -190,7 +190,7 @@ export default {
   height: 10px;
   width: 10px;
   margin: 0 5px;
-  background-color: var(--primaryRed);
+  background-color: var(--secondary);
   border: 2px solid #fff;
   border-radius: 50%;
   display: inline-block;
