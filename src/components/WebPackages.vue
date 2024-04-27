@@ -217,22 +217,6 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .package {  
-   max-width: 300px;    
-   width: 100%;
-   }
-   .features li {
-    font-size: 20px;
-   }
-   .titles {
-  display: flex;
-  text-align: center;
-  justify-content: center; /* This will center the image horizontally */
-  align-items: center; /* This will center the image vertically */
-  width: 250px; /* You need a specific height to align items in the center vertically */
-}
-}
-@media (min-width: 480px) {
   .titles {
   display: flex;
   text-align: center;
@@ -240,6 +224,17 @@ button:hover {
   align-items: center; /* This will center the image vertically */
   width: 250px; /* You need a specific height to align items in the center vertically */
 }
+  .package {  
+   max-width: 300px;    
+   width: 100%;
+   }
+   .features li {
+    font-size: 20px;
+   }
+
+}
+@media (min-width: 480px) {
+ 
   .features li {
     font-size: 20px;
   }
@@ -255,6 +250,7 @@ button:hover {
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .features li {
     font-size: 20px;
   }

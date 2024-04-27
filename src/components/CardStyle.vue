@@ -158,13 +158,6 @@ img .titles{
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 
-.titles {
-  display: flex;
-  text-align: center;
-  justify-content: center; /* This will center the image horizontally */
-  align-items: center; /* This will center the image vertically */
-  width: 200px; /* You need a specific height to align items in the center vertically */
-}
 
 }
 

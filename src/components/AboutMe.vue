@@ -184,7 +184,7 @@ img .titles{
   text-align: center;
   justify-content: center; /* This will center the image horizontally */
   align-items: center; /* This will center the image vertically */
-  width: 250px; /* You need a specific height to align items in the center vertically */
+  width: 400px; /* You need a specific height to align items in the center vertically */
 }
   .layout {
   display: flex;
@@ -340,7 +340,13 @@ width: 100%;
    
     margin-left: 0px;
   }
-
+  .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
   #about-section {
    margin: auto;
    margin-top: 60px;

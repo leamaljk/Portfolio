@@ -58,13 +58,12 @@
   <style scoped>
 
 .accordion{
-width: 60%;
+width: 70%;
 align-items: center;
 justify-content: center;
 margin: auto;
 margin-bottom: 3rem;
 font-family: "Raleway", sans-serif;
-border-radius: 8px;
 
 }
 .accordion-content {
@@ -74,22 +73,18 @@ border-radius: 8px;
   padding: 0 10px; /* Adjust padding here to match the closed state */
   background: rgba(255, 255, 255, 0.7);
   font-family: "Raleway", sans-serif;
-  border-radius: 8px;
   border: none;
 }
 
 /* New styles for when the accordion content is open */
 .accordion-item .accordion-content {
-  max-height: 1000px; /* Set a large enough max-height to accommodate the content */
-  padding: 8px; /* Add padding to create space around the content */
-  border-radius: 8px;/* Optional: adds a line to separate title from content */
+  max-height: 1200px; /* Set a large enough max-height to accommodate the content */
+  padding: 28px; /* Add padding to create space around the content */
 }
   .accordion-item {
     font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
-    border: 1px solid var(--darkergray);
-    border-radius: 8px;
-    
+    /* border-bottom: 2px solid var(--title); */
     
   }
   
@@ -98,7 +93,8 @@ border-radius: 8px;
      background: rgba(255, 255, 255, 0.6);
     color: var(--secondary);
     cursor: pointer;
-    padding: 8px;
+    padding: 12px;
+    margin-left: 20px;
     width: 100%;
     text-align: left;
     border: none;
@@ -109,7 +105,8 @@ border-radius: 8px;
     transition: background-color 0.4s ease;
     font-size: 20px;
   font-weight: 600;
-  border-radius: 8px;
+  border-left: 5px solid var(--title);
+
   }
   
   .accordion-button:hover {
@@ -119,6 +116,8 @@ border-radius: 8px;
   .accordion-button:active {
     background-color: var(--darkergray);
   }
+  
+
   
   .toggle-icon {
     font-size: 26px;
