@@ -8,7 +8,7 @@
 
     <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/mac.webp" alt="Light Supply project" />
+        <img src="../assets/images/projects/mac1.png" alt="Light Supply project" />
       </div>
       <div class="card-description">
         <h2 class="reverse-text">Light Supply</h2>

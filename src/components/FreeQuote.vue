@@ -129,11 +129,15 @@ font-family: "Raleway", sans-serif;
     .accordion{
 width: 90%;
   }
+  .accordion-button {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
   .accordion{
 width: 90%;
+margin-left: 0;
   }
 }
 
