@@ -23,25 +23,6 @@
   box-sizing: border-box;
 }
 body {
-  .libre-caslon text-regular {
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-caslon text-bold {
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.libre-caslon text-regular-italic {
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-font-family: "Libre Caslon Text", serif;
 
 font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;

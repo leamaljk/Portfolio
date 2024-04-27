@@ -179,20 +179,13 @@ img .titles{
     transform: scale(1.2);
   }
   
-  .about {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 800;
-    font-size: 3em;
-    color:var(--secondary);
-    margin: 3rem 0;
-    letter-spacing: 1.5px;
-    animation: fadeInUp 2s ease;
-    text-align: center;
-  }
-
-  .about:hover{
-    color: var(--title);
-  }
+  .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
   .layout {
   display: flex;
   gap: 16px;

@@ -108,7 +108,6 @@
 }
 
 h1{
-  font-family: "Libre Caslon Text", serif;
     font-weight: 800;
     font-size: 2.5em;
     color: #4a4949;
@@ -213,7 +212,6 @@ h1{
   background: var(--white);
   border: none;
   cursor: pointer;
-  font-weight: 600;
   text-transform: uppercase;
 
 }

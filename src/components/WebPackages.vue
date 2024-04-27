@@ -103,18 +103,7 @@ img .titles{
   display: flex;
   justify-content: center;
 }
-.web {
-    font-weight: 800;
-    font-size: 3em;
-    color:var(--secondary);
-    letter-spacing: 1.5px;
-    text-align: center;
-    font-family: "Libre Caslon Text", serif;
-    margin: 3rem 0;
-  }
-.web:hover{
-color: var(--title);
-}
+
 .package {
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -185,14 +174,6 @@ color: var(--title);
 }
 
 
-.price-range,
-.price-per-hour {
-  font-size: 28px;
-  font-family: "Libre Caslon Text", serif;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 20px;
-}
 .CMS{
   background-color: var(--secondary);
   color: var(--primaryRed);
@@ -230,7 +211,7 @@ button:hover {
   background: var(--title);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #web-packages {
     flex-direction: row;
     justify-content: center;
@@ -243,9 +224,22 @@ button:hover {
    .features li {
     font-size: 20px;
    }
- 
+   .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
 }
 @media (min-width: 480px) {
+  .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
   .features li {
     font-size: 20px;
   }
@@ -255,9 +249,7 @@ button:hover {
 }
 
 @media (min-width: 320px) {
-  .web{
-font-size: 2.6rem;
-   }
+ 
   #web-packages {
     flex-direction: row;
     justify-content: center;

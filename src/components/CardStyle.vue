@@ -125,7 +125,6 @@ img .titles{
 .reverse-text {
   color: var(--text);
   font-size: 2.5em;
-  font-family: "Libre Caslon Text", serif;
 }
 .reverse-text{
   color: var(--secondary);
@@ -158,6 +157,15 @@ img .titles{
   .card-reverse {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
+
+.titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 200px; /* You need a specific height to align items in the center vertically */
+}
+
 }
 
 @media (max-width: 767px) {
@@ -167,9 +175,13 @@ img .titles{
     padding: 20px;
   }
 
-  .about {
-    font-size: 2rem;
-  }
+  .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
 }
 
 @media (max-width: 480px) {

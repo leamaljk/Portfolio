@@ -1,7 +1,7 @@
 <template>
     <div id="skills-section">
       <div class="center-title">
-      <img src="@/assets/images/titles/7.png" alt="PearlDesign" class="titles" >
+      <img src="@/assets/images/titles/10.png" alt="PearlDesign" class="titles" >
     </div>
       <div id="skills-container">
         <div v-for="skill in skills" :key="skill.name" class="skill">
@@ -134,5 +134,12 @@ img .titles{
   .skill-name {
     font-size: 0.75rem;
   }
+  .titles {
+  display: flex;
+  text-align: center;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 250px; /* You need a specific height to align items in the center vertically */
+}
 }
 </style>
