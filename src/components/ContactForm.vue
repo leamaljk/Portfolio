@@ -39,7 +39,7 @@
         </p>
         <div class="logo">
           <router-link to="/" class="nav-link" @click="closeNav"> 
-          <img src="@/assets/images/titles/12.png" alt="PearlDesign Logo" >
+          <img src="@/assets/images/titles/12.webp" alt="PearlDesign Logo" >
           </router-link>
         </div>
 <!-- TrustBox widget - Review Collector -->

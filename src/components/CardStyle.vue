@@ -2,13 +2,13 @@
 
   <div id="cards-container">
     <div class="center-title">
-      <img src="@/assets/images/titles/7.png" alt="PearlDesign" class="titles" >
+      <img src="@/assets/images/titles/7.webp" alt="PearlDesign" class="titles" >
     </div>
     <!-- Each card will have two main parts: the image showcase and the description -->
 
     <div class="card">
       <div class="card-image">
-        <img src="../assets/images/projects/mac1.png" alt="Light Supply project" />
+        <img src="../assets/images/projects/mac1.webp" alt="Light Supply project" />
       </div>
       <div class="card-description">
         <h2 class="reverse-text">Light Supply</h2>

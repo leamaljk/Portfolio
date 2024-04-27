@@ -1,6 +1,6 @@
 <template>
   <div class="center-title">
-      <img src="@/assets/images/titles/9.png" alt="PearlDesign" class="titles" >
+      <img src="@/assets/images/titles/9.webp" alt="PearlDesign" class="titles" >
     </div>
 <div>
 <FreeQuote></FreeQuote>

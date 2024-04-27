@@ -1,11 +1,11 @@
 <template>
  
  <div class="center-title">
-      <img src="@/assets/images/titles/11.png" alt="PearlDesign" class="titles" >
+      <img src="@/assets/images/titles/11.webp" alt="PearlDesign" class="titles" >
     </div>
     <div id="feedback-container">
     <p>Please share your thoughts on your recent experience with me.<br>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. <br> Thank you for your time.
-      <br><img src="../assets/images/NoviLogo/8.png" alt="My profile photo" class="profile-title" />
+      <br><img src="../assets/images/NoviLogo/8.webp" alt="My profile photo" class="profile-title" />
 
     </p>
     <div data-canny />

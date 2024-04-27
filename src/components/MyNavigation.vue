@@ -12,7 +12,7 @@
                       <router-link to="/" @click="closeNav">
                       </router-link>
                   </li>
-                  <li><router-link to="/" class="nav-link" @click="closeNav"> <img class="logo" src="@/assets/images/NoviLogo/13.png" alt="PearlDesign Logo" ></router-link> </li>
+                  <li><router-link to="/" class="nav-link" @click="closeNav"> <img class="logo" src="@/assets/images/NoviLogo/13.webp" alt="PearlDesign Logo" ></router-link> </li>
                   <li><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
                   <li><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
                   <li><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>

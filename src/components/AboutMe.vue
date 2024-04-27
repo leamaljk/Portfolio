@@ -1,7 +1,7 @@
 <template>
   <div id="about-section">
     <div class="center-title">
-      <img src="@/assets/images/titles/8.png" alt="PearlDesign" class="titles" >
+      <img src="@/assets/images/titles/8.webp" alt="PearlDesign" class="titles" >
     </div>
 
     <section class="layout">
