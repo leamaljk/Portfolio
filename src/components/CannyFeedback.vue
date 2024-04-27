@@ -1,11 +1,13 @@
 <template>
-   <div id="feedback-container">
-    <h1 class="square">I Value Your Feedback 
-        <img src="../assets/images/NoviLogo/8.png" alt="My profile photo" class="profile-title" />
+ 
+ <div class="center-title">
+      <img src="@/assets/images/titles/11.png" alt="PearlDesign" class="titles" >
+    </div>
+    <div id="feedback-container">
+    <p>Please share your thoughts on your recent experience with me.<br>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. <br> Thank you for your time.
+      <br><img src="../assets/images/NoviLogo/11.png" alt="My profile photo" class="profile-title" />
 
-    </h1>
-    <h2>Please share your thoughts on your recent experience with me.</h2>
-    <p>Please be reminded that to leave a review you need to Sign Up with Canny to verify your review. <br> Thank you for your time.</p>
+    </p>
     <div data-canny />
   </div>
   </template>
@@ -73,7 +75,23 @@ text-transform: uppercase;
     margin-bottom: 40px;
      
   }
+  .titles {
+  display: flex;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 400px; /* You need a specific height to align items in the center vertically */
+}
 
+img .titles{
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center;
+}
+.center-title{
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
   .profile-title {
     width: 110px;
     height: 110px;

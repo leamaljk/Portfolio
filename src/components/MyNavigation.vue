@@ -122,7 +122,7 @@
   }
   .nav-link:hover {
       color: var(--secondary);
-      font-weight: 600;
+      font-weight: 500;
       transform: scale(1.2);
   }
   @media (max-width: 768px) {

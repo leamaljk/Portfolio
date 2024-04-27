@@ -1,6 +1,8 @@
 <template>
     <div id="skills-section">
-      <h1 class="skills-title">Skills</h1>
+      <div class="center-title">
+      <img src="@/assets/images/titles/7.png" alt="PearlDesign" class="titles" >
+    </div>
       <div id="skills-container">
         <div v-for="skill in skills" :key="skill.name" class="skill">
           <img :src="skill.icon" :alt="skill.name" class="skill-icon">
@@ -60,6 +62,24 @@
 
 .skills-title:hover{
   color: var(--title);
+}
+
+.titles {
+  display: flex;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 400px; /* You need a specific height to align items in the center vertically */
+}
+
+img .titles{
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center;
+}
+.center-title{
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 #skills-container {
   display: grid;

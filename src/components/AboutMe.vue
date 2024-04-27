@@ -1,9 +1,7 @@
 <template>
   <div id="about-section">
-    <div class="profile-title">
-      <h1 class="about">About Me</h1>
-      <img src="../assets/images/profile-pic.webp" alt="My profile photo" class="profile-pic" />
-
+    <div class="center-title">
+      <img src="@/assets/images/titles/8.png" alt="PearlDesign" class="titles" >
     </div>
 
     <section class="layout">
@@ -109,7 +107,23 @@ export default {
     animation-fill-mode: both;
   }
 
+  .titles {
+  display: flex;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 400px; /* You need a specific height to align items in the center vertically */
+}
 
+img .titles{
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center;
+}
+.center-title{
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
   .read-more-button {
   background-color: var(--secondary); /* or use your secondary color */

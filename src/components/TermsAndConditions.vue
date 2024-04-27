@@ -48,7 +48,13 @@
       
       <PaymentStructure></PaymentStructure>
       <p>If you enlist my services, you will be provided with a contract of service at the time of booking a design date. This outlines the full Terms & Conditions we will be bound by before, during, and after your website design process.</p>
+      <div class="terms-logo">
+          
+            <h2 class="subtitle"><strong>Signed By</strong>:<br><img src="@/assets/images/NoviLogo/16.png" alt="PearlDesign Logo" >
+            </h2>
+        </div>
     </div>
+   
   </div>
 </template>
 
@@ -74,6 +80,12 @@ export default {
 </script>
 
 <style>
+  .terms-logo img {
+ 
+  height: 100px; /* You need a specific height to align items in the center vertically */
+}
+
+
 .terms-container {
   text-align: center;
   justify-content: center;

@@ -1,8 +1,7 @@
 <template>
-  <div >
-    <h1 class="web">Web Packages</h1>
-    
-</div>
+  <div class="center-title">
+      <img src="@/assets/images/titles/9.png" alt="PearlDesign" class="titles" >
+    </div>
 <div>
 <FreeQuote></FreeQuote>
 
@@ -86,6 +85,23 @@ export default {
   max-width: 100%;
   margin: auto;
   padding: 20px;
+}
+.titles {
+  display: flex;
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  width: 400px; /* You need a specific height to align items in the center vertically */
+}
+
+img .titles{
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center;
+}
+.center-title{
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .web {
     font-weight: 800;
