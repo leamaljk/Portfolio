@@ -148,7 +148,28 @@ img .titles{
 .card-description button:hover {
   background: var(--title);
 }
+@media (min-width: 767px) and (max-width: 1100px) { 
+  .card {
+display: flex;
+flex-direction: column;  }
 
+.card-image {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center text */
+  margin: auto;
+}
+.card-image img{
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+  
+ 
+}
 @media (min-width: 768px) {
   .card {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */

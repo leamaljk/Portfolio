@@ -105,16 +105,18 @@ font-family: "Raleway", sans-serif;
     transition: background-color 0.4s ease;
     font-size: 20px;
   font-weight: 600;
-  border-left: 5px solid var(--title);
+  border-left: 5px solid var(--secondary);
 
   }
   
   .accordion-button:hover {
     background-color: var(--primaryRed);
+    border-left: 5px solid var(--title);
   }
 
   .accordion-button:active {
     background-color: var(--darkergray);
+    border-left: 5px solid var(--title);
   }
   
 

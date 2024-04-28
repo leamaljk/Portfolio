@@ -125,6 +125,19 @@
       font-weight: 500;
       transform: scale(1.2);
   }
+
+
+  @media (min-width: 767px) and (max-width: 1200px) { 
+    .top-bar ul li {
+      margin-left: 20px;
+      font-size: 16px ;  }
+  
+  li img {
+      margin-right: 0px;
+  }
+
+  }
+
   @media (max-width: 768px) {
     .container{
       margin-bottom: 20px;

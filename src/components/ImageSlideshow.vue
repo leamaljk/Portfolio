@@ -18,7 +18,6 @@
       
       <!-- Slides -->
       <div v-for="(slide, index) in slides" :key="index" class="slide" :class="{ 'active': currentImageIndex === index }">
-        <div class="overlay"></div>
         <img :src="slide.image" class="slide-background" />
       </div>
     </div>
@@ -81,7 +80,9 @@ export default {
         { image: require('../assets/images/mobileSlides/9.webp') }
         // Additional mobile slides...
       ],
-      isMobile: window.innerWidth < 768
+      isMobile: window.innerWidth < 768,
+      isTablet: window.innerWidth > 768,
+
     };
   },
   methods: {
@@ -105,6 +106,8 @@ export default {
     },
     handleResize() {
       this.isMobile = window.innerWidth < 768;
+      this.isTablet = window.innerWidth > 768;
+
     }
   },
   mounted() {
@@ -203,6 +206,12 @@ export default {
   opacity: 1;
   transform: scale(1.6);
 
+}
+
+@media (min-width: 767px) and (max-width: 1100px) { 
+  .navigation{
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
