@@ -1,5 +1,6 @@
 <template>
     <div class="accordion">
+      <h1 class="faq">Frequently Asked Questions </h1>
       <div class="accordion-item" v-for="(faq, index) in faqs" :key="index">
         <button class="accordion-button" @click="toggle(index)">
           {{ faq.question }}
@@ -19,7 +20,7 @@
         faqs: [
           {
             question: 'Web Development Services Tailored to Your Needs',
-            answer: 'As a freelance web developer, I specialize in designing custom websites that effectively support your business objectives. I offer two primary packages: Standard and Premium. Each is designed to cater to different needs, whether you are looking to establish a new online presence or enhance an existing one.',
+            answer: 'As a web developer, I specialize in designing custom websites that effectively support your business objectives. I offer two primary packages: Standard and Premium. Each is designed to cater to different needs, whether you are looking to establish a new online presence or enhance an existing one.  Standard package for essential web needs or the Premium package for more advanced features and design customizations. Let\'s work together to build a website that not only meets but exceeds your expectations.',
             open: false
           },
           {
@@ -32,12 +33,20 @@
             answer: 'If you\'re interested in exploring which package might be right for you, I\'m happy to provide a detailed quote at no cost. This free quote will help you understand the potential costs and benefits without any obligation.',
             open: false
           },
+          
           {
-            question: 'Choose the package that best fits your requirements ',
-            answer: ' Standard package for essential web needs or the Premium package for more advanced features and design customizations. Let\'s work together to build a website that not only meets but exceeds your expectations.',
+            question: 'How long does it take to build a website?',
+            answer: ' The timeline for developing a website can vary based on the complexity and scope of your project. Typically, my Standard package websites take up to 2 weeks to complete, while Premium package websites may take up to 4 weeks. My priority is quality and attention to detail, ensuring I deliver a product that aligns perfectly with your vision. The estimated time will be determined after I assess the complexity of a project. Some may take less than a week. I just want to give you an idea of what to expect. If there is any specific timeline you want your project completed within, we should determine that at the beginning of the process.',
+            open: false
+          },{
+            question: 'How do we handle communication and project updates? ',
+            answer: 'Clients receive weekly updates and have direct access to me for any queries or feedback via email, phone, or scheduled meetings. This ensures that we stay aligned on project goals and timelines.',
+            open: false
+          },{
+            question: 'Do you offer training on how to use the website once it’s live?',
+            answer: 'Absolutely! Both of my packages include comprehensive CMS training and documentation, empowering you to manage your site with confidence. These can also be conducted via video calls or provided as custom video tutorials and written guides, depending on your preference and the complexity of your site.',
             open: false
           },
-          
         
           // ... additional FAQs
         ]
@@ -58,7 +67,7 @@
   <style scoped>
 
 .accordion{
-width: 70%;
+width: 80%;
 align-items: center;
 justify-content: center;
 margin: auto;
@@ -105,13 +114,13 @@ font-family: "Raleway", sans-serif;
     transition: background-color 0.4s ease;
     font-size: 20px;
   font-weight: 600;
-  border-left: 5px solid var(--secondary);
+  border-left: 4px solid var(--title);
 
   }
   
   .accordion-button:hover {
     background-color: var(--primaryRed);
-    border-left: 5px solid var(--title);
+    border-left: 5px solid var(--darkergray);
   }
 
   .accordion-button:active {
@@ -119,12 +128,18 @@ font-family: "Raleway", sans-serif;
     border-left: 5px solid var(--title);
   }
   
+  .faq{
+    color: var(--secondary);
+    text-align: center;
+    margin: 3rem 0;
+
+  }
 
   
   .toggle-icon {
     font-size: 26px;
     font-weight: bold;
-    color: var(--secondary);
+    color: var(--title);
   }
   
   @media (max-width: 768px) {

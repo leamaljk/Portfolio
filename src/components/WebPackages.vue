@@ -3,7 +3,7 @@
       <img src="@/assets/images/titles/9.webp" alt="PearlDesign" class="titles" >
     </div>
 <div>
-<FreeQuote></FreeQuote>
+
 
 </div>
   <div id="web-packages">
@@ -63,7 +63,7 @@
       <a href="#footer"><button>Learn More</button></a>
     </div>
 
-    
+    <FreeQuote></FreeQuote>
   </div>
 </template>
 

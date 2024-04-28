@@ -80,8 +80,7 @@ export default {
         { image: require('../assets/images/mobileSlides/9.webp') }
         // Additional mobile slides...
       ],
-      isMobile: window.innerWidth < 768,
-      isTablet: window.innerWidth > 768,
+      isMobile: window.innerWidth < 1100,
 
     };
   },
@@ -105,9 +104,7 @@ export default {
       this.mobileCurrentImageIndex = index;
     },
     handleResize() {
-      this.isMobile = window.innerWidth < 768;
-      this.isTablet = window.innerWidth > 768;
-
+      this.isMobile = window.innerWidth < 1100;
     }
   },
   mounted() {

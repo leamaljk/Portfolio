@@ -7,15 +7,14 @@
   <ImageSlideshow />
 </div>
 <router-view />
-
-
+<div>
+  <WebPackages></WebPackages>
+</div>
 <div>
 <CardStyle />
 </div>
 
-<div>
-  <WebPackages></WebPackages>
-</div>
+
 <div>
 <AboutMe />
 </div>
