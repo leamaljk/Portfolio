@@ -137,7 +137,10 @@ width: 90%;
 @media (max-width: 480px) {
   .accordion{
 width: 90%;
-margin-left: 0;
+
+  }
+  .accordion-button {
+    margin-left: 0;
   }
 }
 
