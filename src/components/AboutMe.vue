@@ -113,8 +113,8 @@ margin: auto;
   }
 
   .profile-photo {
-    width:400px;
-  height: 400px;
+    width:320px;
+  height: 320px;
   }
   .titles {
   display: flex;
