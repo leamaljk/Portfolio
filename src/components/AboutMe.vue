@@ -3,7 +3,7 @@
     <div class="center-title">
       <img src="@/assets/images/titles/8.webp" alt="PearlDesign" class="titles" >
     </div>
-  <div class="about-me">
+  <div id="about-me">
     <div class="content-wrapper">
       <img class="profile-photo" src="../assets/images/4.png" alt="Lea">
       <div class="text-content">
@@ -23,7 +23,7 @@
 </script>
 
 <style scoped>
-.about-me {
+#about-me {
   display: flex;
   justify-content: center;
   align-items: center;

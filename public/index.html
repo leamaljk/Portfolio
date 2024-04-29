@@ -51,6 +51,20 @@
   <meta name="google-site-verification" content="16_yIomkSpiqm8Kiaio-KTRNrntEUL3qcJrJtSpyUFw" />
 </head>
 <body>
+  <script type="text/javascript">
+    // Function to disable right-click
+    function disableRightClick(event) {
+        if (event.button == 2) {
+            return false;
+        }
+    }
+
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false);
+
+    document.addEventListener('mousedown', disableRightClick, false);
+</script>
   <noscript><strong>We're sorry but Pearl Design doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
   <div id="app"><!-- Vue app root element --></div>
   <!-- built files will be auto injected -->

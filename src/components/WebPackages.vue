@@ -243,6 +243,10 @@ h3{
   }
 }
 
-
+@media (max-width: 480px) {
+  .back-text {
+    font-size: 0.9em; /* Smaller font size */
+  }
+}
 
 </style>

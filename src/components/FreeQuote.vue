@@ -91,10 +91,7 @@ font-family: "Raleway", sans-serif;
   padding: 28px; /* Add padding to create space around the content */
 }
   .accordion-item {
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 10px;
-    /* border-bottom: 2px solid var(--title); */
-    
+    font-family: "Raleway", sans-serif;    
   }
   
   .accordion-button {
@@ -102,7 +99,7 @@ font-family: "Raleway", sans-serif;
      background: rgba(255, 255, 255, 0.6);
     color: var(--secondary);
     cursor: pointer;
-    padding: 12px;
+    padding: 12px 12px;
     margin-left: 20px;
     width: 100%;
     text-align: left;
@@ -113,12 +110,12 @@ font-family: "Raleway", sans-serif;
     align-items: center;
     transition: background-color 0.4s ease;
     font-size: 20px;
-  font-weight: 600;
-  border-left: 4px solid var(--secondary);
+  font-weight: 400;
+  border-bottom: 1px #ccc solid;
 
   }
   
-  .accordion-button:hover {
+  .accordion-button:hover  {
     background-color: var(--primaryRed);
     border-left: 5px solid var(--darkergray);
   }
@@ -139,15 +136,21 @@ font-family: "Raleway", sans-serif;
   .toggle-icon {
     font-size: 26px;
     font-weight: bold;
-    color: var(--title);
+    color: var(--secondary);
   }
   
   @media (max-width: 768px) {
     .accordion{
 width: 90%;
+
   }
   .accordion-button {
     margin-left: 0;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  .toggle-icon {
+margin-left: 10px;
   }
 }
 

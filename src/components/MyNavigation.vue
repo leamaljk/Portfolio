@@ -16,7 +16,7 @@
                   <li><router-link to="/" class="nav-link" @click="closeNav">Home</router-link></li>
                   <li><router-link to="/#web-packages" class="nav-link" @click="closeNav">Web packages</router-link></li>
                   <li><router-link to="/#cards-container" class="nav-link" @click="closeNav">Portfolio</router-link></li>
-                  <li><router-link to="/#about-section" class="nav-link" @click="closeNav">About Me</router-link></li>
+                  <li><router-link to="/#about-me" class="nav-link" @click="closeNav">About Me</router-link></li>
                   <li><router-link to="/#feedback-container" class="nav-link" @click="closeNav">Feedback</router-link></li>
                   <li><router-link to="/#container" class="nav-link" @click="closeNav">Contact</router-link></li>
               </ul>
