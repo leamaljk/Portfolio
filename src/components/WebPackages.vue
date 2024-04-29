@@ -223,7 +223,7 @@ h3{
   width: 300px; /* You need a specific height to align items in the center vertically */
 }
   .button-style, .button-style-back {
-    font-size: 14px; /* Smaller font size for smaller screens */
+    font-size: 0.8em; /* Smaller font size for smaller screens */
     padding: 10px 20px; /* Reduce padding for smaller screens */
   }
 
@@ -234,11 +234,11 @@ h3{
   }
 
   .back-text, .front-text, h3 {
-    font-size: 0.9em; /* Smaller font size */
+    font-size: 1em; /* Smaller font size */
   }
 
   h3{
-    font-size: 1.2em; /* Smaller font size */
+    font-size: 1.4em; /* Smaller font size */
 
   }
 }

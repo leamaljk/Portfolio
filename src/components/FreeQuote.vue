@@ -114,7 +114,7 @@ font-family: "Raleway", sans-serif;
     transition: background-color 0.4s ease;
     font-size: 20px;
   font-weight: 600;
-  border-left: 4px solid var(--title);
+  border-left: 4px solid var(--secondary);
 
   }
   
