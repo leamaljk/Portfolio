@@ -232,7 +232,7 @@ button:hover {
     }
 
     .logo img{
-      width: 200px;
+      width: 300px;
       padding: 0;
       display: flex;
       flex-direction: column;

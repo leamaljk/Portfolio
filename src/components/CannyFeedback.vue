@@ -134,7 +134,7 @@ img .titles{
   text-align: center;
   justify-content: center; /* This will center the image horizontally */
   align-items: center; /* This will center the image vertically */
-  width: 250px; /* You need a specific height to align items in the center vertically */
+  width: 300px; /* You need a specific height to align items in the center vertically */
 }
 }
 

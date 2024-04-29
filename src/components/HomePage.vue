@@ -11,6 +11,9 @@
   <WebPackages></WebPackages>
 </div>
 <div>
+  <FreeQuote></FreeQuote>
+</div>
+<div>
 <CardStyle />
 </div>
 
@@ -33,7 +36,7 @@
 
 <script>
 import CookiesInfo from '../components/CookiesInfo.vue';
-
+import FreeQuote from '../components/FreeQuote.vue';
 import MyNavigation from '../components/MyNavigation.vue';
 
 import AboutMe from '../components/AboutMe.vue';
@@ -57,7 +60,7 @@ export default {
     'CardStyle': CardStyle,
     'ContactFooter': ContactFooter,
     SkillsIcons, WebPackages, ContactForm,
-    ImageSlideshow,TermsAndConditions, CannyFeedback
+    ImageSlideshow,TermsAndConditions, CannyFeedback,FreeQuote
 },
 };
 
