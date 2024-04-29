@@ -17,13 +17,13 @@
 <CardStyle />
 </div>
 
-
-<div>
-<AboutMe />
-</div>
 <div>
 <SkillsIcons></SkillsIcons>
 </div>
+<div>
+<AboutMe />
+</div>
+
 <div>
     <CannyFeedback></CannyFeedback>
   </div>

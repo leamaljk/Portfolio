@@ -230,6 +230,7 @@ button:hover {
       align-content: center;
       text-align: justify;
     }
+    
 
     .logo img{
       width: 300px;
