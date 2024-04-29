@@ -36,7 +36,7 @@ export default {
       cards: [
         {
           id: 1,
-          img: require('@/assets/images/side4.png'),
+          img: require('@/assets/images/side4.webp'),
           title: 'CMS Training & Documentation',
           summary: 'Learn to manage your site with our comprehensive training.',
           detail: 'Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently. My packages are designed to give you control and understanding of your web presence.',
@@ -44,7 +44,7 @@ export default {
         },
         {
           id: 2,
-          img: require('@/assets/images/side2.png'),
+          img: require('@/assets/images/side2.webp'),
           title: 'Standard Web Package',
           summary: 'Essential features for your online presence.',
           detail: 'Up to 4 custom pages (Home, About, Services, Contact, etc). Responsive design across all devices, Basic SEO for fundamental online visibility, Domain registration, Complimentary hosting service, Email address setup, Robust website security with HTTPS certificate, 2 month of Website Maintenance Package at no extra cost, *Optional Logo Design and Business Card Printing available',
@@ -52,7 +52,7 @@ export default {
         },
         {
           id: 3,
-          img: require('@/assets/images/side1.png'),
+          img: require('@/assets/images/side1.webp'),
           title: 'Premium Web Package',
           summary: 'Advanced solutions for growing businesses.',
           detail: 'Up to 10 or more custom pages, Optimized responsive layout on multi-device, SEO and performance optimization, Logo and Business Card Design included, 250 business card prints provided free, Domain registration, Complimentary hosting service, Email address setup, Guaranteed website security with HTTPS certificate, 2-month trial of Website Maintenance Package for free' ,
@@ -60,7 +60,7 @@ export default {
         },
         {
           id: 4,
-          img: require('@/assets/images/side3.png'),
+          img: require('@/assets/images/side3.webp'),
           title: 'Website Maintenance',
           summary: 'Regular updates and security for your website.',
           detail: 'Regular website content updates, Detailed security checks, Ongoing performance optimization, Content updates as requested, Responsive technical support',

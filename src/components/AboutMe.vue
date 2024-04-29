@@ -5,7 +5,7 @@
     </div>
   <div id="about-me">
     <div class="content-wrapper">
-      <img class="profile-photo" src="../assets/images/4.png" alt="Lea">
+      <img class="profile-photo" src="../assets/images/4.webp" alt="Lea">
       <div class="text-content">
         <h1>Hello!</h1>
         <p>I’m Lea, the face behind Pearl Design. Thank you for visiting my page.</p>
