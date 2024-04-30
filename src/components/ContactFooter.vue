@@ -124,7 +124,6 @@ export default {
   width: 100%;
   margin: auto;
   padding: 0 2rem;
-  background: #4b3f9812; /* semi-transparent white background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* subtle shadow for depth */
 }
 .footer-block.in-view {
