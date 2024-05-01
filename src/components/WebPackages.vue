@@ -140,7 +140,7 @@ img .titles{
   height: 500px; /* Adjust the height as needed */
   perspective: 1200px;
   border: 1px solid #ccc; /* Border for card */
-  border-radius: 10px; /* Optional for rounded corners */
+  border-radius: 25px; /* Optional for rounded corners */
 }
 
 .card-content {
@@ -161,7 +161,7 @@ img .titles{
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  border-radius: 10px; /* Optional for rounded corners */
+  border-radius: 25px; /* Optional for rounded corners */
 }
 
 .card-front {
