@@ -196,6 +196,7 @@ h3{
   transform: rotateY(180deg);
 }
 
+
 /* Style for screens smaller than 768px */
 @media (max-width: 768px) {
   .cards {
@@ -208,7 +209,7 @@ h3{
   .card {
     display: flex;
     flex-direction: column;
-    width: 90%; /* Take full width minus margin */
+    width: 320px; /* Take full width minus margin */
     height: 480px;
     margin: 10px; /* Add some margin around cards */
     
@@ -234,7 +235,7 @@ h3{
   }
 
   .back-text, .front-text, h3 {
-    font-size: 1em; /* Smaller font size */
+    font-size: 0.9em; /* Smaller font size */
   }
 
   h3{
