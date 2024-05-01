@@ -16,7 +16,7 @@
           </div>
           <div class="card-face card-back">
             <p class="back-text">{{ card.detail }}</p>
-            <button class="button-style-back">get a free quote</button>
+            <button class="button-style-back"><a href="/#container"> a free quote </a></button>
 
           </div>
         </div>
@@ -124,6 +124,11 @@ img .titles{
   text-align: center;
   display: flex;
   justify-content: center;
+}
+
+button a{
+  text-decoration: none;
+  color:var(--primaryRed) ;
 }
 
 .cards {

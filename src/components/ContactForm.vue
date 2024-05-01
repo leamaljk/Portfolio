@@ -1,4 +1,10 @@
 <template>
+  <div v-if="showPopup" class="popup">
+    <div class="popup-inner">
+      <h3>{{ popupMessage }}</h3>
+      <button @click="closePopup">Close</button>
+    </div>
+    </div>
     <div id="container">
       <form @submit.prevent="submitForm" class="form">
       <div class="form-group">
@@ -55,46 +61,90 @@
 
 
   <script>
-  export default {
-    data() {
-      return {
-        form: {
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          enquiry: ''
+export default {
+  data() {
+    return {
+      form: {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        enquiry: ''
+      },
+      showPopup: false,
+      popupMessage: ''
+    };
+  },
+  methods: {
+    async submitForm() {
+      const serviceEndpoint = 'https://formspree.io/f/mqkrblqo';  
+      try {
+        const response = await fetch(serviceEndpoint, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(this.form),
+        });
+
+        if (response.ok) {
+          this.popupMessage = 'Thanks for letting me know! I will get back to you as soon as possible.';
+          this.showPopup = true;
+          this.form = { firstName: '', lastName: '', email: '', phone: '', enquiry: '' }; // Reset form
+        } else {
+          this.popupMessage = 'Failed to send a message. Please try again.';
+          this.showPopup = true;
         }
-      };
-    },
-    methods: {
-      async submitForm() {
-        const serviceEndpoint = 'https://formspree.io/f/mqkrblqo';  
-        try {
-          const response = await fetch(serviceEndpoint, {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(this.form),
-          });
-  
-          if (response.ok) {
-            alert('Thanks for letting me know! I will get back to you as soon as possible.');
-            this.form = { firstName: '', lastName: '', email: '', phone: '', enquiry: '' }; // Reset form
-          } else {
-            alert('Failed to send a message. Please try again.');
-          }
-        } catch (error) {
-          alert('An error occurred. Please try again.');
-        }
+      } catch (error) {
+        this.popupMessage = 'An error occurred. Please try again.';
+        this.showPopup = true;
       }
+    },
+    closePopup() {
+      this.showPopup = false;
     }
-  };
+  }
+};
+
   </script>
   
   <style scoped>
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.popup-inner h3{
+  font-weight: 400;
+  
+}
+
+.closePopup{
+  
+    background-color: var(--secondary);
+    color: var(--primaryRed);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
   .trustpilot-widget{
     margin: 20px;
     align-items: flex-start;
@@ -106,6 +156,8 @@
   align-items: center; /* This will center the image vertically */
   height: 400px; /* You need a specific height to align items in the center vertically */
 }
+
+
 
 h1{
     font-weight: 800;

@@ -237,6 +237,9 @@ export default {
   .copyright{
     font-size: 12px;
   }
+  .icons {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 480px) {
@@ -249,7 +252,7 @@ export default {
     font-size: 12px;
   }
   .icons {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .icon {
