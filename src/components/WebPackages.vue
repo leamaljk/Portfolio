@@ -34,22 +34,13 @@ export default {
   data() {
     return {
       cards: [
-        // {
-        //   id: 1,
-        //   img: require('@/assets/images/side4.webp'),
-        //   title: 'CMS Training & Documentation',
-        //   summary: 'Learn to manage your site with our comprehensive training.',
-        //   detail: 'Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently. My packages are designed to give you control and understanding of your web presence.',
-        //   flipped: false,
-        // },
-
         {
-          id: 2,
-          img: require('@/assets/images/projects/mac (2).webp'),
-          title: 'Booki',
-          summary: 'Essential features for your online presence.',
-          detail: 'The webpage is a sleek and inviting online platform designed for booking travel accommodations and discovering activities in Marseille. It boasts a minimalist and intuitive interface with a clear search function, well-organized content, and visually appealing imagery.',
-          flipped: false
+          id: 1,
+          img: require('@/assets/images/side4.webp'),
+          title: 'CMS Training & Documentation',
+          summary: 'Learn to manage your site with our comprehensive training.',
+          detail: 'Receive comprehensive training for managing your website along with detailed documentation, ensuring you can manage your online presence (CMS or Content Managment System) effectively and efficiently. My packages are designed to give you control and understanding of your web presence.',
+          flipped: false,
         },
         {
           id: 2,
