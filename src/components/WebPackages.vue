@@ -1,5 +1,5 @@
 <template>
-<div class="center-title">
+<div class="center-title" id="web-packages">
       <img src="@/assets/images/titles/9.webp" alt="PearlDesign" class="titles" >
     </div>
 
