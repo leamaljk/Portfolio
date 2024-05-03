@@ -196,9 +196,8 @@ button a{
         gap: 20;
         display: flex;
         flex-direction: column;
-        width: 320px; /* Take full width minus margin */
-        height: 320px;
-        margin: 10px; /* Add some margin around cards */
+        width: 340px; /* Take full width minus margin */
+        height: 340px;
         border-radius: 0;
       }
     
