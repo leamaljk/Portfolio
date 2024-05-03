@@ -14,7 +14,7 @@
   <FreeQuote></FreeQuote>
 </div>
 <div>
-<CardStyle />
+<PortfolioShowcase />
 </div>
 
 <div>
@@ -40,7 +40,7 @@ import FreeQuote from '../components/FreeQuote.vue';
 import MyNavigation from '../components/MyNavigation.vue';
 
 import AboutMe from '../components/AboutMe.vue';
-import CardStyle from '../components/CardStyle.vue';
+import PortfolioShowcase from '../components/PortfolioShowcase.vue';
 import ContactFooter from '../components/ContactFooter.vue'
 import SkillsIcons from './SkillsIcons.vue';
 import WebPackages from './WebPackages.vue';
@@ -57,7 +57,7 @@ export default {
     CookiesInfo,
     'MyNavigation': MyNavigation,
     'AboutMe': AboutMe,
-    'CardStyle': CardStyle,
+    'PortfolioShowcase': PortfolioShowcase,
     'ContactFooter': ContactFooter,
     SkillsIcons, WebPackages, ContactForm,
     ImageSlideshow,TermsAndConditions, CannyFeedback,FreeQuote
