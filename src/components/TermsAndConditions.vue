@@ -100,6 +100,12 @@ export default {
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 1rem;
+  
+}
+
+strong{
+  font-size: 1.8rem;    
+      font-weight: 500;
 }
 
 .toggle-button:hover {
@@ -116,9 +122,13 @@ export default {
 .title {
   color: var(--secondary);
   margin-bottom: 0.5rem;
+  font-size: 2.5rem;    
+      font-weight: 500;
 }
 
 .subtitle {
+  font-size: 2rem;    
+      font-weight: 500;
   color: var(--secondary);
   margin-top: 1rem;
   margin-bottom: 0.25rem;

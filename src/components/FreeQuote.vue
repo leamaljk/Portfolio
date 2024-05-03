@@ -127,7 +127,8 @@ font-family: "Raleway", sans-serif;
     color: var(--secondary);
     text-align: center;
     margin: 3rem 0;
-
+    font-size: 2.5rem;    
+      font-weight: 500;
   }
 
   

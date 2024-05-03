@@ -75,11 +75,16 @@
   }
 .h2second {
     color: var(--title);
+    font-size: 1.6rem;    
+      font-weight: 500;
 }
 
 h2{
     color: var(--secondary);
+    font-size: 1.8rem;    
+      font-weight: 500;
 }
+
  
   </style>
   

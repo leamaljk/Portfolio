@@ -160,8 +160,8 @@ export default {
 
 
 h1{
-    font-weight: 800;
-    font-size: 2.5em;
+  font-size: 2.5rem;    
+      font-weight: 500;
     color: #4a4949;
     margin-bottom: 1rem;
     letter-spacing: 1.5px;

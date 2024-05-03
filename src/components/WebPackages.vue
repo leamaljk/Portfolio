@@ -16,7 +16,7 @@
           </div>
           <div class="card-face card-back">
             <p class="back-text">{{ card.detail }}</p>
-            <button class="button-style-back"><a href="/#container"> a free quote </a></button>
+            <button class="button-style-back"><a href="/#container">get a free quote </a></button>
 
           </div>
         </div>
@@ -83,7 +83,7 @@ export default {
   display: flex;
   justify-content: center; /* This will center the image horizontally */
   align-items: center; /* This will center the image vertically */
-  width: 400px; /* You need a specific height to align items in the center vertically */
+  width: 500px; /* You need a specific height to align items in the center vertically */
 }
 
 img .titles{
@@ -114,6 +114,12 @@ img .titles{
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.button-style-back:hover{
+  background-color: var(--title);
+}
+
+
 .card-img {
   max-width: 150px; /* Ensure the image does not exceed the card's width */
   height: 150px; /* Maintain aspect ratio */
@@ -141,10 +147,9 @@ button a{
 }
 
 .card {
-  width: 320px; /* Adjust the width as needed */
+  width: 330px; /* Adjust the width as needed */
   height: 500px; /* Adjust the height as needed */
   perspective: 1200px;
-  border: 1px solid #ccc; /* Border for card */
   border-radius: 25px; /* Optional for rounded corners */
 }
 
@@ -180,9 +185,10 @@ button a{
 
 }
 .back-text {
-  color: var(--text);
+  color: #4e4e4e;
 text-align: center;
 font-size: 18px;
+font-weight: 500;
 }
 .card-face, .front-text, h3{
   color: var(--primaryRed);
@@ -194,7 +200,8 @@ text-align: center;
 
 }
 h3{
-  font-size: 1.6em;
+  font-size: 1.6em;    
+      font-weight: 500;
 }
 
 .flipped:hover, .card-content:hover {

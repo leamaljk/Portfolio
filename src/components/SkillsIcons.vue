@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center; /* This will center the image horizontally */
   align-items: center; /* This will center the image vertically */
-  width: 400px; /* You need a specific height to align items in the center vertically */
+  width: 500px; /* You need a specific height to align items in the center vertically */
 }
 
 img .titles{

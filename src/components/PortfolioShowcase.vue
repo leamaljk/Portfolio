@@ -85,7 +85,7 @@
       display: flex;
       justify-content: center; /* This will center the image horizontally */
       align-items: center; /* This will center the image vertically */
-      width: 400px; /* You need a specific height to align items in the center vertically */
+      width: 500px; /* You need a specific height to align items in the center vertically */
     }
     
     img .titles{
@@ -93,7 +93,8 @@
       align-items: center;
     }
     .center-title{
-      margin: 2rem auto;
+      margin: auto;
+      margin-top: 2rem;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -108,6 +109,10 @@
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 30px;
+}
+
+.button-style-back:hover{
+  background-color: var(--title);
 }
 
 button a{
@@ -199,7 +204,15 @@ button a{
         height: auto;
         gap: 0rem; 
       }
-
+      .front-text{
+      font-size: 1em;
+    }
+    h3{
+      font-size: 1.9rem;
+    }
+    .button-style-back {
+  padding: 12px 20px;
+    }
 }
     
     /* Style for screens smaller than 768px */
