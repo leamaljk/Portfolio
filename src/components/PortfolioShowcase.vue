@@ -1,5 +1,5 @@
 <template>
-    <div class="center-title" id="web-packages">
+    <div class="center-title" id="portfolio">
           <img src="@/assets/images/titles/7.webp" alt="PearlDesign" class="titles" >
         </div>
     
@@ -141,6 +141,7 @@ button a{
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
+  
 }
 
 .card-face {
@@ -171,6 +172,7 @@ button a{
 
 .front-text{
       font-size: 1.2em;
+      text-align: center;
     
     }
     h3{

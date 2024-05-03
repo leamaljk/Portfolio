@@ -109,6 +109,11 @@ img .titles{
   width: 80px; /* Icons are of equal sizes */
   height: 80px; /* Maintain square aspect ratio */
   object-fit: contain; /* Keep the aspect ratio of the icons */
+  border: 1px dotted var(--darkergray);
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 1s, box-shadow 0.1s ease-in-out; /* Smooth transition for box shadow */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skill-icon:hover{
