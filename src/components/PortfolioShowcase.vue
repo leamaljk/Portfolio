@@ -181,6 +181,26 @@ button a{
       font-weight: 500;
       margin-bottom: 20px;
     }
+
+    
+@media (min-width: 767px) and (max-width: 1400px) { 
+  .card {
+  max-width: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  gap: 20px;
+}
+.cards {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        gap: 0rem; 
+      }
+
+}
     
     /* Style for screens smaller than 768px */
     @media (max-width: 768px) {
