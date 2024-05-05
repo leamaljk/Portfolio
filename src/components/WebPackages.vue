@@ -209,6 +209,7 @@ h3{
 }
 
 
+
 /* Style for screens smaller than 768px */
 @media (max-width: 768px) {
   .cards {
@@ -221,7 +222,7 @@ h3{
   .card {
     display: flex;
     flex-direction: column;
-    width: 320px; /* Take full width minus margin */
+    width: 310px; /* Take full width minus margin */
     height: 480px;
     margin: 10px; /* Add some margin around cards */
     

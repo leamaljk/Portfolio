@@ -111,9 +111,7 @@
   margin-top: 30px;
 }
 
-.button-style-back:hover{
-  background-color: var(--title);
-}
+
 
 button a{
       text-decoration: none;
@@ -229,8 +227,8 @@ button a{
         gap: 20;
         display: flex;
         flex-direction: column;
-        width: 340px; /* Take full width minus margin */
-        height: 340px;
+        width: 360px; /* Take full width minus margin */
+        height: 360px;
         border-radius: 0;
       }
     
